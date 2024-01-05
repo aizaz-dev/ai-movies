@@ -1,6 +1,8 @@
-import React from "react";
-
-const CustomButton = ({ type, title }) => {
+interface CustomButtonProps {
+  type: "filledBlue" | "filledWhite" | "outlinedBlue" | "outlinedWhite";
+  title: string;
+}
+const CustomButton: React.FC<CustomButtonProps> = ({ type, title }) => {
   let classes = "";
   if (type === "filledBlue") {
     classes = "bg-primary text-[#fff] [font-family:Outfit-Bold,sans-serif]";
