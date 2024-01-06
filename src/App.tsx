@@ -1,17 +1,18 @@
 import { Route, Routes } from "react-router-dom";
-import Untersiete from "./pages/untersiete/Untersiete";
 import Stellenbeschreibung from "./pages/stellenbeschreibung/Stellenbeschreibung";
 import Header from "./components/header/Header";
 import Footer from "./components/Footer/Footer";
 import Jobs from "./pages/jobs/Jobs";
-import Faq from "./pages/faq/Faq";
+import Faq from "./components/Faqs";
 import Uber from "./pages/Uber/Uber";
 import Case from "./pages/case/Case";
 import Contact from "./pages/contact/Contact";
 import Blog from "./pages/blog/Blog";
 import Blog2 from "./pages/blog-1/blog-1";
-import Pageone from "./pages/pageone/Pageone";
-import Pagetwo from "./pages/pagetwo/Pagetwo";
+import Startseite from "./pages/startseite/Startseite";
+import Produkt from "./pages/produkt/Pagetwo";
+import Unterseite from "./pages/unterseite/Unterseite";
+import Faqs from "./pages/faq/Faq";
 
 function App() {
   return (
@@ -19,17 +20,19 @@ function App() {
       <Header />
       <Routes>
         {/* page 1 */}
-        <Route path="/" element={<Pageone />} />
-         {/* page 2 */}
-         <Route path="/produkt" element={<Pagetwo />} />
+        <Route path="/" element={<Startseite/>} />
+        {/* page 2 */}
+        <Route path="/produkt" element={<Produkt />} />
         {/* page 3 */}
         <Route path="/uber" element={<Uber />} />
         {/* page 4 */}
         <Route path="/case" element={<Case />} />
+        {/* page 5 */}
+        <Route path="/unterseite"  element={<Unterseite/>}/>
         {/* Page 6 */}
         <Route path="/contact" element={<Contact />} />
         {/* Page 7 */}
-        <Route path="/faqs" element={<Faq />} />
+        <Route path="/faq" element={<Faqs />} />
         {/* Page 8 */}
         <Route path="/jobs" element={<Jobs />} />
         {/* Page 9 */}

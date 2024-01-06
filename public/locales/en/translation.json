@@ -1,0 +1,35 @@
+{
+  "flextop": {
+    "heading1": "From Input Text to E-Learning Video",
+    "heading2": "The Most Efficient Way to Create Corporate Knowledge",
+    "paragraph": "FAST AI Movies is the only AI solution for automatically creating custom E-Learnings - from colleagues to colleagues. You don't need complex scripts; your employees can turn existing documentation/descriptions into interactive E-Learnings in minutes. Learning psychology insights ensure high comprehensibility.",
+    "button1": "Create Demo Video for Free",
+    "button2": "How It Works?"
+  },
+  "footer": {
+    "quickFind": "Quick Find",
+    "caseStudies": "Case Studies",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "legal": "Legal",
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "additional": "Additional",
+    "faq": "FAQ",
+    "jobs": "Jobs",
+    "social": "Social",
+    "news": "News",
+    "blog": "Blog",
+    "dontMiss": "Don't Miss",
+    "subscribeNewsletter": "Subscribe to our Newsletter!",
+    "emailPlaceholder": "E-Mail Address",
+    "subscriptionNote": "By clicking Subscribe, you agree to our Privacy Policy.",
+    "subscribeButton": "Subscribe"
+  },
+  "languages": {
+    "english": "English",
+    "german": "German",
+    "french": "French",
+    "spanish": "Spanish"
+  }
+}

@@ -1,3 +1,5 @@
+import Topstory from "../../components/Uber/Topstory";
+
 const Uber = () => {
   const about = [
     {
@@ -31,6 +33,13 @@ const Uber = () => {
   ];
   return (
     <div>
+      <div>
+<Topstory/>
+      </div>
+
+
+
+
       <div className="max-w-[2000px] mx-auto  w-[100%] flex flex-col lg:px-[80px] px-[20px] pt-[50px]">
         <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary">
           ABOUT US

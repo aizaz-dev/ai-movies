@@ -1,65 +1,69 @@
-import { FaFacebookF } from "react-icons/fa6";
-import { FaLinkedinIn } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
+import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { BsSend } from "react-icons/bs";
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
+
   return (
-    <div className="bg-[#0d1c5a] flex flex-col lg:px-[80px] px-[20px] max-w-[2000px] w-[100%]">
-      <div className="flex h-fit">
-        <img className="w-[200px] h-fit" src="/white.svg" alt="" />
+    <div className="bg-[#0d1c5a]  lg:px-[80px] px-[20px] pb-[40px]  w-[100%]">
+     <div className="max-w-[2000px] mx-auto">
+      <div className="">
+      <div className="flex h-fit ">
+        <img className="w-[200px] max-laptop:w-[150px] h-fit" src="/white.svg" alt="" />
       </div>
       <div className="flex md:flex-row justify-between gap-[30px] flex-col">
-        <div className="flex flex-wrap gap-[60px]">
+        <div className="flex flex-wrap gap-[60px] max-md:items-start max-md:justify-around">
           <div className="flex flex-col gap-1">
-            <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[white]">
-              Schnell Finden
+            <div className="text-sm font-[Outfit-Bold] text-white  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.quickFind")}
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-light200">
-              Case Studies
+            <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.caseStudies")}
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-light200">
-              Über uns
+            <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.aboutUs")}
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-light200">
-              Kontakt
+            <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.contact")}
             </div>
           </div>
           <div className="flex flex-col gap-1">
-            <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[white]">
-              Rechtliches
+            <div className="text-sm font-[Outfit-Bold] text-white max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.legal")}
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-light200">
-              Impressum
+            <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.imprint")}
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-light200">
-              Datenschutz
-            </div>
-          </div>
-          <div className="flex flex-col gap-1">
-            <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[white]">
-              Weiterführende
-            </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-light200">
-              Kontakt
-            </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-light200">
-              FAQ
-            </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-light200">
-              Jobs
+            <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.privacy")}
             </div>
           </div>
           <div className="flex flex-col gap-1">
-            <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[white]">
-              Social
+            <div className="text-sm font-[Outfit-Bold] text-white  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.additional")}
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-light200">
-              News
+            <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.contact")}
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-light200">
-              Blog
+            <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.faq")}
             </div>
-            <div className="flex gap-[10px]">
+            <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.jobs")}
+            </div>
+          </div>
+          <div className="flex flex-col gap-1">
+            <div className="text-sm font-[Outfit-Bold] text-white  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.social")}
+            </div>
+            <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.news")}
+            </div>
+            <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              {t("footer.blog")}
+            </div>
+            <div className="flex gap-[10px] mt-3">
               <div className="bg-white rounded-sm p-[4px]">
                 <FaFacebookF className="text-[#0d1c5a] text-[18px]" />
               </div>
@@ -70,39 +74,43 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-col gap-2">
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[white]">
-            Nichts mehr verpassen!
+          <div className="text-sm font-[Outfit-Bold] text-white  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+            {t("footer.dontMiss")}
           </div>
-          <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-[white]">
-            Registrieren Sie sich für unseren Newsletter!
+          <div className="text-sm font-[Outfit-Bold] text-white  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+            {t("footer.subscribeNewsletter")}
           </div>
           <input
-            className="text-sm text-white w-fit px-[20px] py-[10px] my-1 border-[3px] border-white rounded-md bg-transparent"
-            placeholder="E-Mail Address"
+            className="text-sm font-[Outfit-Bold] text-white  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px] w-fit px-[20px] py-[10px] my-1 border-[3px] border-white rounded-md bg-transparent"
+            placeholder={t("footer.emailPlaceholder")}
             type="text"
           />
-          <div className=" text-xs font-[Outfit-Regular]  text-light200">
-            Mit klicken auf Abonnieren <br />
-            stimmen Sie unseren <br />
-            Datenschutzbestimmungen zu
+          <div className=" text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+            {t("footer.subscriptionNote")}
           </div>
-          <div className="lg:text-sm text-xs gap-2 font-[Outfit-Bold]  text-primary flex items-center px-[24px] py-[8px] bg-light200 rounded-md w-fit ">
+          <div className="max-md:hidden">
+          <button className="text-primary border-none  text-sm max-laptop:text-mf font-bold border-[2px]  border-primary py-[10px] px-[15px]  mt-6 max-md:text-[14px] whitespace-nowrap max-md:mx-auto  gap-2 font-[Outfit-Bold] flex items-center  bg-light200 rounded-md w-fit ">
             <BsSend />
-            Aboneirene
+            {t("footer.subscribeButton")}
+          </button>
           </div>
         </div>
       </div>
-      <div>
+      <div className="max-md:flex max-md:items-center max-md:justify-center">
         <select
           name=""
           id=""
-          className="rounded-md px-[24px] py-[8px] font-[Outfit-Bold]"
+          className="rounded-md px-[24px] max-tab:mt-[20px] py-[8px] font-[Outfit-Bold] max-md:mx-auto"
+          onChange={(e) => i18n.changeLanguage(e.target.value)}
         >
-          <option value="English">English</option>
-          <option value="German">German</option>
+          <option value="en">{t("languages.english")}</option>
+          <option value="fr">{t("languages.french")}</option>
+          {/* Add more language options as needed */}
         </select>
       </div>
-    </div>
+      </div>
+      </div>
+     </div>
   );
 };
 

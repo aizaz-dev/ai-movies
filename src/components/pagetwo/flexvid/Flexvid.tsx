@@ -1,4 +1,3 @@
-import React from "react";
 
 const Flexvid = () => {
   return (
@@ -10,14 +9,14 @@ const Flexvid = () => {
               Hier steht eine <br /> Headline
             </h1>
             <p className=" text-left text-sm max-laptop:text-mf font-[Outfit-Regular] max-laptop:w-[436px] max-md:w-auto max-md:text-center max-md:text-mf mt-[8px]">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+              erat, sed diam
             </p>
-           
           </div>
           <div className=" w-full lg:flex hidden">
             <video className=" object-cover m-auto" autoPlay muted>
               <source
-
                 className="w-full h-full"
                 src="./flexvid/vid.mp4"
                 type="video/mp4"

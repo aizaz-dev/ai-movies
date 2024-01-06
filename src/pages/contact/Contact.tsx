@@ -3,7 +3,7 @@ import { FaLinkedinIn } from "react-icons/fa6";
 
 const Contact = () => {
   return (
-    <div className="max-w-[2000px] mx-auto  w-[100%] flex flex-col lg:px-[80px] px-[20px] pt-[50px]">
+    <div className="max-w-[2000px] mx-auto  w-[100%] flex flex-col lg:px-[80px] px-[20px] pt-[50px] pb-[50px]">
       <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary">
         GET IN TOUCH
       </div>

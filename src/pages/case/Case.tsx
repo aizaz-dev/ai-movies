@@ -36,7 +36,7 @@ const Case = () => {
     },
   ];
   return (
-    <div className="w-[100%] mt-[50px] px-[80px] max-laptop:px-[60px] max-md:px-[30px]">
+    <div className="w-[100%] mt-[50px] mb-[50px] px-[80px] max-laptop:px-[60px] max-md:px-[30px]">
       <div className="max-w-[2000px] mx-auto">
         <div className="text-sm font-[Outfit-Bold]  text-primary max-md:text-center max-laptop:text-mf">
           Case Studies
