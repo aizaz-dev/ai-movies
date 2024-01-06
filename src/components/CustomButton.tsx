@@ -17,7 +17,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ type, title }) => {
 
   return (
     <div
-      className={`rounded-[10px] px-[24px] py-[8px] text-sm w-fit h-fit ${classes}`}
+      className={`rounded-[10px] px-[24px] py-[8px] lg:text-sm text-xs w-fit h-fit ${classes}`}
     >
       {title}
     </div>

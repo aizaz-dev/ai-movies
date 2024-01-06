@@ -1,11 +1,10 @@
-
 import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { BsSend } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <div className="bg-[#0d1c5a] flex flex-col lg:px-[80px] px-[20px] mt-[50px] max-w-[2000px] w-[100%]">
+    <div className="bg-[#0d1c5a] flex flex-col lg:px-[80px] px-[20px] max-w-[2000px] w-[100%]">
       <div className="flex h-fit">
         <img className="w-[200px] h-fit" src="/white.svg" alt="" />
       </div>

@@ -2,7 +2,7 @@ import { FaAngleRight } from "react-icons/fa6";
 
 const Jobs = () => {
   return (
-    <div className="w-[100%]  flex flex-col">
+    <div className="w-[100%] flex flex-col">
       <div>
         <div className="w-full m-auto">
           <div className="bg-[url('/bg.png')] bg-cover w-[100%] lg:flex-row flex flex-col items-center justify-center py-[80px] max-md:py-[30px] px-[80px] max-tab:px-[40px] max-laptop:px-[80px] max-md:px-[30px] gap-[4%] ">
@@ -44,60 +44,62 @@ const Jobs = () => {
           </div>
         </div>
       </div>
-      <div className="w-[100%] flex items-center lg:gap-6 md:gap-4 gap-3 flex-col lg:mt-[50px] md:mt-[30px] mt-[20px]">
-        <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
-          <div>
-            <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              Project Study in Business Development
+      <div className="max-w-[2000px] mx-auto  w-[100%] flex flex-col lg:px-[80px] px-[20px] pt-[50px]">
+        <div className="w-[100%] flex items-center lg:gap-6 md:gap-4 gap-3 flex-col lg:mt-[50px] md:mt-[30px] mt-[20px]">
+          <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
+            <div>
+              <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
+                Project Study in Business Development
+              </div>
+              <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
+                (Complaince/legal market segment)
+              </div>
             </div>
-            <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              (Complaince/legal market segment)
+            <div className="text-[40px]   text-light200">
+              <FaAngleRight />
             </div>
           </div>
-          <div className="text-[40px]   text-light200">
-            <FaAngleRight />
-          </div>
-        </div>
 
-        <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
-          <div>
-            <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
-              Project Study in Business Development
+          <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
+            <div>
+              <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
+                Project Study in Business Development
+              </div>
+              <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
+                (Complaince/legal market segment)
+              </div>
             </div>
-            <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              (Complaince/legal market segment)
+            <div className="text-[40px]   text-light200">
+              <FaAngleRight />
             </div>
           </div>
-          <div className="text-[40px]   text-light200">
-            <FaAngleRight />
-          </div>
-        </div>
 
-        <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
-          <div>
-            <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
-              Project Study in Business Development
+          <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
+            <div>
+              <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
+                Project Study in Business Development
+              </div>
+              <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
+                (Complaince/legal market segment)
+              </div>
             </div>
-            <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              (Complaince/legal market segment)
+            <div className="text-[40px] text-light200">
+              <FaAngleRight />
             </div>
           </div>
-          <div className="text-[40px] text-light200">
-            <FaAngleRight />
-          </div>
-        </div>
 
-        <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
-          <div>
-            <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              Project Study in Business Development
+          <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
+            <div>
+              <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
+                Project Study in Business Development
+              </div>
+              <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
+                (Complaince/legal market segment)
+              </div>
             </div>
-            <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              (Complaince/legal market segment)
+            <div className="text-[40px] font-[900] text-light200">
+              <FaAngleRight />
             </div>
-          </div>
-          <div className="text-[40px] font-[900] text-light200">
-            <FaAngleRight />
           </div>
         </div>
       </div>

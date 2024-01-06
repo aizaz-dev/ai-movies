@@ -8,14 +8,20 @@ import Faq from "./pages/faq/Faq";
 import Uber from "./pages/Uber/Uber";
 import Case from "./pages/case/Case";
 import Contact from "./pages/contact/Contact";
+import Blog from "./pages/blog/Blog";
+import Blog2 from "./pages/blog-1/blog-1";
+import Pageone from "./pages/pageone/Pageone";
+import Pagetwo from "./pages/pagetwo/Pagetwo";
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        {/* page */}
-        <Route path="/" element={<Untersiete />} />
+        {/* page 1 */}
+        <Route path="/" element={<Pageone />} />
+         {/* page 2 */}
+         <Route path="/produkt" element={<Pagetwo />} />
         {/* page 3 */}
         <Route path="/uber" element={<Uber />} />
         {/* page 4 */}
@@ -29,9 +35,14 @@ function App() {
         {/* Page 9 */}
         <Route path="/stellenbeschreibung" element={<Jobs />} />
         {/* Page 10*/}
-        <Route path="/stellenbeschreibung-1" element={<Stellenbeschreibung />} />
-         {/* Page 11*/}
-         <Route path="/blog" element={<Stellenbeschreibung />} />
+        <Route
+          path="/stellenbeschreibung-1"
+          element={<Stellenbeschreibung />}
+        />
+        {/* Page 11*/}
+        <Route path="/blog" element={<Blog />} />
+        {/* Page 12*/}
+        <Route path="/blog-1" element={<Blog2 />} />
       </Routes>
       <Footer />
     </>
