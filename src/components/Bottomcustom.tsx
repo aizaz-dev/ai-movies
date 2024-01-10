@@ -14,7 +14,7 @@ const Bottomcustom = () => {
           Schreiben Sie uns gerne eine Nachricht!
                 </p>
                 <div className='button flex gap-8'>
-                <button className='text-white bg-primary text-sm max-laptop:text-mf font-bold border-[2px] border-solid border-primary py-[10px] px-[15px] rounded-[10px] mt-6 max-md:text-[14px] whitespace-nowrap max-md:mx-auto'>Frage stellen</button>
+                <button className='text-light400 bg-primary text-sm max-laptop:text-mf font-bold border-[2px] border-solid border-primary py-[10px] px-[15px] rounded-[10px] mt-6 max-md:text-[14px] whitespace-nowrap max-md:mx-auto'>Frage stellen</button>
                 
                 </div>
     </div>

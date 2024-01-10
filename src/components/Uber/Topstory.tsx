@@ -1,14 +1,42 @@
+import React from 'react';
+import { useInView } from 'react-intersection-observer';
+interface SlideInItemProps {
+  delay: number;
+  direction: 'left' | 'right'; // Assuming direction can only be 'left' or 'right'
+  children: React.ReactNode;
+}
+
+const SlideInItem: React.FC<SlideInItemProps> = ({ delay, direction, children }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
+  const wrapperStyle = {
+    transitionDelay: `${delay}ms`,
+  };
+
+  const transformClass = `transform transition-transform ease-out duration-1000 ${
+    inView ? 'translate-x-0 opacity-100' : direction === 'left' ? '-translate-x-full opacity-0' : 'translate-x-full opacity-0'
+  }`;
+
+  return (
+    <div ref={ref} style={wrapperStyle} className={transformClass}>
+      {children}
+    </div>
+  );
+};
 
 const Topstory = () => {
+  
   return (
     <div className="relative w-full m-auto">
       <div className="overflow-hidden bg-light100 w-full lg:flex-row flex flex-col  items-center justify-center py-[80px] max-md:py-[30px] px-[80px] max-tab:px-[40px] max-laptop:px-[80px] max-md:px-[30px] gap-[4%] relative">
         {/* Background */}
-        <div className="absolute inset-0 ">
+        <div className="absolute inset-0">
           <img
             src="/bgin.png"
             alt=""
-            className="w-[75%] object-cover absolute -top-[120px] -left-[290px]"
+            className="w-[75%] object-cover absolute -top-[220px] -left-[390px]"
           />
         </div>
 
@@ -18,7 +46,7 @@ const Topstory = () => {
             <h3 className="text-sm text-primary font-[Outfit-Bold] max-laptop:text-mf max-md:text-center">
               THE STORY
             </h3>
-            <h1 className="font-[Outfit-Bold] text-left text-lg font-black leading-[60px] max-laptop:text-lf max-md:text-sm max-md:leading-8 max-md:text-center max-laptop:font-[700] max-laptop:leading-10">
+            <h1 className="font-[Outfit-Bold] text-left text-lg   leading-[60px] max-laptop:text-lf max-md:text-sm max-md:leading-8 max-md:text-center max-laptop:font-[700] max-laptop:leading-10">
               Die Entstehung von FAST AI Movies
             </h1>
             <p className="font-[Outfit-Regular]  text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
@@ -52,6 +80,7 @@ const Topstory = () => {
                   </p>
                 </div>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto  bg-light300 opacity-[0.3]"></div>
+                <SlideInItem direction='right' delay={0}>
                 <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px]">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
                     JULI 2022
@@ -62,6 +91,8 @@ const Topstory = () => {
                     Al+Munich erhielten.
                   </p>
                 </div>
+                </SlideInItem>
+
               </div>
 
               <div className="circle max-md:hidden max-md:w-[50px] max-md:h-[50px] max-laptop:w-[70px] max-laptop:h-[70px] w-[100px] h-[100px] bg-primary rounded-[50%]"></div>
@@ -69,6 +100,7 @@ const Topstory = () => {
 
 
               <div className="flex gap-[70px] max-md:flex-col max-md:gap-[30px] ">
+              <SlideInItem direction="left" delay={0}>
                 <div className="first w-[300px] max-md:w-auto text-right max-md:text-start -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px]">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
                   SEPTEMBER 2022
@@ -79,6 +111,7 @@ der Industrie kam mit unserem ersten
 Kunden im Maschinenbau-Segment.
                   </p>
                 </div>
+                </SlideInItem>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
@@ -108,6 +141,9 @@ Mitglieder.
                   </p>
                 </div>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
+               
+              <SlideInItem direction="right" delay={0}>
+               
                 <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
                   DEZEMBER 2022
@@ -118,6 +154,7 @@ engagierte und talentierte
 Mitglieder.
                   </p>
                 </div>
+                </SlideInItem>
               </div>
 
               <div className="circle max-md:hidden max-md:w-[50px] max-md:h-[50px] max-laptop:w-[70px] max-laptop:h-[70px] w-[100px] h-[100px] bg-primary rounded-[50%]"></div>
@@ -125,6 +162,8 @@ Mitglieder.
 
 
               <div className="flex text-end max-md:text-start gap-[70px] max-md:flex-col max-md:gap-[30px] ">
+              <SlideInItem direction="left" delay={0}>
+                
                 <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
                   APRIL 2023
@@ -135,6 +174,7 @@ markierte einen wichtigen
 Meilenstein in unserer Entwicklung.
                   </p>
                 </div>
+                </SlideInItem>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
@@ -164,7 +204,7 @@ Experte auf seinem Gebiet.
                   </p>
                 </div>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
-                <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
+                <SlideInItem direction='right' delay={0}> <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
                   JUNI 2023
                   </h3>
@@ -174,11 +214,16 @@ Experte auf seinem Gebiet.
 Experte auf seinem Gebiet.
                   </p>
                 </div>
+                </SlideInItem>
+
               </div>
+              
 
               <div className="circle max-md:hidden max-md:w-[50px] max-md:h-[50px] max-laptop:w-[70px] max-laptop:h-[70px] w-[100px] h-[100px] bg-primary rounded-[50%]"></div>
 
               <div className="flex gap-[70px] max-md:flex-col max-md:gap-[30px] ">
+              <SlideInItem direction="left" delay={0}>
+               
                 <div className="first text-end max-md:text-start w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
                   JULI 2023
@@ -190,6 +235,7 @@ auch für die Öffentliche
 Verwaltung zu generieren
                   </p>
                 </div>
+                </SlideInItem>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
@@ -211,6 +257,7 @@ Verwaltung zu generieren
 
 
               <div className="flex gap-[70px] max-md:flex-col max-md:gap-[30px] ">
+               
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
                   SOMMER 2023
@@ -223,6 +270,8 @@ Perspektiven und Ideen ein.
                   </p>
                 </div>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
+                <SlideInItem direction="right" delay={0}>
+              
                 <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
                   SOMMER 2023
@@ -235,11 +284,14 @@ an und brachten neue
 Perspektiven und Ideen ein.
                   </p>
                 </div>
+                </SlideInItem>
               </div>
 
               <div className="circle max-md:hidden max-md:w-[50px] max-md:h-[50px] max-laptop:w-[70px] max-laptop:h-[70px] w-[100px] h-[100px] bg-primary rounded-[50%]"></div>
 
               <div className="flex gap-[70px] max-md:flex-col max-md:gap-[30px] ">
+              <SlideInItem direction="left" delay={0}>
+               
                 <div className="first text-end max-md:text-start w-[300px] break-words text-wrap max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px]">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
                   HERBST 2023
@@ -249,6 +301,7 @@ Perspektiven und Ideen ein.
 </p>
 
                 </div>
+                </SlideInItem>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0]"></div>
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">

@@ -1,7 +1,9 @@
 import React from "react";
 import { FaRegCircleCheck } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
 const Benefits = () => {
+  const { t } = useTranslation();
   const benefitsData = [
     {
       id:1,
@@ -42,15 +44,15 @@ const Benefits = () => {
   ];
 
   return (
-    <div className="w-full bg-white py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px]">
+    <div className="w-full bg-white py-10 px-[80px] max-tab:px-[40px] max-md:px-[15px]">
       <div className="max-w-[2000px] mx-auto">
       <h3 className="text-sm font-bold font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf">
-        BENEFITS
+      {t("Benefits.BENEFITS_SUBTITLE")}
       </h3>
       <h1 className="text-lg font-[Outfit-Bold]  max-md:text-sm max-md:text-center max-laptop:text-lf ">
-        Welche Vorteile haben Sie?
+          {t("Benefits.BENEFITS_TITLE")}
       </h1>
-      <div className="p-[40px] max-tab:p-[20px] max-md:p-[0px]">
+      <div className="p-[40px] max-tab:p-[20px] max-md:p-[20px] shadow-lg rounded-[10px] border-[2px] border-solid border-light300 border-opacity-[0.1] mt-[40px]">
         <div className="griditems w-full grid grid-cols-3 max-tab:grid-cols-2 max-md:grid-cols-1 gap-[80px] mt-[30px]">
           {benefitsData.map((benefit, index) => (
             <div key={index}>

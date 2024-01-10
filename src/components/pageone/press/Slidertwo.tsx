@@ -38,14 +38,14 @@ const Carousel = () => {
     {
       id: 2,
       image: '/slidetwo/2.png',
-      cont: " In dieser Episode trifft Antoine Leboyer Florian Scherl, Gründer von FAST AI Movies",
-      blue: "EP 28 Learn from an entrepreneur: Florian Scherl, Founder at Fast AI Movies"
+      cont: " In der Mathestunde schnappt er seinen Laptop und geht…",
+      blue: "Markteintritt mitten im Abi "
     },
     {
       id: 3,
       image: '/slidetwo/3.png',
       cont: " In dieser Episode trifft Antoine Leboyer Florian Scherl, Gründer von FAST AI Movies",
-      blue: "EP 28 Learn from an entrepreneur: Florian Scherl, Founder at Fast AI Movies"
+      blue: "20 unter 20: Diese jungen Startup-Gründer stehen vor dem Durchbruch "
     },
     {
       id: 4,
@@ -83,18 +83,19 @@ const Carousel = () => {
   };
 
   return (
+    <div className=''>
     <div className="mx-auto mt-[30px] space-x-4">
       <Slider {...settings}>
         {slideContents.map((content, index) => (
           <div key={index} className="flex p-2 flex-row">
             <div
-              className="bg-white p-[30px] shadow-md rounded-[10px] text-2xl flex flex-col justify-center items-center gap-7"
+              className="bg-white h-[300px] p-[30px]   shadow-md rounded-[10px] text-2xl flex flex-col justify-center items-center gap-7"
             >
               <div>
                 <img src={content.image} alt="" className="w-[270px] mx-auto h-[94px] object-contain" />
               </div>
-              <div className="border-t border-solid border-grey">
-                <p className="mt-[30px] text-sm max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start">
+              <div className="border-t max-tab:pb-8 border-solid border-grey ">
+                <p className="mt-[30px] text-sm  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start">
                   <span className="text-primary">{content.blue}</span>
                   {content.cont}
                 </p>
@@ -105,6 +106,7 @@ const Carousel = () => {
       </Slider>
       
     </div>
+        </div>
     
   );
 };

@@ -1,7 +1,8 @@
-import React from 'react';
+import { useTranslation } from "react-i18next";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Industrien = () => {
+  const { t } = useTranslation();
   const industriesData = [
     {
       id: 1,
@@ -32,8 +33,8 @@ const Industrien = () => {
   return (
     <div className='w-full bg-light100 py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px]'>
       <div className='max-w-[2000px] m-auto'>
-        <h1 className='text-sm  font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf'>Industrien</h1>
-        <div className="flexitems grid grid-cols-4 max-md:grid-cols-1 max-tab:grid-cols-2 gap-[50px] items-start max-tab:mt-[20px] max-md:flex-col max-md:gap-[40px]">
+        <h1 className='text-sm  font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf'>{t("Industrien.INDUSTRIEN_TITLE")}</h1>
+        <div className="flexitems mt-8   grid grid-cols-4 max-md:grid-cols-1 max-tab:grid-cols-2 gap-[50px] items-start max-tab:mt-[20px] max-md:flex-col max-md:gap-[40px]">
           {industriesData.map((industry, index) => (
             <div key={industry.id} className="item w-[100%] max-md:w-full max-md:items-center flex flex-col gap-[30px]">
               <img className='w-[50%] max-md:w-[80%]' src={industry.imageSrc} alt={industry.title} />

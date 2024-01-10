@@ -77,7 +77,7 @@ const Flexbenifit = () => {
                 </div>
               </div>
               <div className="div flex items-start justify-start">
-                <button className="text-sm max-laptop:text-mf bg-blue-700 py-[10px] px-[12px] rounded-[5px] text-white font-[Outfit-Bold] whitespace-nowrap">
+                <button className="text-sm max-laptop:text-mf bg-blue-700 py-[10px] px-[12px] rounded-[5px] text-light400 font-[Outfit-Bold] whitespace-nowrap">
                   Demovideo kostenlose erstaellen
                 </button>
               </div>

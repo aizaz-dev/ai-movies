@@ -2,15 +2,15 @@ import CustomButton from "../../components/CustomButton";
 
 export default function Home() {
   return (
-    <div>
+    <div className=" ">
       <img
-        className="w-[100%] h-[50vh] object-cover"
+        className="w-[100%]  object-cover"
         src="/blog2/girl.png"
         alt="pic"
       />
-      <div className="max-w-[2000px]  w-full mx-auto flex flex-col justify-between items-center px-[40px]  max-lg:p-[40px] max-md:p-[0px]">
+      <div className="max-w-[2000px] m-auto  px-[60px] max-tab:px-[40px] max-md:px-[28px]">
         <div className=" flex justify-center w-[100%]">
-          <div className="w-[85%] flex flex-col justify-center my-[40px]">
+          <div className="w-[100%] flex flex-col justify-center my-[40px]">
             <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary">
               MEISTERHAFTE METHODEN:
             </div>
@@ -20,8 +20,8 @@ export default function Home() {
           </div>
         </div>
         <div className="w-[100%] flex justify-center">
-          <div className="w-[85%] ">
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black">
+          <div className="w-[100%] ">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100">
               Die Art und Weise, wie wir lernen, hat sich im digitalen Zeitalter
               erheblich verändert, und E-Learning hat sich zu einer bedeutenden
               Bildungsform entwickelt. E-Learning bietet den Lernenden die
@@ -39,10 +39,10 @@ export default function Home() {
               ausmachen und letztendlich den Erfolg in E-Learning-Kursen
               fördern.
             </p>
-            <p className="lg:text-sm text-xs font-[Outfit-Bold] text-black mt-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Bold] text-dark100 mt-[30px]">
               Selbsmotivation:
             </p>
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Selbstmotivation spielt eine zentrale Rolle beim erfolgreichen
               Abschluss von E-Learning-Kursen. In einer Umgebung, in der Sie
               weitgehend selbstgesteuert lernen, sind die eigenen inneren
@@ -54,7 +54,7 @@ export default function Home() {
               Sie die Vorteile und Erfolge, die Sie durch das Lernen erreichen
               werden.
             </p>
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Es ist auch hilfreich, sich Belohnungen zu setzen, wenn Sie
               bestimmte Meilensteine erreichen, um die Motivation
               aufrechtzuerhalten. Belohnen Sie sicl beispielsweise mit einer
@@ -63,7 +63,7 @@ export default function Home() {
               haben
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Die Selbstmotivation kann jedoch schwanken, und es gibt Zeiten, in
               denen Sie sich weniger motiviert fühlen. In solchen Momenten ist
               es wichtig, auf Disziplin zu setzen. Befolgen Sie Ihren Lernplan
@@ -72,7 +72,7 @@ export default function Home() {
               Fortschritte au erziolen
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Schließlich kann die Einbeziehung von anderen Menschen, sei es in
               Form von Lernpartnern oder Mentoren, Ihre Selbstmotivation
               stärken. Teilen Sie Ihre Ziele und Fortschritte mit anderen, um
@@ -82,11 +82,11 @@ export default function Home() {
               erreichen.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Bold] text-black mt-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Bold] text-dark100 mt-[30px]">
               Zeitmanacement:
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Ein effektives Zeitmanagement ist von entscheidender Bedeutung, um
               das Beste aus Ihrem E-Learning-Erlebnis herauszuholen. Da
               E-Learning oft Ein effektives Zeitmanagement ist von
@@ -96,7 +96,7 @@ export default function Home() {
               diszipliniert und strukturiert vorzugehen.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Beginnen Sie damit, einen Lernplan zu erstellen, der die
               Kursinhalte, Ziele und Fristen berücksichtigt. Setzen Sie sich
               klare und realistische Lernziele für jeden Tag oder jede Woche, um
@@ -104,14 +104,14 @@ export default function Home() {
               für unerwartete Ereignisse oder zusätzliche Übungen einzuplanen.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Nutzen Sie Technologie, um Ihr Zeitmanagement zu unterstützen.
               Kalender-Apps oder Aufgabenlisten können dabei helfen, Lernzeiten
               zu organisieren und Erinnerungen für wichtige Fristen
               einzurichten.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Darüber hinaus ist es sinnvoll, Ihre persönliche Produktivität zu
               berücksichtigen. Identifizieren Sie Ihre produktivsten Zeiten am
               Tag und planen Sie anspruchsvolle Aufgaben während dieser
@@ -119,25 +119,25 @@ export default function Home() {
               vermeiden und die Konzentration aufrechtzuerhalten
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Schließlich ist Flexibilität ein wichtiger Aspekt des
               Zeitmanagements. Es ist in Ordnung, den Zeitplan anzupassen, wenn
               unerwartete Verpflichtunger auftauchen, solange Sie sicherstellen,
               dass Sie die verlorenen Lernzeiten später nachholen.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Ein gut durchdachtes Zeitmanagement ermöglicht es Ihnen, Ihren
               E-Learning-Kurs effizient zu bewältigen, Stress zu reduzieren und
               sicherzustellen. dass Sie genügend Zeit für das Verstehen und
               Vertiefen des Kursmaterials haben.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Bold] text-black mt-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Bold] text-dark100 mt-[30px]">
               Aktives Lernen:
             </p>
 
-            <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Aktives Lernen ist ein Schlüsselaspekt beim erfolgreichen
               Absolvieren von E-Learning-Kursen. Statt passiv Informationen
               aufzunehmen, werden Sie durch aktives Lernen zu einem aktiven
@@ -145,7 +145,7 @@ export default function Home() {
               und das Behalten von Wissen verbessern.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Eine bewährte Methode des aktiven Lernens ist das Stellen von
               Fragen. Fragen Sie sich selbst, was Sie bereits wissen, was Sie
               lernen möchten und wie neue Informationen in Ihre bestehenden
@@ -153,7 +153,7 @@ export default function Home() {
               Lernens auftauchen, und versuchen Sie, diese zu beantworten.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Praktisches Anwenden des erlernten Wissens ist ebenfalls ein
               zentraler Aspekt des aktiven Lernens. Lösen Sie Übungen, führen
               Sie Experimente durch oder setzen Sie das Gelernte in praktische
@@ -161,14 +161,14 @@ export default function Home() {
               Verständnis, sondern stärkt auch die praktischen Fähigkeiten.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Das aktive Lernen erfordert auch, dass Sie das Material in Ihre
               eigenen Worte fassen und Zusammenfassungen erstellen. Dies zwingt
               Sie dazu, das Gelernte zu verarbeiten und zu organisieren, was das
               Behalten erleichtert.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Insgesamt trägt aktives Lernen dazu bei, dass Sie nicht nur
               informationen aufnehmen, sondern sie tatsächlich verstehen und
               anwenden können. Dies fördert nachhaltiges Lernen und ermöglicht
@@ -176,11 +176,11 @@ export default function Home() {
               anzuwenden.
             </p>
 
-            <p className=" lg:text-sm text-xs font-[Outfit-Bold] text-black mt-[30px]">
+            <p className=" lg:text-sm text-xs font-[Outfit-Bold] text-dark100 mt-[30px]">
               Interaktion
             </p>
 
-            <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Interaktion spielt eine herausragende Rolle in E-Learning, da sie
               den Lernprozess bereichern und vertiefen kann. Durch die
               Interaktion mit anderenLernenden, Lehrern und dem Kursmaterial
@@ -188,7 +188,7 @@ export default function Home() {
               verschiedenen Perspektiven profitieren.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Eine der häufigsten Formen der Interaktion in
               E-Learning-Umgebungen sind Online-Diskussionsforen oder Chatrooms.
               Hier können Sie Fragen stellen, Ansichten austauschen und von den
@@ -197,7 +197,7 @@ export default function Home() {
               Gemeinschaft und des Lernens in einer Gruppe.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Die Interaktion mit Lehrern oder Tutoren ist ebenfalls
               entscheidend. Nutzen Sie die zur Verfügung stehenden
               Kommunikationsmittel, um Klarstellungen zu erhalten und Feedback
@@ -205,14 +205,14 @@ export default function Home() {
               Ressourcen bieten, um Ihren Lernerfolg zu unterstützen.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Die Interaktion mit dem Kursmaterial selbst sollte nicht übersehen
               werden. Aktive Teilnahme durch das Lösen von Übungen, Quizfragen
               und praktischen Aufgaben vertieft ihr Verständnis und ermöglicht
               es ihnen, Ihr Wissen anzuwenden.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Wenn möglich, bilden Sie auch Lerngruppen, um gemeinsam zu
               arbeiten und voneinander zu lernen. Gemeinsames Studieren,
               Diskutieren und Erklären des Gelernten kann dazu beitragen, Lücken
@@ -220,7 +220,7 @@ export default function Home() {
               erhalten.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Insgesamt fördert die Interaktion in E-Learning-Umgebungen den
               Wissensaustausch, erhöht die Motivation und erleichtert das
               Verständnis komplexer Themen. Es ist wichtig, diese Möglichkeiten
@@ -228,11 +228,11 @@ export default function Home() {
               E-Learning-Erlebnis herauszuholen.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Bold] text-black mt-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Bold] text-dark100 mt-[30px]">
               Selbstdisziplin
             </p>
 
-            <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Selbstdisziplin ist eine unverzichtbare Eigenschaft für jeden, der
               erfolgreich E-Learning-Kurse absolvieren möchte. In einer
               Umgebung, in der Sie weitgehend selbstgesteuert lernen, sind Sie
@@ -241,7 +241,7 @@ export default function Home() {
               bleiben und Ihre Lernziele zu erreichen.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Selbst disziplin bedeutet, klare Erwartungen an sich selbst zu
               setzen und diese zu erfüllen, auch wenn niemand anderes zuschaut.
               Dies kann bedeuten. dass Sie sich an einen Lernplan halten,
@@ -250,14 +250,14 @@ export default function Home() {
               die Aufaaben zu konzentrieren.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Es ist auch wichtig, sich bewusst zu machen, dass Selbstdisziplin
               nicht bedeutet, sich übermäßig zu überfordern. Setzen Sie
               realistische Ziele und achten Sie darauf, sich selbst ausreichend
               Pausen und Erholungszeiten zu gönnen, um Ermüdung zu vermeiden.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Selbstdisziplin umfasst auch die Fähigkeit, sich selbst zu
               überwachen und anzupassen. Wenn Sie feststellen, dass Sie von
               Ihrem Plan abweichen oder Schwierigkeiten haben, sich zu
@@ -265,7 +265,7 @@ export default function Home() {
               zu ergreifen, um wieder auf Kurs zu kommen.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               Insgesamt ist Selbstdisziplin der Schlüssel, um die
               Selbstverantwortung zu übernehmen, die im E-Learning erforderlich
               ist. Es hilft Ihnen, Ihre Zeit effizient zu nutzen, Ihre Lernziele
@@ -273,7 +273,7 @@ export default function Home() {
               erwerben, die Sie sich erhoffen.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               In der digitalen Ära, in der E-Learning eine immer wichtigere
               Rolle spielt, sind die richtigen Lernstrategien der Schlüssel zum
               Erfolg. Wir haben gesehen, wie Selbstmotivation, effektives
@@ -284,7 +284,7 @@ export default function Home() {
               modernen Welt von unschätzbarem Wert sind.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-black mb-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
               E-Learning bietet eine Weit voller Chancen für lebenslanges Lernen
               und berufliche Weiterentwicklung. Die Anwendung dieser
               Lernstrategien wird nicht nur den Lernerfolg steigern, sondern
@@ -299,7 +299,7 @@ export default function Home() {
               erkunden und Ihre Bildungsziele erreichen.
             </p>
 
-            <p className="lg:text-sm text-xs font-[Outfit-Bold] text-black my-[30px]">
+            <p className="lg:text-sm text-xs font-[Outfit-Bold] text-dark100 my-[30px]">
               Mit FAST Al Movies haben wir eine KI SaaS entwickelt, die genau
               solche Mitarbeiterschulungen in einer spannenden Art und Weise mit
               Hilfe von anschaulichen Schulungsvideos aufbereitet.
@@ -312,17 +312,17 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" bg-light200 w-[100%] mt-[30px] flex justify-center">
-        <div className="  w-[85%] my-8">
+      <div className=" bg-light200  mt-[30px] flex justify-center">
+        <div className="   my-8 max-w-[2000px] w-full mx-auto px-[60px] max-tab:px-[40px] max-md:px-[28px]">
           <div className="  ">
             {" "}
             <input
-              className=" py-[12px] border-none rounded-lg pl-5 font-normal lg:text-sm text-xs font-[Outfit-Bold] text-black placeholder:text-black"
+              className=" py-[12px] border-none rounded-lg pl-5 font-normal lg:text-sm text-xs font-[Outfit-Bold] text-dark100 placeholder:text-dark100"
               placeholder="E-mail-Adresse*"
               type=" placeholder"
             />
           </div>
-          <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-white my-[20px]">
+          <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-light400 my-[20px]">
             Mit klicken auf Abonnieren stimmen Sie unseren
             Datenschutzbestimmungen zu
           </p>
@@ -331,6 +331,8 @@ export default function Home() {
             <img className="h-[25px] w-[25px]" src="blog2/right.svg" alt="" />
           </button>
         </div>
+        <div></div>
+
       </div>
     </div>
   );

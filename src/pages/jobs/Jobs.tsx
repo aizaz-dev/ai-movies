@@ -1,20 +1,37 @@
 import { FaAngleRight } from "react-icons/fa6";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Jobs = () => {
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    nextArrow: <></>, // Hide next arrow
+    prevArrow: <></>, // Hide previous arrow
+    centerMode: true, // Center the active slide
+    centerPadding: "0", // No padding for center mode
+    dotsClass: "slick-dots custom-dots", // Custom class for dots
+  };
   return (
-    <div className="w-[100%] flex flex-col">
+    <div className="w-[100%] mb-[80px] flex flex-col">
       <div>
         <div className="w-full m-auto">
-          <div className="bg-[url('/bg.png')] bg-cover w-[100%] lg:flex-row flex flex-col items-center justify-center py-[80px] max-md:py-[30px] px-[80px] max-tab:px-[40px] max-laptop:px-[80px] max-md:px-[30px] gap-[4%] ">
-            <div className="max-w-[2000px] w-full mx-auto flex gap-[60px] justify-between   items-center px-[40px]  max-lg:p-[40px] max-md:p-[0px]">
-              <div className="w-full  text-white flex flex-col gap-6 ">
+          <div className="bg-[url('./flexvid/bg.png')] bg-cover w-[100%] lg:flex-row lg:items-center flex flex-col items-center justify-center py-[80px] max-md:py-[30px] px-[80px] max-tab:px-[40px] max-laptop:px-[80px] max-md:px-[30px] gap-[4%]">
+            <div className="max-w-[2000px] w-full mx-auto flex gap-[60px] justify-between items-center px-[40px] max-lg:p-[40px] max-md:p-[0px]">
+              <div className=" text-light400 flex flex-col gap-6">
                 <h3 className="text-sm font-[Outfit-Bold] max-laptop:text-mf max-md:text-center">
-                  Join Us
+                  JOIN US
                 </h3>
-                <h1 className="font-[Outfit-Bold] text-left text-lg font-black leading-[60px] max-laptop:text-lf max-md:text-sm max-md:leading-8 max-md:text-center max-laptop:font-[700] max-laptop:leading-10">
-                  Werde ein Teil von FAST Al Movies!
+                <h1 className="font-[Outfit-Bold] text-left text-lg   leading-[60px] max-laptop:text-lf max-md:text-sm max-md:leading-8 max-md:text-center max-laptop:font-[700] max-laptop:leading-10">
+                  Werde ein Teil von FAST AI Movies!
                 </h1>
-                <p className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
+                <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
                   FAST AI Movies is a highly innovative AI start-up that
                   generates training videos for medium-sized companies
                   automatically with the help of AI. The customer only provides
@@ -31,16 +48,37 @@ const Jobs = () => {
                   </button>
                 </div>
               </div>
-              <div className=" w-full lg:flex hidden">
-                <video className=" object-cover m-auto   controls autoPlay muted">
-                  <source
-                    className="w-full h-full object-cover"
-                    src="./flexvid/vid.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </div>
             </div>
+            {/* Slider for the image portion */}
+            <Slider
+              {...sliderSettings}
+              className="w-[50%] max-tab:w-full max-tab:px-[30px] max-md:px-0 max-md:mt-7 lg:flex lg:items-center "
+            >
+              {/* Add your image slides as needed */}
+              <div>
+                <img
+                  className="object-cover rounded-[10px] w-[800px]   mx-auto"
+                  src="/12.png"
+                  alt="Slide 1"
+                />
+              </div>
+              <div>
+                <img
+                  className="object-cover rounded-[10px] w-[800px] mx-auto"
+                  src="/12.png"
+                  alt="Slide 2"
+                />
+              </div>
+              <div>
+                <img
+                  className="object-cover rounded-[10px] w-[800px] mx-auto"
+                  src="/12.png"
+                  alt="Slide 2"
+                />
+              </div>
+
+              {/* Add more image slides as needed */}
+            </Slider>
           </div>
         </div>
       </div>

@@ -5,14 +5,14 @@ interface CustomButtonProps {
 const CustomButton: React.FC<CustomButtonProps> = ({ type, title }) => {
   let classes = "";
   if (type === "filledBlue") {
-    classes = "bg-primary text-[#fff] [font-family:Outfit-Bold,sans-serif]";
+    classes = "bg-primary text-light400 [font-family:Outfit-Bold,sans-serif]";
   } else if (type === "filledWhite") {
-    classes = "bg-[#fff] [font-family:Outfit-Bold,sans-serif]";
+    classes = "bg-light400 [font-family:Outfit-Bold,sans-serif]";
   } else if (type === "outlinedBlue") {
     classes =
       "bg-transparent border-[3px] border-white [font-family:Outfit-Regular]";
   } else if (type === "outlinedWhite") {
-    classes = "bg-[#fff] border-[3px] border-primary [font-family:Outfit-Bold]";
+    classes = "bg-light400 border-[3px] border-primary [font-family:Outfit-Bold]";
   }
 
   return (

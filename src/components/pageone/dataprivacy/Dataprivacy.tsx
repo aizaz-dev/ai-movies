@@ -1,14 +1,19 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Dataprivacy = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="w-full bg-light100 py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px]">
+    <div className="w-full mt-[40px] bg-light100 py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px]">
       <div className="max-w-[2000px] m-auto">
         <h3 className="text-sm  font-bold font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf">
-          DATA PRIVACY
+        {t("Dataprivacy.TITLE")}
+
         </h3>
         <h1 className="text-lg font-bold  max-md:text-sm  max-md:text-center max-laptop:text-lf ">
-          Wie gewährleisten wir die Sicherheit Ihrer Daten?
+        {t("Dataprivacy.SUBTITLE")}
+
         </h1>
 
         <div className="w-[70%] max-md:w-full mx-auto flex max-md:flex-col justify-around gap-6 mt-[30px]">
@@ -31,7 +36,7 @@ const Dataprivacy = () => {
           </div>
         </div>
 
-        <div className="images mt-[30px] items-center justify-center w-[80%] mx-auto  flex max-md:hidden">
+        <div className="images mt-[30px] items-center justify-center w-[100%] mx-auto  flex max-md:hidden">
           <div className="one flex w-[15%] flex-col  justify-center items-center">
             <img
               className="opacity-0 w-[5%]  transform rotate-180"

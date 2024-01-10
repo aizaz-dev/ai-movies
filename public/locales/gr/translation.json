@@ -1,0 +1,59 @@
+{
+  "startseite": {
+    "startseite": "page One",
+    "intro": "LES LEADERS DE L'INDUSTRIE ET LES ADMINISTRATIONS PUBLIQUES NOUS FONT CONFIANCE POUR NOTRE CRÉATION VIDÉO :",
+    "tick1": "✓ Productivité des employés 42% plus élevée",
+    "tick2": "✓ Productivité des employés 42% plus élevée",
+    "tick3": "✓ Productivité des employés 42% plus élevée"
+  },
+  "flextop": {
+    "heading1": "Du texte d'entrée à la vidéo d'apprentissage électronique",
+    "heading2": "La manière la plus efficace de créer des connaissances d'entreprise",
+    "paragraph": "FAST AI Movies est la seule solution d'IA pour la création automatique de E-Learnings personnalisés - de collègue à collègue. Vous n'avez pas besoin de scripts complexes; vos employés peuvent transformer en quelques minutes des documentations/descriptions existantes en E-Learnings interactifs. Les connaissances en psychologie de l'apprentissage garantissent une grande compréhensibilité.",
+    "button1": "Créer une vidéo de démonstration gratuitement",
+    "button2": "Comment ça marche ?"
+  },
+  "function": {
+    "howItWorks": "COMMENT ÇA MARCHE",
+    "quickSimpleEffective": "Rapide, Simple, Efficace",
+    "description": "Vous fournissez les spécifications de design d'entreprise de votre société, téléchargez un texte d'entrée et sélectionnez le locuteur souhaité pour le doublage de votre vidéo. Le résultat : Une vidéo de formation personnalisée qui répond précisément à vos spécifications.",
+    "tick1": "Productivité des employés 42% plus élevée",
+    "tick2": "Productivité des employés 42% plus élevée",
+    "tick3": "Productivité des employés 42% plus élevée"
+  },
+  "blog2": {
+    "Page 12":"",
+    "howItWorks": "COMMENT ÇA MARCHE",
+    "quickSimpleEffective": "Rapide, Simple, Efficace",
+    "description": "Vous fournissez les spécifications de design d'entreprise de votre société, téléchargez un texte d'entrée et sélectionnez le locuteur souhaité pour le doublage de votre vidéo. Le résultat : Une vidéo de formation personnalisée qui répond précisément à vos spécifications.",
+    "tick1": "Productivité des employés 42% plus élevée",
+    "tick2": "Productivité des employés 42% plus élevée",
+    "tick3": "Productivité des employés 42% plus élevée"
+  },
+  "footer": {
+    "quickFind": "Trouver rapidement",
+    "caseStudies": "Études de cas",
+    "aboutUs": "À propos de nous",
+    "contact": "Contact",
+    "legal": "Légal",
+    "imprint": "Imprimer",
+    "privacy": "Confidentialité",
+    "additional": "Supplémentaire",
+    "faq": "FAQ",
+    "jobs": "Emplois",
+    "social": "Social",
+    "news": "Actualités",
+    "blog": "Blog",
+    "dontMiss": "Ne rien manquer",
+    "subscribeNewsletter": "Abonnez-vous à notre newsletter !",
+    "emailPlaceholder": "Adresse e-mail",
+    "subscriptionNote": "En cliquant sur S'abonner, vous acceptez notre politique de confidentialité.",
+    "subscribeButton": "S'abonner"
+  },
+  "languages": {
+    "english": "Anglais",
+    "german": "Allemand",
+    "french": "Français",
+    "spanish": "Espagnol"
+  }
+}

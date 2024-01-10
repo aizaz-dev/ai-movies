@@ -1,6 +1,9 @@
 import React from 'react'
+import { useTranslation } from "react-i18next";
 
 const Supporter = () => {
+  const { t } = useTranslation();
+
     const data=[
         {
             id:1,
@@ -57,10 +60,11 @@ const Supporter = () => {
     <div className="w-full bg-white py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px]">
         <div className='max-w-[2000px] mx-auto'>
     <h3 className="text-sm  font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf">
-      SUPPORTER
+    {t("Supporter.TITLE")}
+
     </h3>
     <h1 className="text-lg font-[Outfit-Bold] max-md:text-sm max-md:text-center max-laptop:text-lf">
-      Unterstützt von
+    {t("Supporter.SUBTITLE")}
     </h1>
     <div className="grid grid-cols-6 gap-[20px] mt-[30px] max-tab:grid-cols-4 max-md:grid-cols-2">
       {data.map((item) => (

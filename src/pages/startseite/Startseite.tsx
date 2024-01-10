@@ -10,7 +10,7 @@ import Industrien from "../../components/pageone/industrien/Industrien";
 import Benifits from "../../components/pageone/benifits/Benifits";
 import Dataprivacy from "../../components/pageone/dataprivacy/Dataprivacy";
 import Feature from "../../components/pageone/feature/Feature";
-import Casestudy from "../../components/pageone/casestudy/Casestudy";
+import Casestudy from "../../components/pageone/case/Case";
 import Supporter from "../../components/pageone/supporter/Supporter";
 import Actnow from "../../components/pagetwo/actnow/Actnow";
 import Footer from "../../components/footer/Footer";

@@ -1,10 +1,159 @@
 {
+  "startseite": {
+    "intro": "INDUSTRY LEADERS AND PUBLIC ADMINISTRATIONS TRUST OUR VIDEO CREATION:",
+    "tick1": "✓ 42% higher employee productivity",
+    "tick2": "✓ 42% higher employee productivity",
+    "tick3": "✓ 42% higher employee productivity"
+  },
   "flextop": {
     "heading1": "From Input Text to E-Learning Video",
     "heading2": "The Most Efficient Way to Create Corporate Knowledge",
     "paragraph": "FAST AI Movies is the only AI solution for automatically creating custom E-Learnings - from colleagues to colleagues. You don't need complex scripts; your employees can turn existing documentation/descriptions into interactive E-Learnings in minutes. Learning psychology insights ensure high comprehensibility.",
     "button1": "Create Demo Video for Free",
     "button2": "How It Works?"
+  },
+  "function": {
+    "howItWorks": "HOW IT WORKS",
+    "quickSimpleEffective": "Quick, Simple, Effective",
+    "description": "You provide your company's corporate design specifications, upload an input text, and select the desired speaker for the voiceover of your video. The result: A customized training video that precisely meets your specifications.",
+    "tick1": "42% higher employee productivity",
+    "tick2": "42% higher employee productivity",
+    "tick3": "42% higher employee productivity"
+  },
+  "features": {
+    "sectionTitle": "FEATURES",
+    "idealFeaturesTitle": "Comprehensive features for an ideal result",
+    "feature1Title": "Diverse Export Options",
+    "feature1Description": "Download trainings as MP4, use the LMS-compatible file, or share your content directly via URL. Additionally, a PDF export for animations is available.",
+    "feature2Title": "Post-Editing",
+    "feature2Description": "Update your videos anytime with visual and textual adjustments to keep content up-to-date.",
+    "feature3Title": "Automated Animations",
+    "feature3Description": "Automatically create animations from text inputs, including charts and icons.",
+    "feature4Title": "Various Language Styles",
+    "feature4Description": "Enter content in bullet points and choose from various output styles tailored to your audience - from simple language to technical jargon."
+  },
+  "Benefits": {
+    "BENEFITS_TITLE": "BENEFITS",
+    "BENEFITS_SUBTITLE": "What benefits do you have?"
+  },
+  "Dataprivacy": {
+    "TITLE": "DATA PRIVACY",
+    "SUBTITLE": "How do we ensure the security of your data?"},
+
+
+
+
+
+
+
+
+    "Case": {
+      "TITLE": "STATEMENTS",
+      "SUBTITLE": "What our customers say"
+      
+    },
+    "Press": {
+      "TITLE": "PRESS",
+      "SUBTITLE": "What the media says"
+    },
+    "Supporter": {
+      "TITLE": "SUPPORTER",
+      "SUBTITLE": "Supported by"
+    },
+
+    "Actnow": {
+      "TITLE": "ACT NOW",
+      "SUBTITLE": "Ready for a digital transformation?",
+      "DESCRIPTION": "Take the right step for more efficient and engaging training – with just one click.",
+      "CONTACT_BUTTON": "Contact Us",
+      "FAQ_BUTTON": "Frequently Asked Questions"
+    },
+    "Flexvid": {
+      "HEADLINE": "Here is a Headline",
+      "DESCRIPTION": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+    },
+
+
+
+
+
+
+    "Webapp": {
+      "TopHeading": "Web Application",
+      "SubHeading": "Flexible Video Creation and Editing",
+      
+    },
+
+
+
+  "weCase": {
+    "title": "USE CASES",
+    "subtitle": "Where can you use our videos?",
+    "description": "Our AI software can be used in the company for various training purposes, especially the start is suitable in the following areas to relieve your company and administration:",
+    "currentlyUsedIn": "Currently used in the following industries",
+    "demoButton": "Case Study Watch Demo",
+    "categories": {
+      "compliance": {
+        "id": "compliance",
+        "title": "Title 1",
+        "description": "Ensure legal compliance in the company. With the help of our technology, you convey legal requirements such as the Money Laundering Act or the Supply Chain Act, as well as the use of new technologies like ChatGPT, clearly and concisely.",
+        "industries": [
+          { "name": "Mechanical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
+          { "name": "Electrical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
+          { "name": "Management Consultancies", "iconUrl": "pageone/wecase/wecase.png" }
+        ],
+        "videoUrl": "/flexvid/vid.mp4"
+      }
+    }
+  },
+  "leftBoxData": [
+    {
+      "id": "compliance",
+      "title": "Title 1",
+      "description": "Ensure legal compliance in the company. With the help of our technology, you convey legal requirements such as the Money Laundering Act or the Supply Chain Act, as well as the use of new technologies like ChatGPT, clearly and concisely.",
+      "industries": [
+        { "name": "Mechanical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Electrical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Management Consultancies", "iconUrl": "pageone/wecase/wecase.png" }
+      ],
+      "videoUrl": "/flexvid/vid.mp4"
+    },
+    {
+      "id": "softwareschulungen",
+      "title": "title2",
+      "description": "Ensure legal compliance in the company. With the help of our technology, you convey legal requirements such as the Money Laundering Act or the Supply Chain Act, as well as the use of new technologies like ChatGPT, clearly and concisely.",
+      "industries": [
+        { "name": "Mechanical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Electrical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Management Consultancies", "iconUrl": "pageone/wecase/wecase.png" }
+      ],
+      "videoUrl": "/flexvid/vid.mp4"
+    },
+    {
+      "id": "produktschulungen",
+      "title": "Produktschulungen",
+      "description": "Ensure legal compliance in the company. With the help of our technology, you convey legal requirements such as the Money Laundering Act or the Supply Chain Act, as well as the use of new technologies like ChatGPT, clearly and concisely.",
+      "industries": [
+        { "name": "Mechanical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Electrical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Management Consultancies", "iconUrl": "pageone/wecase/wecase.png" }
+      ],
+      "videoUrl": "/flexvid/vid.mp4"
+    },
+    {
+      "id": "prozessschulungen",
+      "title": "Prozessschulungen",
+      "description": "Ensure legal compliance in the company. With the help of our technology, you convey legal requirements such as the Money Laundering Act or the Supply Chain Act, as well as the use of new technologies like ChatGPT, clearly and concisely.",
+      "industries": [
+        { "name": "Mechanical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Electrical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Management Consultancies", "iconUrl": "pageone/wecase/wecase.png" }
+      ],
+      "videoUrl": "/flexvid/vid.mp4"
+    }
+  ],
+  "Industrien": {
+    "INDUSTRIEN_TITLE": "INDUSTRIES"
   },
   "footer": {
     "quickFind": "Quick Find",

@@ -92,7 +92,7 @@ const featuresData = [
 
 const Features = () => {
   return (
-    <div className="w-full bg-light100 p-[80px] max-md:p-[30px] max-tab:p-[40px]">
+    <div className="w-full mt-[60px] bg-light100 p-[80px] max-md:p-[30px] max-tab:p-[40px]">
       <div className="max-w-[2000px] mx-auto flex flex-col items-center w-[100%]">
         <div className="w-[95%]">
           <div className="flex flex-col mt-[20px]">
@@ -100,19 +100,19 @@ const Features = () => {
     <h1 className='text-lg font-[Outfit-Bold]  max-md:text-sm max-md:text-center max-laptop:text-lf'>Umfangreiche Funktionen für ein ideales Ergebnis</h1>
           </div>
           <div className="mt-[20px] max-md:mt-[0px]">
-            <div className="flex flex-wrap justify-between gap-[30px]">
+            <div className="flex flex-wrap justify-center  gap-[80px]">
             {featuresData.map((feature) => (
   <div
     key={feature.id}
     className="relative flex flex-col items-center justify-center transition group"
   >
-    <div className="text-black w-[300px] h-[300px] text-4xl opacity-100 transition duration-300 group-hover:opacity-0 flex justify-center items-center">
+    <div className="text-dark100 w-[300px] h-[300px] text-4xl opacity-100 transition duration-300 group-hover:opacity-0 flex justify-center items-center">
       <div className="text-[80px] w-[120px] h-[120px] border-2 border-solid border-primary flex items-center justify-center rounded-[50%]">
         <img src={feature.image} alt="" className="w-[50px] h-[50px]"/>
         {/* {feature.image} */}
       </div>
     </div>
-    <div className="text-white text-center font-[Outfit-Regular] opacity-0 group-hover:opacity-100 absolute bottom-0 w-[300px] p-[30px] bg-primary transition duration-300 flex items-center justify-center">
+    <div className="text-light400 text-center font-[Outfit-Regular] opacity-0 group-hover:opacity-100 absolute bottom-0 w-[300px] p-[30px] bg-primary transition duration-300 flex items-center justify-center">
       {feature.description}
     </div>
     <div className="text-primary text-sm font-[Outfit-Bold] text-center opacity-100 group-hover:opacity-0 absolute bottom-[20px] w-full transition duration-300 whitespace-nowrap max-laptop:text-mf p-2">

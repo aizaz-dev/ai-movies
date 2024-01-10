@@ -1,5 +1,6 @@
 import { FaFacebookF } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
+import { FaXingSquare } from "react-icons/fa";
 
 const Contact = () => {
   return (
@@ -10,31 +11,31 @@ const Contact = () => {
       <div className="xl:text-lg lg:text-md text-m2d text font-[Outfit-Bold] ">
         Senden Sie uns eine E-Mail
       </div>
-      <div className="w-[100%] flex lg:flex-row md:flex-row flex-col lg:p-8 p-4  pb-3 ">
+      <div className="w-[100%] flex lg:flex-row md:flex-row flex-col   pb-3 ">
         <div className="lg:w-[50%] md:w-[60%] w-[100%] flex flex-col !gap-[20px]">
           <input
             type="text*"
-            className=" bg-light200 w-full py-3 px-6 rounded-[10px] placeholder:text-black lg:text-sm text-xs font-[Outfit-Regular] text-primary"
+            className=" bg-light200 bg-opacity-[0.6]  w-full py-3 px-6 rounded-[10px] placeholder:text-dark100 lg:text-sm text-xs font-[Outfit-Regular] text-primary"
             placeholder="Name*"
           />
           <input
             type="text*"
-            className=" bg-light200 w-full py-3 px-6 rounded-[10px] placeholder:text-black lg:text-sm text-xs font-[Outfit-Regular] text-primary"
+            className=" bg-light200 bg-opacity-[0.6] w-full py-3 px-6 rounded-[10px] placeholder:text-dark100 lg:text-sm text-xs font-[Outfit-Regular] text-primary"
             placeholder="E-Mail*"
           />
           <input
             type="text*"
-            className=" bg-light200 w-full py-3 px-6 rounded-[10px] placeholder:text-black lg:text-sm text-xs font-[Outfit-Regular] text-primary"
+            className=" bg-light200 bg-opacity-[0.6] w-full py-3 px-6 rounded-[10px] placeholder:text-dark100 lg:text-sm text-xs font-[Outfit-Regular] text-primary"
             placeholder="Telefonnummer"
           />
           <input
             type="text*"
-            className=" bg-light200 w-full py-3 px-6 rounded-[10px] placeholder:text-black lg:text-sm text-xs font-[Outfit-Regular] text-primary"
+            className=" bg-light200 bg-opacity-[0.6] w-full py-3 px-6 rounded-[10px] placeholder:text-dark100 lg:text-sm text-xs font-[Outfit-Regular] text-primary"
             placeholder="Unternehmen*"
           />
           <input
             type="text*"
-            className=" bg-light200 w-full py-3 px-6 rounded-[10px] placeholder:text-black lg:text-sm text-xs font-[Outfit-Regular] text-primary"
+            className=" bg-light200 bg-opacity-[0.6] w-full py-3 px-6 rounded-[10px] placeholder:text-dark100 lg:text-sm text-xs font-[Outfit-Regular] text-primary"
             placeholder="Nachricht*"
           />
         </div>
@@ -43,13 +44,13 @@ const Contact = () => {
             <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary">
               ADDRESS
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular] text-black">
+            <div className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100">
               FAST AI Movies
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular] text-black">
+            <div className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100">
               Zwieselster.3a
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular] text-black">
+            <div className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100">
               83278 Traunstein
             </div>
           </div>
@@ -58,7 +59,7 @@ const Contact = () => {
             <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary">
               MAIL
             </div>
-            <div className="lg:text-sm text-xs font-[Outfit-Regular] text-black">
+            <div className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100">
               info@fast-ai-movies.com
             </div>
           </div>
@@ -73,6 +74,9 @@ const Contact = () => {
               </div>
               <div className="bg-white rounded-sm p-[4px]">
                 <FaLinkedinIn className="text-primary text-[18px]" />
+              </div>
+              <div className="bg-white rounded-sm p-[4px]">
+                <FaXingSquare  className="text-primary text-[18px]" />
               </div>
             </div>
           </div>
@@ -94,10 +98,10 @@ const Contact = () => {
           info@fast-ai-movies.com widerrufen
         </div>
       </div>
-      <div className="lg:w-[45%] md:w-[45%] w-full flex justify-end mt-4 ">
+      <div className="lg:w-[50%] md:w-[50%] w-full flex justify-end mt-4 ">
         <button
           type="submit"
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg  w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 lg:text-sm text-xs font-[Outfit-Bold] "
+          className="text-light400 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg  w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 lg:text-sm text-xs font-[Outfit-Bold] "
         >
           Abschicken
         </button>

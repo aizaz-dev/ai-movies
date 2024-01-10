@@ -16,11 +16,20 @@ export default {
         light200: "#A0B2FB",
         light300: "#A3A3A3",
         darkBlue: "#E7ECFE",
+        light400: "#ffffff",
+        dark100: "#000000",
+        dark200: "#0d1c5a",
       },
       screens: {
         // SH
         laptop: "1500px",
         tab: "850px",
+        xtab: "1050px",
+      },
+      transitionDuration: {
+        2000: "2000ms", // You can adjust the duration as needed
+        3000: "3000ms",
+        4000: "4000ms",
       },
       fontSize: {
         x2s: "15px",
@@ -31,7 +40,7 @@ export default {
         lg: "60px",
         // SH
         mf: "18px",
-        lf:"40px",
+        lf: "40px",
       },
     },
   },

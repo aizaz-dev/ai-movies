@@ -36,13 +36,13 @@ import {
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className="">
-      <header className="bg-white shadow-md">
-        <nav
-          className="mx-auto  flex items-center justify-between p-6 lg:px-8"
+    <div className=" shadow-md    bg-white ">
+      <header  className="bg-white   shadow-md relative p-0 m-0 top-0 z-10">
+        <nav 
+          className="mx-auto  flex items-center justify-between p-6 max-laptop:py-1 lg:px-8  "
           aria-label="Global"
         >
-          <div className="flex lg:flex-1">
+          <div className="flex lg:flex-1  ">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
@@ -68,40 +68,40 @@ const Header = () => {
           <Popover.Group className="hidden lg:flex lg:items-center lg:gap-x-12 ">
             <a
               href="#"
-              className="text-sm max-laptop:text-[14px] font-semibold leading-6 text-gray-900"
+              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-gray-900"
             >
               Produkt
             </a>
             <a
               href="#"
-              className="text-sm max-laptop:text-[14px] font-semibold leading-6 text-gray-900"
+              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-gray-900"
             >
               Case Studies
             </a>
             <a
               href="#"
-              className="text-sm max-laptop:text-[14px] font-semibold leading-6 text-gray-900"
+              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-gray-900"
             >
               Uber Uns
             </a>
             <a
               href="#"
-              className="text-sm max-laptop:text-[14px] font-semibold leading-6 text-gray-900"
+              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-gray-900"
             >
               Kontakt
             </a>
             <a
               href="#"
-              className="text-sm max-laptop:text-[14px] font-semibold leading-6 text-gray-900"
+              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-gray-900"
             >
               FAQ
             </a>
-            <button className=" bg-blue-700 py-[10px] px-[12px] rounded-[5px] text-white text-sm max-laptop:text-[14px]">
+            <button className=" bg-blue-700 font-[Outfit-Bold] py-[10px] px-[12px] rounded-[5px] text-light400 text-sm max-laptop:text-[14px]">
               Demovideo kostenlose erstaellen
             </button>
           </Popover.Group>
           {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
+          <a href="#" className="text-sm font-[Outfit-Regular] leading-6 text-gray-900">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div> */}
@@ -143,7 +143,7 @@ const Header = () => {
                   {/* <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50">
                         Product
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
@@ -156,7 +156,7 @@ const Header = () => {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -167,42 +167,42 @@ const Header = () => {
                 </Disclosure> */}
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Produkt
                   </a>
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Case Studies
                   </a>
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Uber Uns
                   </a>
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Kontakt
                   </a>
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     FAQ
                   </a>
-                  <button className=" bg-blue-700 py-[10px] px-[12px] rounded-[5px] text-white">
+                  <button className=" bg-blue-700 py-[10px] px-[12px] rounded-[5px] text-light400">
                     Demovideo kostenlose erstaellen
                   </button>
                 </div>
                 {/* <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
                 >
                   Log in
                 </a>
