@@ -38,53 +38,38 @@
   },
   "Dataprivacy": {
     "TITLE": "DATA PRIVACY",
-    "SUBTITLE": "How do we ensure the security of your data?"},
+    "SUBTITLE": "How do we ensure the security of your data?"
+  },
 
+  "Case": {
+    "TITLE": "STATEMENTS",
+    "SUBTITLE": "What our customers say"
+  },
+  "Press": {
+    "TITLE": "PRESS",
+    "SUBTITLE": "What the media says"
+  },
+  "Supporter": {
+    "TITLE": "SUPPORTER",
+    "SUBTITLE": "Supported by"
+  },
 
+  "Actnow": {
+    "TITLE": "ACT NOW",
+    "SUBTITLE": "Ready for a digital transformation?",
+    "DESCRIPTION": "Take the right step for more efficient and engaging training – with just one click.",
+    "CONTACT_BUTTON": "Contact Us",
+    "FAQ_BUTTON": "Frequently Asked Questions"
+  },
+  "Flexvid": {
+    "HEADLINE": "Here is a Headline",
+    "DESCRIPTION": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+  },
 
-
-
-
-
-
-    "Case": {
-      "TITLE": "STATEMENTS",
-      "SUBTITLE": "What our customers say"
-      
-    },
-    "Press": {
-      "TITLE": "PRESS",
-      "SUBTITLE": "What the media says"
-    },
-    "Supporter": {
-      "TITLE": "SUPPORTER",
-      "SUBTITLE": "Supported by"
-    },
-
-    "Actnow": {
-      "TITLE": "ACT NOW",
-      "SUBTITLE": "Ready for a digital transformation?",
-      "DESCRIPTION": "Take the right step for more efficient and engaging training – with just one click.",
-      "CONTACT_BUTTON": "Contact Us",
-      "FAQ_BUTTON": "Frequently Asked Questions"
-    },
-    "Flexvid": {
-      "HEADLINE": "Here is a Headline",
-      "DESCRIPTION": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
-    },
-
-
-
-
-
-
-    "Webapp": {
-      "TopHeading": "Web Application",
-      "SubHeading": "Flexible Video Creation and Editing",
-      
-    },
-
-
+  "Webapp": {
+    "TopHeading": "Web Application",
+    "SubHeading": "Flexible Video Creation and Editing"
+  },
 
   "weCase": {
     "title": "USE CASES",
@@ -98,9 +83,18 @@
         "title": "Title 1",
         "description": "Ensure legal compliance in the company. With the help of our technology, you convey legal requirements such as the Money Laundering Act or the Supply Chain Act, as well as the use of new technologies like ChatGPT, clearly and concisely.",
         "industries": [
-          { "name": "Mechanical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
-          { "name": "Electrical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
-          { "name": "Management Consultancies", "iconUrl": "pageone/wecase/wecase.png" }
+          {
+            "name": "Mechanical Engineering",
+            "iconUrl": "pageone/wecase/wecase.png"
+          },
+          {
+            "name": "Electrical Engineering",
+            "iconUrl": "pageone/wecase/wecase.png"
+          },
+          {
+            "name": "Management Consultancies",
+            "iconUrl": "pageone/wecase/wecase.png"
+          }
         ],
         "videoUrl": "/flexvid/vid.mp4"
       }
@@ -112,9 +106,18 @@
       "title": "Title 1",
       "description": "Ensure legal compliance in the company. With the help of our technology, you convey legal requirements such as the Money Laundering Act or the Supply Chain Act, as well as the use of new technologies like ChatGPT, clearly and concisely.",
       "industries": [
-        { "name": "Mechanical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
-        { "name": "Electrical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
-        { "name": "Management Consultancies", "iconUrl": "pageone/wecase/wecase.png" }
+        {
+          "name": "Mechanical Engineering",
+          "iconUrl": "pageone/wecase/wecase.png"
+        },
+        {
+          "name": "Electrical Engineering",
+          "iconUrl": "pageone/wecase/wecase.png"
+        },
+        {
+          "name": "Management Consultancies",
+          "iconUrl": "pageone/wecase/wecase.png"
+        }
       ],
       "videoUrl": "/flexvid/vid.mp4"
     },
@@ -123,9 +126,18 @@
       "title": "title2",
       "description": "Ensure legal compliance in the company. With the help of our technology, you convey legal requirements such as the Money Laundering Act or the Supply Chain Act, as well as the use of new technologies like ChatGPT, clearly and concisely.",
       "industries": [
-        { "name": "Mechanical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
-        { "name": "Electrical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
-        { "name": "Management Consultancies", "iconUrl": "pageone/wecase/wecase.png" }
+        {
+          "name": "Mechanical Engineering",
+          "iconUrl": "pageone/wecase/wecase.png"
+        },
+        {
+          "name": "Electrical Engineering",
+          "iconUrl": "pageone/wecase/wecase.png"
+        },
+        {
+          "name": "Management Consultancies",
+          "iconUrl": "pageone/wecase/wecase.png"
+        }
       ],
       "videoUrl": "/flexvid/vid.mp4"
     },
@@ -134,9 +146,18 @@
       "title": "Produktschulungen",
       "description": "Ensure legal compliance in the company. With the help of our technology, you convey legal requirements such as the Money Laundering Act or the Supply Chain Act, as well as the use of new technologies like ChatGPT, clearly and concisely.",
       "industries": [
-        { "name": "Mechanical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
-        { "name": "Electrical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
-        { "name": "Management Consultancies", "iconUrl": "pageone/wecase/wecase.png" }
+        {
+          "name": "Mechanical Engineering",
+          "iconUrl": "pageone/wecase/wecase.png"
+        },
+        {
+          "name": "Electrical Engineering",
+          "iconUrl": "pageone/wecase/wecase.png"
+        },
+        {
+          "name": "Management Consultancies",
+          "iconUrl": "pageone/wecase/wecase.png"
+        }
       ],
       "videoUrl": "/flexvid/vid.mp4"
     },
@@ -145,9 +166,18 @@
       "title": "Prozessschulungen",
       "description": "Ensure legal compliance in the company. With the help of our technology, you convey legal requirements such as the Money Laundering Act or the Supply Chain Act, as well as the use of new technologies like ChatGPT, clearly and concisely.",
       "industries": [
-        { "name": "Mechanical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
-        { "name": "Electrical Engineering", "iconUrl": "pageone/wecase/wecase.png" },
-        { "name": "Management Consultancies", "iconUrl": "pageone/wecase/wecase.png" }
+        {
+          "name": "Mechanical Engineering",
+          "iconUrl": "pageone/wecase/wecase.png"
+        },
+        {
+          "name": "Electrical Engineering",
+          "iconUrl": "pageone/wecase/wecase.png"
+        },
+        {
+          "name": "Management Consultancies",
+          "iconUrl": "pageone/wecase/wecase.png"
+        }
       ],
       "videoUrl": "/flexvid/vid.mp4"
     }
