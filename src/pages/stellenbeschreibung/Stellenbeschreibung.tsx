@@ -1,24 +1,26 @@
 import React from "react";
 import Joincomponent from "../../components/Stellenbeschreibung/joincomponent/Joincomponent";
 import Seemore from "../../components/Stellenbeschreibung/seemore/Seemore";
+import { useTranslation } from "react-i18next";
 
 const Stellenbeschreibung = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="">
       <div className=" w-full max-w-[2000px] mx-auto mt-[10px] max-tab:mt-[40px]  p-[80px] max-md:p-[30px] max-tab:p-[40px]">
         <div className=" ">
           <h1 className="text-lg font-[Outfit-Bold]  max-md:text-sm max-md:text-center max-laptop:text-lf">
-            Project Study in Business Development
+          {t("JobDescription.section1.title")}
+
           </h1>
           <h3 className="text-sm font-bold font-[Outfit-Regular] max-md:text-center max-laptop:text-mf">
-            (compliance/legal market segment)
+          {t("JobDescription.section1.subtitle")}
+
           </h3>
           <div className=" font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start mt-[50px]">
-            FAST AI Movies is looking for motivated TUM students that want to
-            carry out a project study in <br /> the field of Business
-            Development (developing new market opportunity for compliance
-            training <br /> videos) to get our video creation AI software to the
-            next level!
+          {t("JobDescription.section1.description")}
+
           </div>
         </div>
       </div>
@@ -27,7 +29,8 @@ const Stellenbeschreibung = () => {
         <div className=" w-[100%] max-w-[2000px] mx-auto  p-[80px] max-md:p-[30px] max-tab:p-[40px]">
           <div className=" flex  flex-col gap-[20px] mt-[50px]">
             <h3 className=" text-sm font-bold font-[Outfit-Bold] max-md:text-center max-laptop:text-mf text-primary">
-              WARUM FAST AI MOVIES?
+            {t("JobDescription.section2.title")}
+
             </h3>
             <div className=" flex max-tab:flex-wrap    w-[100%]  gap-[40px] justify-between max-laptop:justify-start">
               <div className=" flex items-center gap-[30px] max-md:gap-[15px]">
@@ -40,10 +43,12 @@ const Stellenbeschreibung = () => {
                 </div>
                 <div className="textcont ">
                   <h3 className="font-[Outfit-Bold] text-sm font-bold   max-laptop:text-mf">
-                    Wachsendes Startup
+                  {t("JobDescription.section2.items1.title")}
+
                   </h3>
                   <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
-                    mit spannenden Einblicken
+                  {t("JobDescription.section2.items1.description")}
+
                   </p>
                 </div>
               </div>
@@ -57,10 +62,11 @@ const Stellenbeschreibung = () => {
                 </div>
                 <div className="textcont  items-start">
                   <h3 className="text-sm font-bold font-[Outfit-Bold]  max-laptop:text-mf">
-                  Echten Impact haben
+                  {t("JobDescription.section2.items2.title")}
                   </h3>
                   <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
-                  in einem kleinen Team
+                  {t("JobDescription.section2.items2.description")}
+
                   </p>
                 </div>
               </div>
@@ -74,10 +80,12 @@ const Stellenbeschreibung = () => {
                 </div>
                 <div className="textcont ">
                   <h3 className="text-sm font-bold font-[Outfit-Regular]  max-laptop:text-mf">
-                  Hoch innovative
+                  {t("JobDescription.section2.items3.title")}
+
                   </h3>
                   <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
-                  KI-Technologie
+                  {t("JobDescription.section2.items3.description")}
+
                   </p>
                 </div>
               </div>
@@ -92,68 +100,76 @@ const Stellenbeschreibung = () => {
             <div className=" lg:gap-[2%] flex  lg:flex-row flex-col w-[100%] mt-[50px] gap-[30px]">
               <div className=" lg:w-[50%] w-[100%] p-8  bg-light100 rounded-[10px] flex  flex-col gap-[30px]">
                 <h3 className="text-sm font-bold font-[Outfit-Regular] max-md:text-center max-laptop:text-mf text-primary">
-                  DEINE ROLLE
+                {t("JobDescription.section3.title")}
+
                 </h3>
                 <ul>
                   <li className="list-item-red flex ">
                     <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                      Identify a new market segment <br /> (compliance training/
-                      legal training){" "}
+                    {t("JobDescription.section3.points11")}
+
                     </p>{" "}
                   </li>
                   <li className="list-item-red flex ">
                     <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                      Use Design Thinking methods to identify new market
-                      opportunities.{" "}
+                    {t("JobDescription.section3.points12")}
+
                     </p>{" "}
                   </li>
                   <li className="list-item-red flex ">
                     <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                      Conduct market research to identify the innovators.{" "}
+                    {t("JobDescription.section3.points13")}
+
                     </p>{" "}
                   </li>
                   <li className="list-item-red flex ">
                     <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                      Research relevant market players{" "}
+                    {t("JobDescription.section3.points14")}
+
                     </p>{" "}
                   </li>
                   <li className="list-item-red flex ">
                     <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                      Work independently and manage
+                    {t("JobDescription.section3.points15")}
+
                     </p>{" "}
                   </li>
                 </ul>
               </div>
               <div className=" lg:w-[50%] w-[100%] p-8  bg-light100 rounded-[10px] flex  flex-col gap-[30px]">
                 <h3 className="text-sm font-bold font-[Outfit-Regular] max-md:text-center max-laptop:text-mf text-primary">
-                  SKILLS UND EXPERTISE
+                {t("JobDescription.section4.title")}
+
                 </h3>
                 <ul>
                   <li className="list-item-red flex ">
                     <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                      Identify a new market segment <br /> (compliance training/
-                      legal training){" "}
+                    {t("JobDescription.section4.points1")}
+
                     </p>{" "}
                   </li>
                   <li className="list-item-red flex ">
                     <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                      Use Design Thinking methods to identify new market
-                      opportunities.{" "}
+                    {t("JobDescription.section4.points2")}
+
                     </p>{" "}
                   </li>
                   <li className="list-item-red flex ">
                     <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                      Conduct market research to identify the innovators.{" "}
+                    {t("JobDescription.section4.points3")}
+
                     </p>{" "}
                   </li>
                   <li className="list-item-red flex ">
                     <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                      Research relevant market players{" "}
+                    {t("JobDescription.section4.points4")}
+
                     </p>{" "}
                   </li>
                   <li className="list-item-red flex ">
                     <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                      Work independently and manage
+                    {t("JobDescription.section4.points5")}
+
                     </p>{" "}
                   </li>
                 </ul>
@@ -161,36 +177,38 @@ const Stellenbeschreibung = () => {
             </div>
             <div className="  bg-light100 flex flex-col gap-[30px] p-8 rounded-[10px]">
               <h3 className="text-sm font-bold font-[Outfit-Regular] max-md:text-center max-laptop:text-mf text-primary">
-                YOUR PROJECT STUDY
+              {t("JobDescription.section5.title")}
+
               </h3>
               <ul>
                 <li className="list-item-red flex ">
                   <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                    Start date: as soon as possible
+                  {t("JobDescription.section5.points6")}
+
                   </p>{" "}
                 </li>
                 <li className="list-item-red flex ">
                   <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                    Regular 1:1 with FAST AI Movies CEO
+                  {t("JobDescription.section5.points7")}
+
                   </p>{" "}
                 </li>
                 <li className="list-item-red flex ">
                   <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                    If you have fellow students, bring them on board!
+                  {t("JobDescription.section5.points8")}
+
                   </p>{" "}
                 </li>
                 <li className="list-item-red flex ">
                   <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                    We provide a rough structure but inside this structure, you
-                    can work completely independently.
+                  {t("JobDescription.section5.points9")}
+
                   </p>{" "}
                 </li>
                 <li className="list-item-red flex ">
                   <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                    We have our own office at TUM Incubator in Garching. If you
-                    want you can work mostly remotely, but we will organize a
-                    few office days anyway, since nothing beats meeting
-                    physically regularly and exchanging ideas.
+                  {t("JobDescription.section5.points10")}
+
                   </p>{" "}
                 </li>
               </ul>

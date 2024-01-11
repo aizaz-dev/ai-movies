@@ -1,49 +1,51 @@
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useTranslation } from "react-i18next";
 
-const box = [
-  {
-    id: 1,
-    logo: "pageone/casestudy/1.png",
-    name: "Produktkommunikation",
-    des: "consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
-     userpic: "pageone/casestudy/man1.png",
-    username: "Adrian Weiß",
-    userinfo: "Produkt Manager nexineer",
-  },
-  {
-    id: 2,
-    logo: "pageone/casestudy/2.png",
-    name: "Softwareschulung ",
-    des: "consetetur sadipscing elitr, sed diamnonumy eirmod tempor invidunt utlabore et dolore magna aliquyamerat, sed diam voluptua. At vero eoslet accusam et justo duo dolores et ea",
-    userpic: "pageone/casestudy/man2.png",
-    username: "Christian Färber ",
-    userinfo: "Digitalisierungsbeauftragter Neuburg-Schrobenhausen",
-  },
 
-];
 const Unterseite = () => {
+  const { t } = useTranslation();
+
+
+  const box = [
+    {
+      id: 1,
+      logo: "pageone/casestudy/1.png",
+      name: `${t("unterseite.box1.name")}`,
+      des: `${t("unterseite.box1.des")}`,
+       userpic: "pageone/casestudy/man1.png",
+      username:`${t("unterseite.box1.username")}`,
+      userinfo: `${t("unterseite.box1.userinfo")}`,
+    },
+    {
+      id: 2,
+      logo: "pageone/casestudy/2.png",
+      name: `${t("unterseite.box2.name")}`,
+      des: `${t("unterseite.box2.des")}`,
+      userpic: "pageone/casestudy/man2.png",
+      username:  `${t("unterseite.box2.username")}`,
+      userinfo:  `${t("unterseite.box1.userinfo")}`,
+    },
+  
+  ];
+
+
   return (
     <div className="w-full bg-white ">
       <div className="max-w-[2000px] mx-auto py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px]">
         <h3 className="text-sm font-bold font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf">
-          LANDKREIS NEUBURG-SCHROBENHAUSEN:
+        {t("unterseite.title")}
+
         </h3>
         <h1 className="text-lg font-[Outfit-Bold]  max-md:text-sm max-md:text-center max-laptop:text-lf ">
-          KI-Unterstützte Schulungsvideos <br className="max-tab:hidden" />{" "}
-          revolutionieren die Verwaltung
+        {t("unterseite.subtitle")}
+
         </h1>
 
         <div className="flex bg-light100 py-14 px-11 mt-7  max-md:px-6 max-tab:flex-col rounded-[10px]">
           <div className="one w-[70%] max-tab:w-full flex items-center justify-center border-r-1 border-solid border-light300 max-tab:border-none">
             <p className="text-left text-sm font-[Outfit-Regular] pr-7 max-tab:pr-0  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              Im Zeitalter der Digitalisierung sind effiziente Schulungsprozesse
-              und die rasche Anpassung an neue Technologien von entscheidender
-              Bedeutung. Der Landkreis Neuburg-Schrobenhausen hat in dieser
-              Hinsicht eine Vorreiterrolle eingenommen, indem er auf innovative
-              Lösungen setzt, um seine Mitarbeiter bestmöglich zu schulen und
-              die Verwaltung zu digitalisieren. Die Zusammenarbeit mit FAST Al
-              Movies, einem Anbieter von KI-gesteuerten Schulungsvideos, ist ein
-              Schlüsselteil dieses Vorhabens.
+                    {t("unterseite.section1.content")}
+
             </p>
           </div>
           <div className="two w-[30%] max-tab:w-full py-14 px-11 flex items-center justify-center">
@@ -54,20 +56,8 @@ const Unterseite = () => {
         <div className="secflex flex max-tab:flex-col">
           <div className="left w-[50%] max-tab:w-full  flex items-center justify-center py-14 px-11  max-md:px-0 ">
             <p className="text-left text-sm font-[Outfit-Regular] pr-7 max-tab:pr-0  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              Das Landratsamt Neuburg-Schrobenhausen hat erkannt, dass die
-              Automatisierung und Digitalisierung von Schulungsprozessen einen
-              erheblichen Mehrwert für die Verwaltung bietet. Mit Hilfe der
-              Software von FAST AI Movies werden hochqualitative Schulungsvideos
-              für Prozessschulungen und interne Software-Schulungen erstellt.
-              Diese Videos sind nicht nur kostengünstig, sondern auch äußerst
-              effektiv. Ein bemerkenswertes Beispiel für die erfolgreiche
-              Zusammenarbeit ist die Schulung für die Formularanwendung zur
-              Prozesserfassung. Die Erstellung einer Schulung für dieses
-              einfache, aber dennoch wichtige Verwaltungsaufgabe ermöglicht es
-              den Mitarbeitern, Zeit zu sparen und sich effizienter auf ihre
-              Aufgaben zu konzentrieren. Die Schulungsvideos sind interaktiv und
-              beinhalten multiple-choice-Quizfragen, die sicherstellen, dass das
-              erlernte Wissen verstanden wurde.
+            {t("unterseite.section2.contentLeft")}
+
             </p>
           </div>
           <div className="right w-[50%] max-tab:w-full py-14 px-13 flex items-center justify-center relative">
@@ -79,15 +69,12 @@ const Unterseite = () => {
             <div className="colorbg bg-light100  py-14 px-11 rounded-[10px]">
               {" "}
               <p className="text-left text-sm font-[Outfit-Bold] pr-7 max-tab:pr-0  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                Die Zusammenarbeit mit dem Landkreis Neuburg- Schrobenhausen ist
-                ein herausragendes Beispiel dafür, wie Kl-gesteuerte
-                Schulungsvideos die digitale Transformation in der Verwaltung
-                vorantreiben können. Unsere Technologie ermöglicht es,
-                Schulungsinhalte auf einfache Textgrundlagen zu stützen und
-                hochwirksame Schulungsvideos zu erstellen."
+            {t("unterseite.section2.contentRight")}
+               
               </p>
               <p className=" text-left text-sm font-[Outfit-Regular] pr-7 max-tab:pr-0  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start mt-7 text-light200">
-                Florian Scherl, Geschäftsführer von FAST Al Movies
+              {t("unterseite.section3.content")}
+
               </p>
               <img
                 src="/arrow2.svg"
@@ -108,27 +95,8 @@ const Unterseite = () => {
           </div>
           <div className="righttxt leftimg px-7 max-tab:mt-7  max-md:px-0  w-fit ">
             <p className="text-left  text-sm font-[Outfit-Regular]  max-tab:pr-0  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              Christian Färber, Digitalisierungsbeauftragter des Landkreises,
-              ergänzt: „In der Einführung von KIUnterstützung für
-              Schulungsvideos sehen wir großes Potential, um unseren
-              Mitarbeitenden die immer komplexeren Fachanwendungen und
-              Prozessabläufe zu erklären. Wir sind stolz darauf, die
-              Vorreiterrolle in der Digitalisierung zu übernehmen und anderen
-              Landkreisen zu zeigen, wie sie von dieser Technologie profitieren
-              können.“ Die qualitativen Vorteile dieser innovativen
-              Schulungsvideos sind vielfältig. Sie bieten einen konsistenten
-              Schulungsinhalt, der für alle Mitarbeiter leicht zugänglich ist,
-              und ermöglichen eine individuelle Zeiteinteilung für das Lernen.
-              Dies führt zu einem gesteigerten Wissensniveau und einer
-              verbesserten Mitarbeiterzufriedenheit. Außerdem lassen sich
-              Schulungsergebnisse nachverfolgen, was die Evaluierung und
-              kontinuierliche Verbesserung der Schulungsprozesse ermöglicht. Die
-              erfolgreiche Kooperation zwischen dem Landkreis
-              Neuburg-Schrobenhausen und FAST AI Movies ist ein Paradebeispiel
-              dafür, wie die digitale Transformation die Verwaltung nachhaltig
-              verändern kann. Diese Erfolgsgeschichte sollte als Inspiration für
-              andere Landkreise dienen, die den Weg zur effizienten Schulung und
-              Digitalisierung ihrer Verwaltungsprozesse einschlagen möchten.
+            {t("unterseite.section4.contentLeft")}
+
             </p>
           </div>
         </div>
@@ -136,10 +104,12 @@ const Unterseite = () => {
         <div className="mt-[90px]  ">
           <div className="max-w-[2000px] mx-auto">
             <h3 className="text-sm font-bold font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf">
-              STATEMENTS
+            {t("unterseite.section5.title")}
+
             </h3>
             <h1 className="text-lg font-[Outfit-Bold]  max-md:text-sm max-md:text-center max-laptop:text-lf ">
-              Das sagen unsere Kunden
+            {t("unterseite.section5.subtitle")}
+
             </h1>
 
             <div className="w-[100%] flex justify-start   max-tab:flex-col lg:gap-8 gap-6 items-start mt-[60px]">
@@ -175,7 +145,7 @@ const Unterseite = () => {
                         </p>
                       </div>
                     </div> */}
-                  <button className="text-sm float-right text-primary  font-[Outfit-Bold] max-md:text-left max-laptop:text-mf mt-[30px] whitespace-nowrap flex items-center justify-start gap-2 py-[15px] rounded-[10px] max-md:text-[14px] ">Case Study Ansehen  <FaArrowRightLong /></button>
+                  <button className="text-sm float-right text-primary  font-[Outfit-Bold] max-md:text-left max-laptop:text-mf mt-[30px] whitespace-nowrap flex items-center justify-start gap-2 py-[15px] rounded-[10px] max-md:text-[14px] "> {t("unterseite.section5.buttonText")}<FaArrowRightLong /></button>
 
                   </div>
                 );

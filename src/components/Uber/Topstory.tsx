@@ -1,5 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import { useTranslation } from "react-i18next";
+
 interface SlideInItemProps {
   delay: number;
   direction: 'left' | 'right'; // Assuming direction can only be 'left' or 'right'
@@ -27,6 +29,8 @@ const SlideInItem: React.FC<SlideInItemProps> = ({ delay, direction, children })
 };
 
 const Topstory = () => {
+  const { t } = useTranslation();
+
   
   return (
     <div className="relative w-full m-auto">
@@ -44,17 +48,13 @@ const Topstory = () => {
         <div className="max-w-[2000px] w-full mx-auto flex gap-[20px] max-tab:justify-center max-tab:gap-[60px] max-md:gap-[0px] max-tab:flex-col  items-start px-[40px] max-lg:p-[40px] max-md:p-[10px] relative z-20">
           <div className="w-[50%] max-tab:w-full flex-col  ">
             <h3 className="text-sm text-primary font-[Outfit-Bold] max-laptop:text-mf max-md:text-center">
-              THE STORY
+             {t("about.topstory.title")}
             </h3>
             <h1 className="font-[Outfit-Bold] text-left text-lg   leading-[60px] max-laptop:text-lf max-md:text-sm max-md:leading-8 max-md:text-center max-laptop:font-[700] max-laptop:leading-10">
-              Die Entstehung von FAST AI Movies
+              {t("about.topstory.heading")}
             </h1>
             <p className="font-[Outfit-Regular]  text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              Unsere Reise begann mit der Vision unseres Gründers Florian
-              Scherl, Mitarbeiterschulungen für jedes Unternehmen effizient zu
-              gestalten. Bereits vor seinem Abitur im Mai 2022 setzte Florian
-              den Grundstein für unser Unternehmen durch die offizielle
-              Gründung. Unsere Erfolgsgeschichte nahm rasch Fahrt auf:
+            {t("about.topstory.desc")}
             </p>
           </div>
 
@@ -71,24 +71,22 @@ const Topstory = () => {
               <div className="flex gap-[70px] max-md:flex-col max-md:gap-[30px] max-md:break-words ">
                 <div className="first w-[300px] max-md:w-auto opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                    JULI 2022
+                    {t("about.topstory.1")}
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                    Wir machten auf uns aufmerksam, indem wir den renommierten
-                    „Startup Teens Wettbewerb" gewannen und Fördermittel von
-                    Al+Munich erhielten.
+                  {t("about.topstory.1des")}
                   </p>
                 </div>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto  bg-light300 opacity-[0.3]"></div>
                 <SlideInItem direction='right' delay={0}>
                 <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px]">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                    JULI 2022
+                  {t("about.topstory.1")}
+
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                    Wir machten auf uns aufmerksam, indem wir den renommierten
-                    „Startup Teens Wettbewerb" gewannen und Fördermittel von
-                    Al+Munich erhielten.
+                  {t("about.topstory.1des")}
+
                   </p>
                 </div>
                 </SlideInItem>
@@ -103,24 +101,24 @@ const Topstory = () => {
               <SlideInItem direction="left" delay={0}>
                 <div className="first w-[300px] max-md:w-auto text-right max-md:text-start -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px]">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  SEPTEMBER 2022
+                  {t("about.topstory.2")}
+
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Unser erster großer Durchbruch in
-der Industrie kam mit unserem ersten
-Kunden im Maschinenbau-Segment.
+                  {t("about.topstory.2des")}
+
                   </p>
                 </div>
                 </SlideInItem>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                    JULI 2022
+                  {t("about.topstory.1")}
+
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Unser erster großer Durchbruch in
-der Industrie kam mit unserem ersten
-Kunden im Maschinenbau-Segment.
+                  {t("about.topstory.1des")}
+
                   </p>
                 </div>
               </div>
@@ -132,12 +130,12 @@ Kunden im Maschinenbau-Segment.
               <div className="flex gap-[70px] max-md:flex-col max-md:gap-[30px] ">
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  SEPTEMBER 2022
+                  {t("about.topstory.2")}
+
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Unser Team wuchs auf fünf
-engagierte und talentierte
-Mitglieder.
+                  {t("about.topstory.1des")}
+
                   </p>
                 </div>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
@@ -146,12 +144,11 @@ Mitglieder.
                
                 <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  DEZEMBER 2022
+                  {t("about.topstory.3")}
+
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Unser Team wuchs auf fünf
-engagierte und talentierte
-Mitglieder.
+                  {t("about.topstory.3des")}
                   </p>
                 </div>
                 </SlideInItem>
@@ -166,24 +163,22 @@ Mitglieder.
                 
                 <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  APRIL 2023
+                  {t("about.topstory.4")}
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Der Start unserer Webapp
-markierte einen wichtigen
-Meilenstein in unserer Entwicklung.
+                  {t("about.topstory.4des")}
                   </p>
                 </div>
                 </SlideInItem>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  DEZEMBER 2022
+                  {t("about.topstory.4")}
+
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Der Start unserer Webapp
-markierte einen wichtigen
-Meilenstein in unserer Entwicklung.
+                  {t("about.topstory.4des")}
+
                   </p>
                 </div>
               </div>
@@ -195,23 +190,23 @@ Meilenstein in unserer Entwicklung.
               <div className="flex gap-[70px] max-md:flex-col max-md:gap-[30px] ">
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  APRIL 2023
+                  {t("about.topstory.4")}
+
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Unsere Unternehmen wuchs auf
-15 Mitglieder, jeder einzelne ein
-Experte auf seinem Gebiet.
+                  {t("about.topstory.4des")}
+
                   </p>
                 </div>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
                 <SlideInItem direction='right' delay={0}> <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  JUNI 2023
+                  {t("about.topstory.5")}
+
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Unsere Unternehmen wuchs auf
-15 Mitglieder, jeder einzelne ein
-Experte auf seinem Gebiet.
+                  {t("about.topstory.5des")}
+
                   </p>
                 </div>
                 </SlideInItem>
@@ -226,27 +221,25 @@ Experte auf seinem Gebiet.
                
                 <div className="first text-end max-md:text-start w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  JULI 2023
+                  {t("about.topstory.7")}
+
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Wir erweiterten unsere
-KI-Software um E-Learnings
-auch für die Öffentliche
-Verwaltung zu generieren
+                  {t("about.topstory.7des")}
+
                   </p>
                 </div>
                 </SlideInItem>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  JULI 2023
+                  {t("about.topstory.7")}
+
 
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Wir erweiterten unsere
-KI-Software um E-Learnings
-auch für die Öffentliche
-Verwaltung zu generieren
+                  {t("about.topstory.7des")}
+
                   </p>
                 </div>
               </div>
@@ -260,13 +253,12 @@ Verwaltung zu generieren
                
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  SOMMER 2023
+                  {t("about.topstory.8")}
+
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Philipp und Oliver schlossen sich
-als Co-Founder unserem Team
-an und brachten neue
-Perspektiven und Ideen ein.
+                  {t("about.topstory.8des")}
+
                   </p>
                 </div>
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0.3]"></div>
@@ -274,14 +266,13 @@ Perspektiven und Ideen ein.
               
                 <div className="first w-[300px] max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px] ">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  SOMMER 2023
+                  {t("about.topstory.8")}
+
 
                   </h3>
                   <p className="text-sm  font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Philipp und Oliver schlossen sich
-als Co-Founder unserem Team
-an und brachten neue
-Perspektiven und Ideen ein.
+                  {t("about.topstory.8des")}
+
                   </p>
                 </div>
                 </SlideInItem>
@@ -294,10 +285,12 @@ Perspektiven und Ideen ein.
                
                 <div className="first text-end max-md:text-start w-[300px] break-words text-wrap max-md:w-auto -mt-[120px] max-md:mt-auto max-laptop:-mt-[80px]">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  HERBST 2023
+                  {t("about.topstory.9")}
+
                   </h3>
                   <p className="font-[Outfit-Regular] text-end  text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf  max-md:text-start whitespace-normal   ">
-  Unsere Reise begann mit der Vision unseres Gründers Florian Scherl, Mitarbeiterschulungen für jedes Unternehmen effizient zu gestalten. Bereits vor seinem Abitur im Mai 2022 setzte Florian den Grundstein für unser Unternehmen durch die offizielle Gründung. Unsere Erfolgsgeschichte nahm rasch Fahrt auf:
+                  {t("about.topstory.9des")}
+
 </p>
 
                 </div>
@@ -305,16 +298,12 @@ Perspektiven und Ideen ein.
                 <div className="greyline max-md:hidden max-laptop:w-[10px] w-[20px] h-auto bg-light300 opacity-[0]"></div>
                 <div className="first w-[300px] max-md:w-auto  opacity-0 max-md:hidden">
                   <h3 className="text-sm font-[Outfit-Bold] text-primary max-md:text-mf max-laptop:text-mf">
-                  HERBST 2023
+                  {t("about.topstory.9")}
+
                   </h3>
                   <p className="text-sm   font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5">
-                  Unsere Präsenz auf bedeutenden
-Branchenveranstaltungen wie
-der Bits & Pretzels und dem Websummit
-zeigte unsere Ambitionen und unsere
-wachsende Bedeutung in der Branche.
-Zudem erweiterten wir unseren Einfluss in
-die Finanz- und Versicherungsindustrie.
+                  {t("about.topstory.9des")}
+
                   </p>
                 </div>
               </div>

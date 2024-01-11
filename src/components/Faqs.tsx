@@ -1,34 +1,37 @@
 import React, { useState } from 'react';
+import { useTranslation } from "react-i18next";
 
 const Faq = () => {
+  const { t } = useTranslation();
+
   const [activeQuestion, setActiveQuestion] = useState(0);
 
   const faqData = [
     {
       id: 1,
-      question: 'Muss ich eine komplette Präsentation erstellen?',
+      question: `${t("faq.faq1.question")}`,
       answer:
-        'Nein, Sie müssen lediglich einen kurzen Text, der aus einigen Stichpunkten besteht erstellen. Die Präsentation erstellt unsere KI Software für Sie.',
+      `${t("faq.faq1.answer")}`,
     },
     {
       id: 2,
-      question: 'Muss ich ein vollständiges Drehbuch schreiben?',
-      answer: 'Nein, Sie müssen lediglich einen kurzen Text, der aus einigen Stichllen. Die Präsentation edmsdmasldmsa',
+      question:`${t("faq.faq2.question")}`,
+      answer: `${t("faq.faq2.answer")}`,
     },
     {
       id: 3,
-      question: 'In welchen Sprachen können Schulungsvideos erstellt werden?',
-      answer: 'Nein, Sie müssen lediglich einen kurzen Text, dert erstellen. Die Präsentation edmsdmasldmsa',
+      question: `${t("faq.faq3.question")}`,
+      answer:`${t("faq.faq3.answer")}`,
     },
     {
       id: 4,
-      question: 'Sind die Schulungsvideos interaktiv?',
-      answer: 'Nein, Sie müssen ledinen kurzen Text, der aus einigen Stichpunkten besteht erstellen. Die Präsentation edmsdmasldmsa',
+      question: `${t("faq.faq4.question")}`,
+      answer: `${t("faq.faq4.answer")}`,
     },
     {
       id: 5,
-      question: 'Wie lange dauert die Videoerstellung?',
-      answer: 'Nein, Sie müssen lediglichht erstellen. Die Präsentation edmsdmasldmsa',
+      question: `${t("faq.faq5.question")}`,
+      answer:`${t("faq.faq5.answer")}`,
     }
     // Add more question-answer pairs as needed
   ];
@@ -38,10 +41,11 @@ const Faq = () => {
   };
 
   return (
-    <div className='w-full bg-light100 px-[80px] py-[80px] max-tab:px-[40px] max-md:px-[30px] border-b-[1px] border-light200'>
+    <div className='w-full bg-light100 px-[80px] py-[80px] max-tab:px-[40px] max-md:px-[30px] '>
       <div className='max-w-[2000px] m-auto'>
         <h3 className="text-lf font-[Outfit-Bold]  max-md:text-center max-laptop:text-lf">
-          FAQ
+        {t("faq.faqHeading")}
+
         </h3>
 
         <div className='faq mt-7 flex max-md:flex-col mx-auto py-6'>

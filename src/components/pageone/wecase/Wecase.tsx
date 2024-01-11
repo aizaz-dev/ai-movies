@@ -197,14 +197,15 @@ const Wecase = () => {
       videoUrl: "/flexvid/vid.mp4",
     });
 
-  const handleCategoryChange = (category: string) => {
-    setSelectedCategory(category);
-    const dataIndex = leftBoxData.findIndex((data) => data.id === category);
-    if (dataIndex !== -1) {
-      setSelectedCategoryData(leftBoxData[dataIndex]);
-    }
-  };
-
+    const handleCategoryChange = (category: string) => {
+      setSelectedCategory(category);
+      const dataIndex = leftBoxData.findIndex((data) => data.id === category);
+      if (dataIndex !== -1) {
+        setSelectedCategoryData(leftBoxData[dataIndex]);
+      }
+    };
+    
+    
   const categories = [
     {
       id: "compliance",
@@ -233,6 +234,7 @@ const Wecase = () => {
     },
     // Add more objects for other categories
   ];
+  
   return (
     <div className="w-full bg-light100 py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px] mt-[90px] border-b-[2px] border-light300 border-opacity-[0.5]">
       <div className="max-w-[2000px] m-auto">

@@ -1,48 +1,82 @@
+import { useTranslation } from "react-i18next";
 
 import { GoArrowRight } from "react-icons/go";
 
 const CaseStudies = () => {
-  const box = [
+  const { t } = useTranslation();
+
+  // const box = [
+  //   {
+  //     id: 1,
+  //     logo: "/casestudy/1.png",
+  //     name: "Produktkommunikation",
+  //     des: `consetetur sadipscing elitr, sed diam
+  //     nonumy eirmod tempor invidunt ut
+  //     labore et dolore magna aliquyam
+  //     erat, sed diam voluptua. At vero eos
+  //     et accusam et justo duo dolores et ea`,
+  //     userpic: "/casestudy/man1.png",
+  //     username: "Adrian Weiß",
+  //     userinfo: "Produkt Manager nexineer",
+  //   },
+  //   {
+  //     id: 2,
+  //     logo: "/casestudy/2.png",
+  //     name: "Softwareschulung ",
+  //     des: "Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
+  //     userpic: "/casestudy/man2.png",
+  //     username: "Christian Färber ",
+  //     userinfo: "Digitalisierungsbeauftragter Neuburg-Schrobenhausen",
+  //   },
+  //   {
+  //     id: 3,
+  //     logo: "/casestudy/3.png",
+  //     name: "Xxx",
+  //     des: "Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
+  //     userpic: "/casestudy/man3.png",
+  //     username: "Andreas Lehnig",
+  //     userinfo: "Head of Marketing & Communications bei Schattdecor SE",
+  //   },
+  // ];
+  const box =[
     {
-      id: 1,
+      id:1,
       logo: "/casestudy/1.png",
-      name: "Produktkommunikation",
-      des: `consetetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut
-      labore et dolore magna aliquyam
-      erat, sed diam voluptua. At vero eos
-      et accusam et justo duo dolores et ea`,
+      name:`${t("caseStudies.box1.name")}`,
+      des:`${t("caseStudies.box1.des")}`,
+      username:`${t("caseStudies.box1.username")}`,
+      userinfo:`${t("caseStudies.box1.userinfo")}`,
       userpic: "/casestudy/man1.png",
-      username: "Adrian Weiß",
-      userinfo: "Produkt Manager nexineer",
     },
     {
-      id: 2,
+      id:2,
       logo: "/casestudy/2.png",
-      name: "Softwareschulung ",
-      des: "Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
+      name:`${t("caseStudies.box2.name")}`,
+      des:`${t("caseStudies.box2.des")}`,
+      username:`${t("caseStudies.box2.username")}`,
+      userinfo:`${t("caseStudies.box2.userinfo")}`,
       userpic: "/casestudy/man2.png",
-      username: "Christian Färber ",
-      userinfo: "Digitalisierungsbeauftragter Neuburg-Schrobenhausen",
     },
     {
-      id: 3,
+      id:3,
       logo: "/casestudy/3.png",
-      name: "Xxx",
-      des: "Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
+      name:`${t("caseStudies.box3.name")}`,
+      des:`${t("caseStudies.box3.des")}`,
+      username:`${t("caseStudies.box3.username")}`,
+      userinfo:`${t("caseStudies.box3.userinfo")}`,
       userpic: "/casestudy/man3.png",
-      username: "Andreas Lehnig",
-      userinfo: "Head of Marketing & Communications bei Schattdecor SE",
-    },
-  ];
+    }
+  ]
   return (
     <div className="w-[100%] mt-[50px] mb-[80px] px-[80px] max-laptop:px-[60px] max-md:px-[30px]">
       <div className="max-w-[2000px] mx-auto">
         <div className="text-sm font-[Outfit-Bold]  text-primary max-md:text-center max-laptop:text-mf">
-        CASE STUDIES
+        {t("caseStudies.title")}
+
         </div>
         <div className="text-lg font-[Outfit-Bold]  max-md:text-sm max-md:text-center max-laptop:text-lf ">
-          So optimieren unsere Kunden ihre Schulungsprozesse
+        {t("caseStudies.subtitle")}
+
         </div>
 
         <div className="w-[100%] flex justify-between  max-tab:flex-col lg:gap-8 gap-6 items-start mt-[60px]">

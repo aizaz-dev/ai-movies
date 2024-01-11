@@ -3,9 +3,12 @@ import { MdOutlineKeyboardVoice } from "react-icons/md";
 import { FaPhotoVideo } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import React, { useRef } from "react";
+import { useTranslation } from "react-i18next";
   
 
 const News = () => {
+  const { t } = useTranslation();
+
   const newsSectionRef = useRef(null);
   const podcastSectionRef = useRef(null);
   const videoSectionRef = useRef(null);
@@ -16,74 +19,74 @@ const News = () => {
     {
       id: 1,
       video: "/stell/card1.png",
-      name: "Die Zakunft gehort ihm: Das interview mit dem 19-jahrigen AI-Startup-Grunder Florian Scherl",
-      p: "Florian Scherl telt in diesem video seine Erfahrungen erzahlt, wie er zur Grundung seines AL-Startups kam. Dieses Interview ist ein Muss fur alle Technologie begeisterten,  kunstlichen Imtelligenz erfarhren mochten.",
+      name: `${t("news.news1.name")}`,
+      p:  `${t("news.news1.p")}`,
     },
     {
       id: 2,
       video: "/stell/card2.png",
-      name: "Revolution of AI Video Generation with FAST AI Movies| AI E-Lab Success Stories",
-      p: "Florian Scherl, ein 19-jahriger Grunder und CEO von Fast AI Movies, spricht uber seine Startup-Reise als junger und erfolgreicher Unternehmer mit Launrenz Sommerlad von Europas fuhrender Studenteninitiative TUM.ai.",
+      name: `${t("news.news2.name")}`,
+      p: `${t("news.news2.p")}`,
     },
     {
       id: 3,
       video: "/stell/card3.png",
-      name: "AI meets EdTecH - Welche Rolle spielt Kunstliche Intelligenz in der Bildungsbranche?",
-      p: "Zusammen mit Founders Foundation richtete KI.NRW am 15.Mai 2023 das erste KI Meetup NRW aus. Mit fuhrenden Expert*innen aus der EdTech-Branche ging es bie dem Netzwerk-Event,  fur Lehrende und Lernende ergeben konnen.",
+      name: `${t("news.news3.name")}`,
+      p:`${t("news.news3.p")}`,
     },
     {
       id: 4,
       video: "/stell/card1.png",
-      name: "Die Zakunft gehort ihm: Das interview mit dem 19-jahrigen AI-Startup-Grunder Florian Scherl",
-      p: "Florian Scherl telt in diesem video seine Erfahrungen erzahlt, wie er zur Grundung seines AL-Startups kam. Dieses Interview ist ein Muss fur alle Technologie begeisterten, welt der kunstlichen  erfarhren mochten.",
+      name: `${t("news.news4.name")}`,
+      p: `${t("news.news4.p")}`,
     },
     {
       id: 5,
       video: "/stell/card2.png",
-      name: "Revolution of AI Video Generation with FAST AI Movies| AI E-Lab Success Stories",
-      p: "Florian Scherl, ein 19-jahriger Grunder und CEO von Fast AI Movies, spricht uber seine Startup-Reise als junger und erfolgreicher Unternehmer mit Launrenz Sommerlad von Europas fuhrender Studenteninitiative TUM.ai.",
+      name: `${t("news.news5.name")}`,
+      p: `${t("news.news5.p")}`,
     },
     {
       id: 6,
       video: "/stell/card3.png",
-      name: "AI meets EdTecH - Welche Rolle spielt Kunstliche Intelligenz in der Bildungsbranche?",
-      p: "Zusammen mit Founders Foundation richtete KI.NRW am 15.Mai 2023 das erste KI Meetup NRW aus. Mit fuhrenden Expert*innen aus der EdTech-Branche ging es bie dem Netzwerk-Event,  und welche Chance  ergeben konnen.",
+      name: `${t("news.news6.name")}`,
+      p: `${t("news.news6.p")}`,
     },
     {
       id: 7,
       video: "/stell/card1.png",
-      name: "Die Zakunft gehort ihm: Das interview mit dem 19-jahrigen AI-Startup-Grunder Florian Scherl",
-      p: "Florian Scherl telt in diesem video seine Erfahrungen erzahlt, wie er zur Grundung seines AL-Startups kam. Dieses Interview ist ein Muss fur alle Technologie begeisterten,  kunstlichen Imtelligenz erfarhren mochten.",
+      name: `${t("news.news7.name")}`,
+      p: `${t("news.news7.p")}`,
     },
     {
       id: 8,
       video: "/stell/card2.png",
-      name: "Revolution of AI Video Generation with FAST AI Movies| AI E-Lab Success Stories",
-      p: "Florian Scherl, ein 19-jahriger Grunder und CEO von Fast AI Movies, spricht uber seine Startup-Reise als junger und erfolgreicher Unternehmer mit Launrenz Sommerlad von Europas fuhrender Studenteninitiative TUM.ai.",
+      name: `${t("news.news8.name")}`,
+      p:`${t("news.news8.p")}`,
     },
     {
       id: 9,
       video: "/stell/card3.png",
-      name: "AI meets EdTecH - Welche Rolle spielt Kunstliche Intelligenz in der Bildungsbranche?",
-      p: "Zusammen mit Founders Foundation richtete KI.NRW am 15.Mai 2023 das erste KI Meetup NRW aus. Mit fuhrenden Expert*innen aus der EdTech-Branche ging es bie dem Netzwerk-Event,  fur Lehrende und Lernende ergeben konnen.",
+      name:  `${t("news.news9.name")}`,
+      p: `${t("news.news9.p")}`,
     },
     {
       id: 10,
       video: "/stell/card1.png",
-      name: "Die Zakunft gehort ihm: Das interview mit dem 19-jahrigen AI-Startup-Grunder Florian Scherl",
-      p: "Florian Scherl telt in diesem video seine Erfahrungen erzahlt, wie er zur Grundung seines AL-Startups kam. Dieses Interview ist ein Muss fur alle Technologie begeisterten,  kunstlichen Imtelligenz erfarhren mochten.",
+      name:  `${t("news.news10.name")}`,
+      p:`${t("news.news10.p")}`,
     },
     {
       id: 11,
       video: "/stell/card2.png",
-      name: "Revolution of AI Video Generation with FAST AI Movies| AI E-Lab Success Stories",
-      p: "Florian Scherl, ein 19-jahriger Grunder und CEO von Fast AI Movies, spricht uber seine Startup-Reise als junger und erfolgreicher Unternehmer mit Launrenz Sommerlad von Europas fuhrender Studenteninitiative TUM.ai.",
+      name: `${t("news.news11.name")}`,
+      p: `${t("news.news11.p")}`,
     },
     {
       id: 12,
       video: "/stell/card3.png",
-      name: "AI meets EdTecH - Welche Rolle spielt Kunstliche Intelligenz in der Bildungsbranche?",
-      p: "Zusammen mit Founders Foundation richtete KI.NRW am 15.Mai 2023 das erste KI Meetup NRW aus. Mit fuhrenden Expert*innen aus der EdTech-Branche ging es bie dem Netzwerk-Event,  welche Chance sich daduranch  ergeben konnen.",
+      name: `${t("news.news12.name")}`,
+      p:`${t("news.news12.p")}`,
     },
     
   ];
@@ -97,7 +100,8 @@ const News = () => {
 
 
       <div className="xl:text-lg lg:text-md text-m2d text font-[Outfit-Bold] ">
-        FAST AI Movies in den Medien
+      {t("news.title")}
+
       </div>
 <div className="flex items-center justify-between my-7">
   {/* buttons */}
@@ -115,7 +119,8 @@ const News = () => {
           </div>
         </div>
         <div ref={newsSectionRef} className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary">
-          Artikel
+        {t("news.articles")}
+
         </div>
       </div>
       {news.map((item) => {
@@ -133,7 +138,8 @@ const News = () => {
                   {item.p}
                 </div>
                 <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-                  Artikel lesen
+                {t("news.articleless")}
+
                   <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] ">
                     <FaArrowRight />
                   </div>
@@ -150,25 +156,23 @@ const News = () => {
           </div>
         </div>
         <div  ref={podcastSectionRef} className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary">
-          Podcast
+        {t("news.podcast")}
+
         </div>
       </div>
       <div className="lg:flex-row md:flex-row flex-col h-auto pb-2 flex gap-[40px]">
         <div className="flex flex-col xl:w-[450px] lg:w-[300px] md:w-[250px] w-[100%] lg:pl-8 md:pl-6 pl-3 gap-[20px]">
           <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black] flex items-center gap-[20px]">
-            #28// Learn from an interpreneur: Florian Scherl, Founder at FAST AI
-            Movies
+          {t("news.address")}
+
           </div>
           <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-[black] flex items-center gap-[20px]">
-            In this week's episode, Antonie meets Florian Scherl founder of FAST
-            AI Movies. Florian founded his company while being 17 years old and
-            still being a pupil. Florian takes us on his journey of how he
-            learned coding identified the opportunity for FAST AI Movies, but
-            also of the importance of intensly listening of what your
-            customerwant.
+          {t("news.epdesc")}
+
           </div>
           <div  className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-            Video anschauen
+          {t("news.watchvid")}
+
             <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] ">
               {" "}
               <FaArrowRight />
@@ -177,16 +181,16 @@ const News = () => {
         </div>
         <div className="flex flex-col  lg:w-[300px] md:w-[250px] w-[100%] lg:pl-8 md:pl-6 pl-3 gap-[20px]">
           <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black] flex items-center gap-[20px]">
-            Florian Scherl, Founder at FAST AI Movies
+                      {t("news.founderinfo")}
+
           </div>
           <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-[black] flex items-center gap-[20px]">
-            Despite Florian's age he is advancing very fast in AI and business.
-            At 13 years old he taught himself programming and then AI. In our
-            chat today we talk about Florian's unique journey into his passion
-            for AI.
+          {t("news.founderjourney")}
+
           </div>
           <div  className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-            Video anschauen
+                      {t("news.watchvid")}
+
             <div  className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] pl-[2px]">
               {" "}
               <FaArrowRight />
@@ -210,10 +214,11 @@ const News = () => {
         </div>
         <div className="flex flex-col lg:pl-8 pl-4  lg:pt-5 pt-4 gap-[20px]">
           <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black] flex items-center gap-[20px]">
-            FAST AI Movies | Vorstelling | Campus Founder
+          {t("news.contentfounder")}
+
           </div>
           <div  className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-            Video anschauen
+          {t("news.watchvid")}
             <div className="lg:pt-[10px] md:pt-[6px] pt-[4px] ">
               {" "}
               <FaArrowRight />
@@ -227,10 +232,12 @@ const News = () => {
         </div>
         <div className="flex flex-col lg:pl-8 pl-4  lg:pt-5 pt-4 gap-[20px]">
           <div  className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black] flex items-center gap-[20px]">
-            FAST Movies | Demo Day | KI Garage
+          {t("news.last")}
+
           </div>
           <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-            Video anschauen
+          {t("news.watchvid")}
+
             <div className="lg:pt-[10px] md:pt-[6px] pt-[4px] ">
               {" "}
               <FaArrowRight />
