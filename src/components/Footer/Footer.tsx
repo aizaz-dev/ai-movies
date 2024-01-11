@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { BsSend } from "react-icons/bs";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -120,7 +120,7 @@ const Footer = () => {
               }}
             >
               <option value="en">{t("languages.english")}</option>
-              <option value="fr">{t("languages.french")}</option>
+              <option value="de">{t("languages.german")}</option>
               {/* Add more language options as needed */}
             </select>
           </div>

@@ -1,0 +1,311 @@
+{
+  "startseite": {
+    "startseite": "page One",
+    "intro": "INDUSTRIE-MARKTFÜHRER UND ÖFFENTLICHE VERWALTUNGEN SETZEN AUF UNSERE VIDEOERSTELLUNG:",
+    "tick1": "✓ 42% höhere Mitarbeiter Produktivität",
+    "tick2": "✓ 3x schnellere Prozesse",
+    "tick3": "✓ Sofortiger Start – mit Erfolgsgarantie"
+  },
+  "flextop": {
+    "heading1": "Von Input Text zu E-Learning Video",
+    "heading2": "Die effizienteste Art Unternehmens-Wissen zu erstellen",
+    "paragraph": "FAST AI Movies ist die einzige KI-Lösung für automatisiert erstellte individuelle E-Learnings - von Kollegen für Kollegen. Sie brauchen keine komplexen Skripte, sondern Ihre Mitarbeiter können vorhandene Dokumentationen / Beschreibungen dort in Minuten in interaktive E-Learnings verwandeln. Lernpsychologische Erkenntnisse sorgen für hohe Verständlichkeit.",
+    "button1": "Demovideo kostenlos erstellen",
+    "button2": "Wie funktioniert’s?"
+  },
+  "function": {
+    "howItWorks": "FUNKTIONSWEISE",
+    "quickSimpleEffective": "Schnell, einfach, effektiv",
+    "description": "Sie übermitteln die Corporate Design Vorgaben Ihrer Firma, laden einen Inputtext hoch und wählen den gewünschten Sprecher für die Vertonung Ihres Videos aus. Das Ergebnis: Ein maßgeschneidertes Schulungsvideo, das exakt Ihren Vorgaben entspricht.",
+    "tick1": "42% höhere Mitarbeiter Produktivität",
+    "tick2": "3x schnellere Prozesse",
+    "tick3": "Sofortiger Start – mit Erfolgsgarantie"
+  },
+
+  "features": {
+    "sectionTitle": "FONCTIONNALITÉS",
+    "idealFeaturesTitle": "Fonctionnalités complètes pour un résultat idéal",
+    "feature1Title": "Options d'exportation variées",
+    "feature1Description": "Téléchargez les formations au format MP4, utilisez le fichier compatible LMS ou partagez votre contenu directement via URL. De plus, une exportation PDF pour les animations est disponible.",
+    "feature2Title": "Post-Édition",
+    "feature2Description": "Mettez à jour vos vidéos à tout moment avec des ajustements visuels et textuels pour maintenir le contenu à jour.",
+    "feature3Title": "Animations automatisées",
+    "feature3Description": "Créez automatiquement des animations à partir de saisies de texte, y compris des graphiques et des icônes.",
+    "feature4Title": "Styles de langage variés",
+    "feature4Description": "Saisissez le contenu sous forme de points et choisissez parmi différents styles de sortie adaptés à votre public - du langage simple au jargon technique."
+  },
+  "Benefits": {
+    "BENEFITS_TITLE": "Unsere Vorteile",
+    "BENEFITS_SUBTITLE": "Warum Sie uns wählen sollten",
+    "Benefit1": {
+      "Title": "Kurze Bereitstellungszeit",
+      "Description": "Unsere Software reduziert die Videoerstellungszeit um über 90% im Vergleich zu traditionellen Agenturen, wodurch Schulungen rasch umgesetzt werden."
+    },
+    "Benefit2": {
+      "Title": "Niedrige Kosten",
+      "Description": "Mit einer Kostenersparnis von über 85% gegenüber Agenturen ermöglicht unsere Lösung ein enormes Sparpotenzial bei der Videoproduktion."
+    },
+    "Benefit3": {
+      "Title": "Direkte & schnelle Inhaltserstellung",
+      "Description": "Nutzer können direkt aus bestehenden Dokumenten wie Datenblättern oder E-Mails heraus Inhalte erstellen, ohne komplexe Skripte verfassen zu müssen."
+    },
+    "Benefit4": {
+      "Title": "Hohes Verständnis",
+      "Description": "Unterstützt durch lernpsychologische Expertise, bietet unsere Plattform interaktives und leicht verständliches E-Learning."
+    },
+    "Benefit5": {
+      "Title": "DSGVO konform",
+      "Description": "Wir gewährleisten Datenschutz mit eigenen KI-Modellen und Serverstandort Frankfurt, unabhängig von OpenAl."
+    },
+    "Benefit6": {
+      "Title": "Individuell & zielgerichtet",
+      "Description": "Unsere Software ermöglicht maßgeschneiderte Trainingsvideos, die das Corporate Design integrieren und punktgenau die Zielgruppe ansprechen."
+    }
+  },
+  "Schrit": {
+    "Step1Title": "Corporate Design konfigurieren",
+    "Step1Description": "Wählen Sie ihre Farben und Schriftarten aus und laden Sie Ihr Logo hoch.",
+    "Step2Title": "Sie können vorhande Produktblätter, Compliance Vorschriften,",
+    "Step2Description": "Laden Sie vorhandene Produktblätter, Compliance Vorschriften usw. im Textfeld hoch. Sie können auch Ihre Prozessbeschreibungen und Stichpunkte eingeben. Screenshots können integriert werden.",
+    "Step3Title": "Weitere Einstellungen konfigurieren",
+    "Step3Description": "Wählen Sie Ihre bevorzugten Audioeinstellungen, Exportformate, Funktionen sowie Ihr bevorzugtes Template aus.",
+    "Step4Title": "Video generieren",
+    "Step4Description": "Das Video wird nachträglich von unserer KI-Software automatisiert generiert. Nach Fertigstellung erhalten Sie einen Download-Link per E-Mail.",
+    "Step5Title": "Video aktuell halten",
+    "Step5Description": "Sie können das E-Learning später einfach über den Editor aktualisieren. Ändern Sie nur die entsprechenden Textpassagen.",
+    "CreateDemoVideo": "Demovideo kostenlos erstellen"
+  },
+  "weCase": {
+    "title": "Fallstudien",
+    "subtitle": "Entdecken Sie Unsere Anwendungsfälle",
+    "description": "Entdecken Sie, wie unsere Technologie Branchen revolutioniert.",
+    "compliance": {
+      "Description": "Sorgen Sie für Rechtskonformität in Ihrem Unternehmen. Mit unserer Technologie können Sie gesetzliche Anforderungen wie Geldwäschegesetze, Lieferkettengesetze und neue Technologien wie ChatGPT klar und prägnant vermitteln.",
+      "currently": "Aktuell genutzt in folgenden Industrien:",
+      "Industries": {
+        "Maschinenbau": "Maschinenbau",
+        "Elektrotechnik": "Elektrotechnik",
+        "Unternehmensberatungen": "Unternehmensberatungen"
+      },
+      "VideoUrl": "/flexvid/compliance.mp4"
+    },
+    "softwareschulungen": {
+      "Description": "Erleichtern Sie Ihren Mitarbeitern das Erlernen neuer Software. Mit Hilfe unserer Technologie erstellen Sie verständliche Schulungen für Unternehmenssoftware bis zum Intranet für  effizientere Abläufe.",
+      "currently": "Industries: Öffentliche Verwaltung, Maschinenbau, Gesundheit, Bildung",
+      "Industries": {
+        "Maschinenbau": "Maschinenbau",
+        "Elektrotechnik": "Elektrotechnik",
+        "Unternehmensberatungen": "Unternehmensberatungen"
+      },
+      "VideoUrl": "/flexvid/softwareschulungen.mp4"
+    },
+    "produktschulungen": {
+      "Description": "Verkürzen Sie die Einarbeitungszeit und steigern Sie die Produktkenntnis Ihrer Mitarbeiter. Mit Hilfe unserer Technologie erklären Sie Produkteigenschaften und -vorteile anschaulich für überzeugenden Kundenservice und Vertrieb.",
+      "currently": "Industries: Maschienenbau: Chemie",
+      "Industries": {
+        "Maschinenbau": "Maschinenbau",
+        "Elektrotechnik": "Elektrotechnik",
+        "Unternehmensberatungen": "Unternehmensberatungen"
+      },
+      "VideoUrl": "/flexvid/produktschulungen.mp4"
+    },
+    "prozessschulungen": {
+      "Description": "Optimieren Sie Geschäftsprozesse durch gezielte Schulungsvideos. Mit Hilfe unserer Technologie schaffen Sie Klarheit in Ihren Abläufen, sei es für Supportanfragen, Ticketsysteme oder Netzwerkprozesse.",
+      "currently": "Industries: Gesundheit, Öffentliche Verwaltung, Bildung, Unternehmensberatungen",
+      "Industries": {
+        "Maschinenbau": "Maschinenbau",
+        "Elektrotechnik": "Elektrotechnik",
+        "Unternehmensberatungen": "Unternehmensberatungen"
+      },
+      "VideoUrl": "/flexvid/prozessschulungen.mp4"
+    },
+    "InterneKommunikation": {
+      "Description": "Verbessern Sie die interne Kommunikation mit einprägsamen Videoinhalten. Mit Hilfe unserer Technologie bringen Sie Unternehmensevents oder Produktvorstellungen an Marketing und Vertrieb präzise auf den Punkt",
+      "currently": "Industries: Maschienenbau, Elektronik",
+      "Industries": {
+        "Maschinenbau": "Maschinenbau",
+        "Elektrotechnik": "Elektrotechnik",
+        "Unternehmensberatungen": "Unternehmensberatungen"
+      },
+      "VideoUrl": "/flexvid/prozessschulungen.mp4"
+    }
+  },
+  "Case": {
+    "TITLE": "STATEMENTS",
+    "SUBTITLE": "Das sagen unsere Kunden",
+    "Box1": {
+      "Name": "Produktkommunikation",
+      "Des": "Beschreibung für Box 1...",
+      "Username": "Adrian Weiß",
+      "Userinfo": "Produktmanager nexineer"
+    },
+    "Box2": {
+      "Name": "Software-Schulung",
+      "Des": "Beschreibung für Box 2...",
+      "Username": "Christian Färber",
+      "Userinfo": "Digitalbeauftragter Neuburg-Schrobenhausen"
+    },
+    "Box3": {
+      "Name": "Eine weitere Fallstudie",
+      "Des": "Beschreibung für Box 3...",
+      "Username": "Andreas Lehnig",
+      "Userinfo": "Leiter Marketing & Kommunikation bei Schattdecor SE"
+    }
+  },
+
+  "Press": {
+    "TITLE": "PRESSE",
+    "SUBTITLE": "Ce que disent les médias"
+  },
+  "Carousel": {
+    "Slide1": {
+      "Content": "In dieser Episode trifft Antoine Leboyer Florian Scherl, Gründer von FAST AI Movies",
+      "BlueText": "EP 28 Lernen von einem Unternehmer: Florian Scherl, Gründer von Fast AI Movies"
+    },
+    "Slide2": {
+      "Content": "In der Mathestunde schnappt er seinen Laptop und geht…",
+      "BlueText": "Markteintritt mitten im Abi"
+    },
+    "Slide3": {
+      "Content": "In dieser Episode trifft Antoine Leboyer Florian Scherl, Gründer von FAST AI Movies",
+      "BlueText": "20 unter 20: Diese jungen Startup-Gründer stehen vor dem Durchbruch"
+    },
+    "Slide4": {
+      "Content": "In dieser Episode trifft Antoine Leboyer Florian Scherl, Gründer von FAST AI Movies",
+      "BlueText": "EP 28 Lernen von einem Unternehmer: Florian Scherl, Gründer von Fast AI Movies"
+    }
+  },
+  "Supporter": {
+    "TITLE": "SOUTIEN",
+    "SUBTITLE": "Soutenu par"
+  },
+
+  "Actnow": {
+    "TITLE": "AGISSEZ MAINTENANT",
+    "SUBTITLE": "Prêt pour une transformation numérique ?",
+    "DESCRIPTION": "Faites le bon pas pour une formation plus efficace et engageante - en un seul clic.",
+    "CONTACT_BUTTON": "Nous Contacter",
+    "FAQ_BUTTON": "Foire Aux Questions"
+  },
+
+  "Dataprivacy": {
+    "TITLE": "DATENSCHUTZ",
+    "SUBTITLE": "Wie gewährleisten wir die Sicherheit Ihrer Daten?"
+  },
+  "leftBoxData": [
+    {
+      "id": "compliance",
+      "title": "Titre 1",
+      "description": "Assurez la conformité légale dans l'entreprise. Avec l'aide de notre technologie, vous transmettez des exigences légales telles que la loi sur le blanchiment d'argent ou la loi sur la chaîne d'approvisionnement, ainsi que l'utilisation de nouvelles technologies comme ChatGPT, de manière claire et concise.",
+      "industries": [
+        { "name": "Génie mécanique", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Génie électrique", "iconUrl": "pageone/wecase/wecase.png" },
+        {
+          "name": "Cabinets de conseil en gestion",
+          "iconUrl": "pageone/wecase/wecase.png"
+        }
+      ],
+      "videoUrl": "/flexvid/vid.mp4"
+    },
+    {
+      "id": "softwareschulungen",
+      "title": "title2",
+      "description": "Assurez la conformité légale dans l'entreprise. Avec l'aide de notre technologie, vous transmettez des exigences légales telles que la loi sur le blanchiment d'argent ou la loi sur la chaîne d'approvisionnement, ainsi que l'utilisation de nouvelles technologies comme ChatGPT, de manière claire et concise.",
+      "industries": [
+        { "name": "Génie mécanique", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Génie électrique", "iconUrl": "pageone/wecase/wecase.png" },
+        {
+          "name": "Cabinets de conseil en gestion",
+          "iconUrl": "pageone/wecase/wecase.png"
+        }
+      ],
+      "videoUrl": "/flexvid/vid.mp4"
+    },
+    {
+      "id": "produktschulungen",
+      "title": "Produktschulungen",
+      "description": "Assurez la conformité légale dans l'entreprise. Avec l'aide de notre technologie, vous transmettez des exigences légales telles que la loi sur le blanchiment d'argent ou la loi sur la chaîne d'approvisionnement, ainsi que l'utilisation de nouvelles technologies comme ChatGPT, de manière claire et concise.",
+      "industries": [
+        { "name": "Génie mécanique", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Génie électrique", "iconUrl": "pageone/wecase/wecase.png" },
+        {
+          "name": "Cabinets de conseil en gestion",
+          "iconUrl": "pageone/wecase/wecase.png"
+        }
+      ],
+      "videoUrl": "/flexvid/vid.mp4"
+    },
+    {
+      "id": "prozessschulungen",
+      "title": "Prozessschulungen",
+      "description": "Assurez la conformité légale dans l'entreprise. Avec l'aide de notre technologie, vous transmettez des exigences légales telles que la loi sur le blanchiment d'argent ou la loi sur la chaîne d'approvisionnement, ainsi que l'utilisation de nouvelles technologies comme ChatGPT, de manière claire et concise.",
+      "industries": [
+        { "name": "Génie mécanique", "iconUrl": "pageone/wecase/wecase.png" },
+        { "name": "Génie électrique", "iconUrl": "pageone/wecase/wecase.png" },
+        {
+          "name": "Cabinets de conseil en gestion",
+          "iconUrl": "pageone/wecase/wecase.png"
+        }
+      ],
+      "videoUrl": "/flexvid/vid.mp4"
+    }
+  ],
+  "Industrien": {
+    "INDUSTRIEN_TITLE": "Industrien",
+    "Maschinenbau": {
+      "Title": "Maschinenbau",
+      "Description": "Im Maschinenbau Segment werden unsere E-Learnings verwendet, um Werksmitarbeiter über neue interne Software Anwendungen zu schulen, sowie die gesamte Belegschaft über neue Produktentwicklungen zu informieren."
+    },
+    "ÖffentlicheVerwaltung": {
+      "Title": "Öffentliche Verwaltung",
+      "Description": "Landkreise und Städte können mit Hilfe unserer E-Learnings bei der herausfordernden Digitalisierung Mitarbeiter und Beamte über neue Prozesse effektiv und nachhaltig informieren."
+    },
+    "FinanceInsurance": {
+      "Title": "Finanzen & Versicherungen",
+      "Description": "Sensible Compliance Richtlinien können dank effizienter E-Learnings sicher und nachhaltig an Mitarbeiter vermittelt werden. Zudem lassen sich komplexe Finanzprodukte und Versicherungsprozesse in einem einfachen Kontext darstellen."
+    },
+    "Unternehmensberatungen": {
+      "Title": "Unternehmensberatungen",
+      "Description": "Dank interaktiver E-Learnings können Unternehmensberatungen die Prozesse der Mandanten effizient dokumentieren und somit die Zusammenarbeit ausweiten."
+    },
+    "ViewCaseStudy": "Case Study Ansehen"
+  },
+
+  "Flexvid": {
+    "HEADLINE": "Voici un titre",
+    "DESCRIPTION": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam"
+  },
+
+  "Webapp": {
+    "TopHeading": "Application Web",
+    "SubHeading": "Création et édition de vidéos flexibles"
+  },
+
+  "footer": {
+    "quickFind": "Trouver rapidement",
+    "caseStudies": "Études de cas",
+    "aboutUs": "À propos de nous",
+    "contact": "Contact",
+    "legal": "Légal",
+    "imprint": "Imprimer",
+    "privacy": "Confidentialité",
+    "additional": "Supplémentaire",
+    "faq": "FAQ",
+    "jobs": "Emplois",
+    "social": "Social",
+    "news": "Actualités",
+    "blog": "Blog",
+    "dontMiss": "Ne rien manquer",
+    "subscribeNewsletter": "Abonnez-vous à notre newsletter !",
+    "emailPlaceholder": "Adresse e-mail",
+    "subscriptionNote": "En cliquant sur S'abonner, vous acceptez notre politique de confidentialité.",
+    "subscribeButton": "S'abonner"
+  },
+
+  "languages": {
+    "english": "Anglais",
+    "german": "Allemand",
+    "french": "Français",
+    "spanish": "Espagnol"
+  }
+}

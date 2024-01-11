@@ -16,29 +16,29 @@ const Feature: React.FC = () => {
   const featuresData: FeatureItem[] = [
     {
       id: 1,
-      titleKey: 'feature1Title',
+      titleKey:  `${t('features.feature1Title')}`,
       imageSrc: '/pageone/feature/1.png',
-      descriptionKey: 'feature1Description',
+      descriptionKey: `${t('features.feature1Description')}`,
     },
     {
       id: 2,
-      titleKey: 'feature2Title',
+      titleKey: `${t('features.feature2Title')}`,
       imageSrc: '/pageone/feature/2.png',
-      descriptionKey: 'feature2Description',
+      descriptionKey: `${t('features.feature2Description')}`,
     },
     {
       id: 3,
-      titleKey: 'feature3Title',
+      titleKey: `${t('features.feature3Title')}`,
       imageSrc: '/pageone/feature/3.png',
-      descriptionKey: 'feature3Description',
+      descriptionKey: `${t('features.feature3Description')}`,
     },
     {
       id: 4,
-      titleKey: 'feature4Title',
+      titleKey: `${t('features.feature4Title')}`,
       imageSrc: '/pageone/feature/4.png',
-      descriptionKey: 'feature4Description',
+      descriptionKey: `${t('features.feature4Description')}`,
     },
-    // Add more features as needed
+    
   ];
 
   return (
