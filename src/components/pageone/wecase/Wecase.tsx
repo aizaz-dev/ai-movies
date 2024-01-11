@@ -93,7 +93,7 @@ const Wecase = () => {
           iconUrl: "pageone/wecase/wecase.png",
         },
       ],
-      videoUrl: "/flexvid/compliance.mp4",
+      videoUrl:  "/flexvid/vid.mp4",
     },
     {
       id: "softwareschulungen",
@@ -113,7 +113,7 @@ const Wecase = () => {
           iconUrl: "pageone/wecase/wecase.png",
         },
       ],
-      videoUrl: "/flexvid/softwareschulungen.mp4",
+      videoUrl:  "/flexvid/vid.mp4",
     },
     {
       id: "produktschulungen",
@@ -133,7 +133,7 @@ const Wecase = () => {
           iconUrl: "pageone/wecase/wecase.png",
         },
       ],
-      videoUrl: "/flexvid/produktschulungen.mp4",
+      videoUrl:  "/flexvid/vid.mp4",
     },
     {
       id: "prozessschulungen",
@@ -153,7 +153,7 @@ const Wecase = () => {
           iconUrl: "pageone/wecase/wecase.png",
         },
       ],
-      videoUrl: "/flexvid/prozessschulungen.mp4",
+      videoUrl:  "/flexvid/vid.mp4",
     },
     {
       id: "InterneKommunikation",
@@ -173,7 +173,7 @@ const Wecase = () => {
           iconUrl: "pageone/wecase/wecase.png",
         },
       ],
-      videoUrl: "/flexvid/prozessschulungen.mp4",
+      videoUrl:  "",
     },
   ];
   const [selectedCategoryData, setSelectedCategoryData] =
@@ -197,44 +197,43 @@ const Wecase = () => {
       videoUrl: "/flexvid/vid.mp4",
     });
 
-    const handleCategoryChange = (category: string) => {
-      setSelectedCategory(category);
-      const dataIndex = leftBoxData.findIndex((data) => data.id === category);
-      if (dataIndex !== -1) {
-        setSelectedCategoryData(leftBoxData[dataIndex]);
-      }
-    };
-    
-    
+  const handleCategoryChange = (category: string) => {
+    setSelectedCategory(category);
+    const dataIndex = leftBoxData.findIndex((data) => data.id === category);
+    if (dataIndex !== -1) {
+      setSelectedCategoryData(leftBoxData[dataIndex]);
+    }
+  };
+
   const categories = [
     {
       id: "compliance",
       name: "Compliance",
-      videoUrl: "/flexvid/compliance.mp4",
+      videoUrl: "/flexvid/vid.mp4",
     },
     {
       id: "softwareschulungen",
       name: "Softwareschulungen",
-      videoUrl: "/flexvid/softwareschulungen.mp4",
+      videoUrl: "/flexvid/vid.mp4",
     },
     {
       id: "produktschulungen",
       name: "Produktschulungen",
-      videoUrl: "/flexvid/produktschulungen.mp4",
+      videoUrl: "/flexvid/vid.mp4",
     },
     {
       id: "prozessschulungen",
       name: "Prozessschulungen",
-      videoUrl: "/flexvid/prozessschulungen.mp4",
+      videoUrl: "/flexvid/vid.mp4",
     },
     {
       id: "InterneKommunikation",
       name: "Interne Kommunikation",
-      videoUrl: "/flexvid/prozessschulungen.mp4",
+      videoUrl: "/flexvid/vid.mp4",
     },
     // Add more objects for other categories
   ];
-  
+
   return (
     <div className="w-full bg-light100 py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px] mt-[90px] border-b-[2px] border-light300 border-opacity-[0.5]">
       <div className="max-w-[2000px] m-auto">
@@ -275,7 +274,7 @@ const Wecase = () => {
               muted
               loop
               className="mt-[30px] "
-              src="/flexvid/vid.mp4"
+              src={selectedCategoryData.videoUrl}
             ></video>
             <button className="float-right mt-[30px] whitespace-nowrap flex items-center justify-center gap-2 text-primary text-sm max-laptop:text-mf font-bold py-[10px] px-[15px] rounded-[10px] max-md:text-[14px] max-md:mx-auto">
               Case Study Ansehen <FaArrowRightLong />
