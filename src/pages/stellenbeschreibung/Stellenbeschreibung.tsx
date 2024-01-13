@@ -1,4 +1,3 @@
-import React from "react";
 import Joincomponent from "../../components/Stellenbeschreibung/joincomponent/Joincomponent";
 import Seemore from "../../components/Stellenbeschreibung/seemore/Seemore";
 import { useTranslation } from "react-i18next";

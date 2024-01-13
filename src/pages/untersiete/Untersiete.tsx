@@ -81,18 +81,18 @@ const Untersiete = () => {
 
   return (
     <div className=" w-[100%] flex flex-col lg:p-[40px] p-[22px]">
-      <h1 className="lg:text-2xl text-blue-700 md:text-xs text-[10px]">News</h1>
+      <h1 className="lg:text-2xl text-primary md:text-xs text-[10px]">News</h1>
       <div className=" lg:text-4xl font-bold md:text-[25px] text-[16px]">
         FAST AI Movies in den Medien
       </div>
 
       <div className="lg:h-[50px] md:h-[40px] h-[30px] w-[100%] flex bg-blue-50 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px]">
-        <div className="lg:h-[50px] lg:w-[50px] md:h-[40px] md:w-[40px] w-[30px] h-[30px] outline-blue-700 outline rounded-full bg-white justify-center flex items-center">
+        <div className="lg:h-[50px] lg:w-[50px] md:h-[40px] md:w-[40px] w-[30px] h-[30px] outline-blue-700 outline rounded-full bg-light400 justify-center flex items-center">
           <div className="lg:text-2xl text-[18px]">
             <PiNoteDuotone />{" "}
           </div>
         </div>
-        <div className="lg:text-[15px] text-[13px] text-blue-700 lg:p-[13px] md:p-[8px] p-[5px] font-semibold">
+        <div className="lg:text-[15px] text-[13px] text-primary lg:p-[13px] md:p-[8px] p-[5px] font-semibold">
           ARTIKEL
         </div>
       </div>
@@ -110,7 +110,7 @@ const Untersiete = () => {
                 <div className="lg:text-[16px] md:text-[10px] text-[11px] font-normal pt-[5px] lg:block md:block hidden">
                   {item.p}
                 </div>
-                <div className=" lg:text-[15px] md:text-[12px] text-[10px] text-blue-700 lg:pt-3 md:pt-2 pt-[3px] font-semibold flex">
+                <div className=" lg:text-[15px] md:text-[12px] text-[10px] text-primary lg:pt-3 md:pt-2 pt-[3px] font-semibold flex">
                   Artikel lesen
                   <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] ">
                     {" "}
@@ -123,12 +123,12 @@ const Untersiete = () => {
         );
       })}
       <div className="lg:h-[50px] md:h-[40px] h-[30px] w-[100%] flex bg-blue-50 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px]">
-        <div className="lg:h-[50px] lg:w-[50px] md:h-[40px] md:w-[40px] w-[30px] h-[30px] outline-blue-700 outline rounded-full bg-white justify-center flex items-center">
+        <div className="lg:h-[50px] lg:w-[50px] md:h-[40px] md:w-[40px] w-[30px] h-[30px] outline-blue-700 outline rounded-full bg-light400 justify-center flex items-center">
           <div className="lg:text-2xl text-[18px]">
             <MdOutlineKeyboardVoice />
           </div>
         </div>
-        <div className="lg:text-[15px] text-[13px] text-blue-700 lg:p-[13px] md:p-[8px] p-[5px] font-semibold">
+        <div className="lg:text-[15px] text-[13px] text-primary lg:p-[13px] md:p-[8px] p-[5px] font-semibold">
           PODCAST
         </div>
       </div>
@@ -146,7 +146,7 @@ const Untersiete = () => {
             also of the importance of intensly listening of what your
             customerwant.
           </div>
-          <div className=" lg:text-[16px] md:text-[12px] text-[10px] text-blue-700 lg:pt-3 md:pt-2 pt-[3px] font-semibold flex pb-2">
+          <div className=" lg:text-[16px] md:text-[12px] text-[10px] text-primary lg:pt-3 md:pt-2 pt-[3px] font-semibold flex pb-2">
             Video anschauen
             <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] ">
               {" "}
@@ -164,7 +164,7 @@ const Untersiete = () => {
             chat today we talk about Florian's unique journey into his passion
             for AI.
           </div>
-          <div className=" lg:text-[16px] md:text-[12px] text-[10px] text-blue-700 lg:pt-3 md:pt-2 pt-[3px] font-semibold flex">
+          <div className=" lg:text-[16px] md:text-[12px] text-[10px] text-primary lg:pt-3 md:pt-2 pt-[3px] font-semibold flex">
             Video anschauen
             <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] pl-[2px]">
               {" "}
@@ -174,12 +174,12 @@ const Untersiete = () => {
         </div>
       </div>
       <div className="lg:h-[50px] md:h-[40px] h-[30px] w-[100%] flex bg-blue-50 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px]">
-        <div className="lg:h-[50px] lg:w-[50px] md:h-[40px] md:w-[40px] w-[30px] h-[30px] outline-blue-700 outline rounded-full bg-white justify-center flex items-center">
+        <div className="lg:h-[50px] lg:w-[50px] md:h-[40px] md:w-[40px] w-[30px] h-[30px] outline-blue-700 outline rounded-full bg-light400 justify-center flex items-center">
           <div className="lg:text-2xl text-18px">
             <FaPhotoVideo />
           </div>
         </div>
-        <div className="lg:text-[15px] text-[13px] text-blue-700 lg:p-[13px] md:p-[8px] p-[5px] font-semibold">
+        <div className="lg:text-[15px] text-[13px] text-primary lg:p-[13px] md:p-[8px] p-[5px] font-semibold">
           Video
         </div>
       </div>
@@ -191,7 +191,7 @@ const Untersiete = () => {
           <div className="lg:text-[25px] md:text-[15px] text-[8px] font-bold pt-2">
             FAST AI Movies | Vorstelling | Campus Founder
           </div>
-          <div className=" lg:text-[25px] md:text-[12px] text-[8px] text-blue-700 lg:pt-3 md:pt-2 pt-[3px] font-semibold flex">
+          <div className=" lg:text-[25px] md:text-[12px] text-[8px] text-primary lg:pt-3 md:pt-2 pt-[3px] font-semibold flex">
             Video anschauen
             <div className="lg:pt-[10px] md:pt-[6px] pt-[4px] ">
               {" "}
@@ -208,7 +208,7 @@ const Untersiete = () => {
           <div className="lg:text-[25px] md:text-[15px] text-[8px] font-bold pt-2">
             FAST Movies | Demo Day | KI Garage
           </div>
-          <div className=" lg:text-[25px] md:text-[12px] text-[10px] text-blue-700 lg:pt-3 md:pt-2 pt-[3px] font-semibold flex">
+          <div className=" lg:text-[25px] md:text-[12px] text-[10px] text-primary lg:pt-3 md:pt-2 pt-[3px] font-semibold flex">
             Video anschauen
             <div className="lg:pt-[10px] md:pt-[6px] pt-[4px] ">
               {" "}

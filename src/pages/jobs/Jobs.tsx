@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from "react-i18next";
 
-
 const Jobs = () => {
   const { t } = useTranslation();
 
@@ -30,21 +29,17 @@ const Jobs = () => {
             <div className="max-w-[2000px] w-full mx-auto flex gap-[60px] justify-between items-center px-[40px] max-lg:p-[40px] max-md:p-[0px]">
               <div className=" text-light400 flex flex-col gap-6">
                 <h3 className="text-sm font-[Outfit-Bold] max-laptop:text-mf max-md:text-center">
-                {t("jobspage.joinUsHeading")}
-
+                  {t("jobspage.joinUsHeading")}
                 </h3>
                 <h1 className="font-[Outfit-Bold] text-left text-lg   leading-[60px] max-laptop:text-lf max-md:text-sm max-md:leading-8 max-md:text-center max-laptop:font-[700] max-laptop:leading-10">
-                {t("jobspage.joinUsTitle")}
-
+                  {t("jobspage.joinUsTitle")}
                 </h1>
                 <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                {t("jobspage.joinUsDescription")}
-
+                  {t("jobspage.joinUsDescription")}
                 </p>
                 <div className="btn flex gap-[20px] max-md:flex-col">
-                  <button className="font-[Outfit-Bold] text-primary text-sm font-bold bg-white px-4 py-3 rounded-[12px] whitespace-nowrap max-laptop:text-mf">
-                  {t("jobspage.applyNowButton")}
-
+                  <button className="font-[Outfit-Bold] text-primary text-sm font-bold bg-light400 px-4 py-3 rounded-[12px] whitespace-nowrap max-laptop:text-mf">
+                    {t("jobspage.applyNowButton")}
                   </button>
                 </div>
               </div>
@@ -87,12 +82,10 @@ const Jobs = () => {
           <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
             <div>
               <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              {t("jobspage.projectStudyTitle")}
-
+                {t("jobspage.projectStudyTitle")}
               </div>
               <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              {t("jobspage.complianceLegalMarketSegment")}
-
+                {t("jobspage.complianceLegalMarketSegment")}
               </div>
             </div>
             <div className="text-[40px]   text-light200">
@@ -103,12 +96,10 @@ const Jobs = () => {
           <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
             <div>
               <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
-              {t("jobspage.projectStudyTitle")}
-
+                {t("jobspage.projectStudyTitle")}
               </div>
               <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              {t("jobspage.complianceLegalMarketSegment")}
-
+                {t("jobspage.complianceLegalMarketSegment")}
               </div>
             </div>
             <div className="text-[40px]   text-light200">
@@ -119,12 +110,10 @@ const Jobs = () => {
           <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
             <div>
               <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
-              {t("jobspage.projectStudyTitle")}
-
+                {t("jobspage.projectStudyTitle")}
               </div>
               <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              {t("jobspage.complianceLegalMarketSegment")}
-
+                {t("jobspage.complianceLegalMarketSegment")}
               </div>
             </div>
             <div className="text-[40px] text-light200">
@@ -135,12 +124,10 @@ const Jobs = () => {
           <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
             <div>
               <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              {t("jobspage.projectStudyTitle")}
-
+                {t("jobspage.projectStudyTitle")}
               </div>
               <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-              {t("jobspage.complianceLegalMarketSegment")}
-
+                {t("jobspage.complianceLegalMarketSegment")}
               </div>
             </div>
             <div className="text-[40px] font-[900] text-light200">

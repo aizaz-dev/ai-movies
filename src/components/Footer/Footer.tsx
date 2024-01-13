@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { BsSend } from "react-icons/bs";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -30,15 +31,15 @@ const Footer = () => {
                 <div className="text-sm font-[Outfit-Bold] text-light400  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.quickFind")}
                 </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                <Link to="/case-studies" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.caseStudies")}
-                </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                </Link>
+                <Link to="/about-us" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.aboutUs")}
-                </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                </Link>
+                <Link to="/contact" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.contact")}
-                </div>
+                </Link>
               </div>
               <div className="flex flex-col gap-1">
                 <div className="text-sm font-[Outfit-Bold] text-light400 max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
@@ -55,15 +56,15 @@ const Footer = () => {
                 <div className="text-sm font-[Outfit-Bold] text-light400  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.additional")}
                 </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                <Link to="/contact" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.contact")}
-                </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                </Link>
+                <Link to="/faq" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.faq")}
-                </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                </Link>
+                <Link to="/jobs" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.jobs")}
-                </div>
+                </Link>
               </div>
               <div className="flex flex-col gap-1">
                 <div className="text-sm font-[Outfit-Bold] text-light400  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
@@ -76,10 +77,10 @@ const Footer = () => {
                   {t("footer.blog")}
                 </div>
                 <div className="flex gap-[10px] mt-3">
-                  <div className="bg-white rounded-sm p-[4px]">
+                  <div className="bg-light400 rounded-sm p-[4px]">
                     <FaFacebookF className="text-dark200 text-[18px]" />
                   </div>
-                  <div className="bg-white rounded-sm p-[4px]">
+                  <div className="bg-light400 rounded-sm p-[4px]">
                     <FaLinkedinIn className="text-dark200 text-[18px]" />
                   </div>
                 </div>
@@ -97,7 +98,7 @@ const Footer = () => {
                 placeholder={t("footer.emailPlaceholder")}
                 type="text"
               />
-              <div className=" text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              <div className=" lg:w-[300px] text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                 {t("footer.subscriptionNote")}
               </div>
               <div className="max-md:hidden">

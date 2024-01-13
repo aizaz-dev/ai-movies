@@ -38,45 +38,43 @@ const CaseStudies = () => {
   //     userinfo: "Head of Marketing & Communications bei Schattdecor SE",
   //   },
   // ];
-  const box =[
+  const box = [
     {
-      id:1,
+      id: 1,
       logo: "/casestudy/1.png",
-      name:`${t("caseStudies.box1.name")}`,
-      des:`${t("caseStudies.box1.des")}`,
-      username:`${t("caseStudies.box1.username")}`,
-      userinfo:`${t("caseStudies.box1.userinfo")}`,
+      name: `${t("caseStudies.box1.name")}`,
+      des: `${t("caseStudies.box1.des")}`,
+      username: `${t("caseStudies.box1.username")}`,
+      userinfo: `${t("caseStudies.box1.userinfo")}`,
       userpic: "/casestudy/man1.png",
     },
     {
-      id:2,
+      id: 2,
       logo: "/casestudy/2.png",
-      name:`${t("caseStudies.box2.name")}`,
-      des:`${t("caseStudies.box2.des")}`,
-      username:`${t("caseStudies.box2.username")}`,
-      userinfo:`${t("caseStudies.box2.userinfo")}`,
+      name: `${t("caseStudies.box2.name")}`,
+      des: `${t("caseStudies.box2.des")}`,
+      username: `${t("caseStudies.box2.username")}`,
+      userinfo: `${t("caseStudies.box2.userinfo")}`,
       userpic: "/casestudy/man2.png",
     },
     {
-      id:3,
+      id: 3,
       logo: "/casestudy/3.png",
-      name:`${t("caseStudies.box3.name")}`,
-      des:`${t("caseStudies.box3.des")}`,
-      username:`${t("caseStudies.box3.username")}`,
-      userinfo:`${t("caseStudies.box3.userinfo")}`,
+      name: `${t("caseStudies.box3.name")}`,
+      des: `${t("caseStudies.box3.des")}`,
+      username: `${t("caseStudies.box3.username")}`,
+      userinfo: `${t("caseStudies.box3.userinfo")}`,
       userpic: "/casestudy/man3.png",
-    }
-  ]
+    },
+  ];
   return (
     <div className="w-[100%] mt-[50px] mb-[80px] px-[80px] max-laptop:px-[60px] max-md:px-[30px]">
       <div className="max-w-[2000px] mx-auto">
         <div className="text-sm font-[Outfit-Bold]  text-primary max-md:text-center max-laptop:text-mf">
-        {t("caseStudies.title")}
-
+          {t("caseStudies.title")}
         </div>
         <div className="text-lg font-[Outfit-Bold]  max-md:text-sm max-md:text-center max-laptop:text-lf ">
-        {t("caseStudies.subtitle")}
-
+          {t("caseStudies.subtitle")}
         </div>
 
         <div className="w-[100%] flex justify-between  max-tab:flex-col lg:gap-8 gap-6 items-start mt-[60px]">
@@ -98,7 +96,7 @@ const CaseStudies = () => {
                 </div>
 
                 <div className="whitespace-nowrap h-[31px] w-[full] lg:text-[25px] md:text-[18px] text-[13px] font-[Outfit-Bold] text-primary flex justify-end lg:pr-3 md:pr-1 pr-0 mt-[50px]">
-                 Case Study ansehen
+                  {t("caseStudies.button")}
                   <div className="lg:pt-[10px] md:pt-[6px] pt-[5px] ">
                     <GoArrowRight className="text-sm" />
                   </div>

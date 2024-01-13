@@ -110,8 +110,8 @@ const Carousel = () => {
       <div className="mx-auto mt-[30px] space-x-4">
         <Slider {...settings}>
           {slideContents.map((content, index) => (
-            <div key={index} className="flex p-2 flex-row">
-              <div className="bg-white h-[300px] p-[30px] shadow-md rounded-[10px] text-2xl flex flex-col justify-center items-center gap-7">
+            <div key={index} className="flex p-2 !py-[60px] flex-row">
+              <div className="bg-light400  px-[50px] !py-[60px] shadow-md rounded-[10px] text-2xl flex flex-col justify-center items-center gap-7">
                 <div>
                   <img
                     src={content.image}
@@ -120,7 +120,7 @@ const Carousel = () => {
                   />
                 </div>
                 <div className="border-t max-tab:pb-8 border-solid border-grey ">
-                  <p className="mt-[30px] text-sm font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start">
+                  <p className="mt-[30px] h-[140px] text-sm font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start">
                     <span className="text-primary font-[Outfit-Regular]">
                       {content.blue}
                     </span>

@@ -6,47 +6,39 @@ export default function Home() {
 
   return (
     <div className=" ">
-      <img
-        className="w-[100%]  object-cover"
-        src="/blog2/girl.png"
-        alt="pic"
-      />
+      <img className="w-[100%]  object-cover" src="/blog2/girl.png" alt="pic" />
       <div className="max-w-[2000px] m-auto  px-[60px] max-tab:px-[40px] max-md:px-[28px]">
         <div className=" flex justify-center w-[100%]">
           <div className="w-[100%] flex flex-col justify-center my-[40px]">
             <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary">
-            {t("cont1.title")}
-
+              {t("cont1.title")}
             </div>
             <div className="xl:text-lg lg:text-md text-m2d text font-[Outfit-Bold]">
-            {t("rewardSystem.heading")}
+              {t("rewardSystem.heading")}
             </div>
           </div>
         </div>
         <div className="w-[100%] flex justify-center">
           <div className="w-[100%] ">
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100">
-            {t("learningIntroduction.intro")}
+              {t("learningIntroduction.intro")}
             </p>
             <p className="lg:text-sm text-xs font-[Outfit-Bold] text-dark100 mt-[30px]">
-            {t("Selbsmotivation")}
-
+              {t("Selbsmotivation")}
             </p>
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("learningIntro.cont")}
-
+              {t("learningIntro.cont")}
             </p>
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text")}
-
+              {t("rewardSystem.text")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text2")}
+              {t("rewardSystem.text2")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text3")}
+              {t("rewardSystem.text3")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Bold] text-dark100 mt-[30px]">
@@ -54,32 +46,27 @@ export default function Home() {
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text4")}
+              {t("rewardSystem.text4")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text5")}
-
+              {t("rewardSystem.text5")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text6")}
-
+              {t("rewardSystem.text6")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text7")}
-
+              {t("rewardSystem.text7")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text8")}
-
+              {t("rewardSystem.text8")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text9")}
-
+              {t("rewardSystem.text9")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Bold] text-dark100 mt-[30px]">
@@ -87,28 +74,23 @@ export default function Home() {
             </p>
 
             <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text10")}
-
+              {t("rewardSystem.text10")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text11")}
-
+              {t("rewardSystem.text11")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text12")}
-
+              {t("rewardSystem.text12")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text13")}
-
+              {t("rewardSystem.text13")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text14")}
-
+              {t("rewardSystem.text14")}
             </p>
 
             <p className=" lg:text-sm text-xs font-[Outfit-Bold] text-dark100 mt-[30px]">
@@ -116,33 +98,27 @@ export default function Home() {
             </p>
 
             <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text15")}
-
+              {t("rewardSystem.text15")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text16")}
-
+              {t("rewardSystem.text16")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text17")}
-
+              {t("rewardSystem.text17")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text18")}
-
+              {t("rewardSystem.text18")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text19")}
-
+              {t("rewardSystem.text19")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text20")}
-
+              {t("rewardSystem.text20")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Bold] text-dark100 mt-[30px]">
@@ -150,43 +126,35 @@ export default function Home() {
             </p>
 
             <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text21")}
-
+              {t("rewardSystem.text21")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text22")}
-
+              {t("rewardSystem.text22")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text23")}
-
+              {t("rewardSystem.text23")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text24")}
-
+              {t("rewardSystem.text24")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text25")}
-
+              {t("rewardSystem.text25")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text26")}
-
+              {t("rewardSystem.text26")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100 mb-[30px]">
-            {t("rewardSystem.text27")}
-
+              {t("rewardSystem.text27")}
             </p>
 
             <p className="lg:text-sm text-xs font-[Outfit-Bold] text-dark100 my-[30px]">
-            {t("rewardSystem.text28")}
-
+              {t("rewardSystem.text28")}
             </p>
 
             <CustomButton
@@ -207,16 +175,14 @@ export default function Home() {
             />
           </div>
           <p className=" lg:text-sm text-xs font-[Outfit-Regular] text-light400 my-[20px]">
-          {t("rewardSystem.text29")}
-
+            {t("rewardSystem.text29")}
           </p>
-          <button className=" bg-white rounded-lg h-[50px] lg:text-sm text-xs font-[Outfit-Bold] text-primary flex flex-row-reverse items-center px-[20px] font-bold my-3">
+          <button className=" bg-light400 rounded-lg h-[50px] lg:text-sm text-xs font-[Outfit-Bold] text-primary flex flex-row-reverse items-center px-[20px] font-bold my-3">
             {t("Abonnieren")}
             <img className="h-[25px] w-[25px]" src="blog2/right.svg" alt="" />
           </button>
         </div>
         <div></div>
-
       </div>
     </div>
   );

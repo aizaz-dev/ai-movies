@@ -23,7 +23,7 @@ function App() {
         {/* page 1 */}
         <Route path="/" element={<Startseite />} />
         {/* page 2 */}
-        <Route path="/produkt" element={<Produkt />} />
+        <Route path="/product" element={<Produkt />} />
         {/* page 3 */}
         <Route path="/about-us" element={<AboutUs />} />
         {/* page 4 */}

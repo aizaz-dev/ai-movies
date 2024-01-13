@@ -74,7 +74,7 @@ const Benefits = () => {
     },
   ];
   return (
-    <div className="w-full bg-white py-10 px-[80px] max-tab:px-[40px] max-md:px-[15px]">
+    <div className="w-full bg-light400 py-10 px-[80px] max-tab:px-[40px] max-md:px-[15px]">
       <div className="max-w-[2000px] mx-auto">
         <h3 className="text-sm font-bold font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf">
           {t("Benefits.BENEFITS_SUBTITLE")}

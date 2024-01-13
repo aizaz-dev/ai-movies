@@ -39,7 +39,7 @@ const Case = () => {
       name: `${t("Case.Box1.Name")}`,
       des: `${t("Case.Box1.Des")}`,
       userpic: "/pageone/casestudy/man1.png",
-      usernameKey: `${t("Case.Box1.Username")}`,
+      username: `${t("Case.Box1.Username")}`,
       userinfo: `${t("Case.Box1.Userinfo")}`,
     },
     {

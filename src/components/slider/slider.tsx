@@ -93,7 +93,7 @@ const ImageSlider = () => {
   return (
     <div className="relative w-full max-w-[2000px] m-auto">
       <div className="hidden md:block absolute -left-4 top-1/2 transform -translate-y-1/2 z-10 pl-4 ">
-        <div className="prev-arrow text-[60px] max-laptop:text-lf text-[#BBBCBC] cursor-pointer " onClick={goToPrev}>
+        <div className="prev-arrow text-[60px] max-laptop:text-lf text-headerText cursor-pointer " onClick={goToPrev}>
           <FaChevronLeft />
         </div>
       </div>
@@ -107,7 +107,7 @@ const ImageSlider = () => {
         </Slider>
       </div>
       <div className="max-tab:hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 pr-4">
-        <div className="next-arrow text-[60px] max-laptop:text-lf text-[#BBBCBC] cursor-pointer" onClick={goToNext}>
+        <div className="next-arrow text-[60px] max-laptop:text-lf text-headerText cursor-pointer" onClick={goToNext}>
           <FaChevronRight />
         </div>
       </div>

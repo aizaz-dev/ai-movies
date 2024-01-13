@@ -86,6 +86,19 @@
         "Unternehmensberatungen": "Unternehmensberatungen"
       },
       "VideoUrl": "/flexvid/prozessschulungen.mp4"
+    },
+    "Andere": {
+      "Description": " ",
+      "currently": " ",
+      "subclasses": {
+        "h1": "User Manuals:",
+        "p1": "Make complex operating procedures easily understandable – with the help of our technology, create animated manuals that support the correct use of your products, both internally and for customers.",
+        "h2": "User Manuals:",
+        "p2": "Ensure safety in the workplace. Using our technology, provide information on proper behaviors and health protection measures to promote the well-being of employees.",
+        "h3": "CSR Trainings:",
+        "p3": "Promote sustainable and responsible practices in your company. Utilizing our technology, create customized Corporate Social Responsibility (CSR) trainings that convey values and practices, enhancing awareness among your employees."
+      },
+      "VideoUrl": "/flexvid/process-training.mp4"
     }
   },
   "Industrien": {
@@ -138,8 +151,18 @@
     }
   },
   "Dataprivacy": {
-    "TITLE": "DATA PRIVACY",
-    "SUBTITLE": "How do we ensure the security of your data?"
+    "TITLE": "Data Privacy",
+    "SUBTITLE": "How Do We Ensure the Security of Your Data?",
+    "SECURE_TRANSMISSION": "Secure Transmission",
+    "SECURE_TRANSMISSION_DESC": "Data is encrypted and transmitted to a server in Germany.",
+    "VIDEO_STORAGE_LOCATION": "Video Storage Location",
+    "VIDEO_STORAGE_LOCATION_DESC": "The video is securely stored on a German server.",
+    "DATA_ENTRY": "Data Entry",
+    "DATA_ENTRY_DESC": "Data is entered in our web app.",
+    "INTERNAL_PROCESSING": "Internal Processing",
+    "INTERNAL_PROCESSING_DESC": "Data is processed in compliance with data protection regulations using our own AI models, without calling the OpenAI API.",
+    "SECURE_DISPLAY": "Secure Display",
+    "SECURE_DISPLAY_DESC": "The video is securely displayed in the web app."
   },
   "features": {
     "sectionTitle": "FEATURES",
@@ -221,55 +244,54 @@
   "feature": {
     "heading1": "FEATURES",
     "heading3": "Comprehensive features for an ideal result",
-    "feature1":{
-      "title":"Diverse export options",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available."
+    "feature1": {
+      "title": "Diverse export options",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available."
     },
-    "feature2":{
-      "title":"Aautomated animations",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
+    "feature2": {
+      "title": "Aautomated animations",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
     },
-    "feature3":{
-      "title":"Various language styles",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
+    "feature3": {
+      "title": "Various language styles",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
     },
-    "feature4":{
-      "title":"Diverse export options",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
+    "feature4": {
+      "title": "Diverse export options",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
     },
-    "feature5":{
-      "title":"Diverse export options",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
+    "feature5": {
+      "title": "Diverse export options",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
     },
-    "feature6":{
-      "title":"Diverse export options",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
+    "feature6": {
+      "title": "Diverse export options",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
     },
-    "feature7":{
-      "title":"Vielfältige Exportoptionen",
-      "description":"Laden Sie Trainings als MP4 herunter, nutzen Sie die LMS-kompatible Datei oder teilen Sie Ihre Inhalte direkt via URL. Zusätzlich steht ein PDF-Export für Animationen bereit."
+    "feature7": {
+      "title": "Vielfältige Exportoptionen",
+      "description": "Laden Sie Trainings als MP4 herunter, nutzen Sie die LMS-kompatible Datei oder teilen Sie Ihre Inhalte direkt via URL. Zusätzlich steht ein PDF-Export für Animationen bereit."
     },
-    "feature8":{
-      "title":"Diverse export options",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
+    "feature8": {
+      "title": "Diverse export options",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
     },
-    "feature9":{
-      "title":"Diverse export options",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
+    "feature9": {
+      "title": "Diverse export options",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
     },
-    "feature10":{
-      "title":"Diverse export options",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
+    "feature10": {
+      "title": "Diverse export options",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
     },
-    "feature11":{
-      "title":"Diverse export options",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
+    "feature11": {
+      "title": "Diverse export options",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
     },
-    "feature12":{
-      "title":"Diverse export options",
-      "description":"Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
+    "feature12": {
+      "title": "Diverse export options",
+      "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available"
     }
-  
   },
   "benefit": {
     "heading1": "BENEFITS",
@@ -294,28 +316,28 @@
     "description5": "Finally, the video is securely presented in our web app. We ensure that the video display is as secure as all previous steps. You can trust that your data is protected from start to finish."
   },
   "about": {
-    "topstory":{
-      "title":"THE STORY",
-      "heading":"The creation of FAST AI Movies",
-      "desc":"Our journey began with our founder Florian Scherl's vision of making employee training efficient for every company. Even before he graduated from high school in May 2022, Florian laid the foundation for our company by officially founding it. Our success story quickly gained momentum:",
-      "1":" JULY 2022",
-      "1des":"We drew attention by winning the renowned Startup Teens competition and receiving funding from Al+Munich.",
-      "2":" SEPTEMBER 2022",
-      "2des":"Our first big breakthrough in the industry came with our first customer in the mechanical engineering segment.",
-      "3":" DECEMBER 2022",
-      "3des":"Our team grew to five dedicated and talented members.",
-      "4":"APRIL 2023",
-      "4des":"The launch of our web app marked an important milestone in our development.",
-      "5":" DEZEMBER 2022",
-      "5des":"The launch of our web app marked an important milestone in our development.",
-      "6":" JUNE 2023",
-      "6dec":"Our company grew to 15 members, each one an expert in their field.",
-      "7":"  JULY 2023",
-      "7dec":"We expanded our AI software to generate e-learnings for public administration",
-      "8":"   SUMMER 2023",
-      "8dec":"We expanded our AI software to generate e-learnings for public administration",
-      "9":" HERBST 2023",
-      "9dec":"Our presence at major industry events such as Bits & Pretzels and Websummit demonstrated our ambitions and growing importance in the industry. We also expanded our influence into the finance and insurance industries."     
+    "topstory": {
+      "title": "THE STORY",
+      "heading": "The creation of FAST AI Movies",
+      "desc": "Our journey began with our founder Florian Scherl's vision of making employee training efficient for every company. Even before he graduated from high school in May 2022, Florian laid the foundation for our company by officially founding it. Our success story quickly gained momentum:",
+      "1": " JULY 2022",
+      "1des": "We drew attention by winning the renowned Startup Teens competition and receiving funding from Al+Munich.",
+      "2": " SEPTEMBER 2022",
+      "2des": "Our first big breakthrough in the industry came with our first customer in the mechanical engineering segment.",
+      "3": " DECEMBER 2022",
+      "3des": "Our team grew to five dedicated and talented members.",
+      "4": "APRIL 2023",
+      "4des": "The launch of our web app marked an important milestone in our development.",
+      "5": " DEZEMBER 2022",
+      "5des": "The launch of our web app marked an important milestone in our development.",
+      "6": " JUNE 2023",
+      "6dec": "Our company grew to 15 members, each one an expert in their field.",
+      "7": "  JULY 2023",
+      "7dec": "We expanded our AI software to generate e-learnings for public administration",
+      "8": "   SUMMER 2023",
+      "8dec": "We expanded our AI software to generate e-learnings for public administration",
+      "9": " HERBST 2023",
+      "9dec": "Our presence at major industry events such as Bits & Pretzels and Websummit demonstrated our ambitions and growing importance in the industry. We also expanded our influence into the finance and insurance industries."
     },
     "title": "ABOUT US",
     "subtitle": "Das Team",
@@ -335,70 +357,67 @@
     "job": "Looking for the right job?",
     "description2": "Become part of a dynamic and growing startup!",
     "buttonText": "Explore Job Openings",
-    "about1":{
-      "name":"FLORIAN SCHERL",
-      "profession":"Founder and CEO"
-         },
-         "about2":{
-          "name":"OLIVER GROßKLOß",
-      "profession":"Product Manager"
-         },
-         "about3":{
-          "name":"PHILIPP GABRIEL",
-      "profession":"Product Manager"
-         },
-         "about4":{
-          "name":"ARNAV SINGH"
-         },
-         "about5":{
-          "name":"DEJAN TODOROV"
-         }
-  
-  
+    "about1": {
+      "name": "FLORIAN SCHERL",
+      "profession": "Founder and CEO"
+    },
+    "about2": {
+      "name": "OLIVER GROßKLOß",
+      "profession": "Product Manager"
+    },
+    "about3": {
+      "name": "PHILIPP GABRIEL",
+      "profession": "Product Manager"
+    },
+    "about4": {
+      "name": "ARNAV SINGH"
+    },
+    "about5": {
+      "name": "DEJAN TODOROV"
+    }
   },
   "caseStudies": {
     "title": "CASE STUDIES",
     "subtitle": "How our customers optimize their training processes",
-    "box1":{
-      "name":"Product communication",
-      "des":"the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
-      "username":"Adrian Weiß",
-      "userinfo":"Product Manager nexineer"
-          },
-          "box2":{
-            "name":"Software training",
-            "des":"the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
-            "username":"Christian Färber",
-            "userinfo":"Digitization officer Neuburg-Schrobenhausen"
-                },
-                "box3":{
-                  "name":"Xxx",
-                  "des":"the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
-                  "username":"Andreas Lehnig",
-                  "userinfo":"Head of Marketing & Communications bei Schattdecor SE"
-                      }
-  
-  
+    "button": "See Case Study",
+    "box1": {
+      "name": "Product communication",
+      "des": "the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
+      "username": "Adrian Weiß",
+      "userinfo": "Product Manager nexineer"
+    },
+    "box2": {
+      "name": "Software training",
+      "des": "the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
+      "username": "Christian Färber",
+      "userinfo": "Digitization officer Neuburg-Schrobenhausen"
+    },
+    "box3": {
+      "name": "Xxx",
+      "des": "the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
+      "username": "Andreas Lehnig",
+      "userinfo": "Head of Marketing & Communications bei Schattdecor SE"
+    }
   },
   "unterseite": {
-    "box1":{
-      "name":"Product communication",
-      "des":"the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
-      "username":"Adrian Weiß",
-      "userinfo":"Product Manager nexineer"
-          },
-          "box2":{
-            "name":"Software training",
-            "des":"the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
-            "username":"Christian Färber",
-            "userinfo":"Digitization officer Neuburg-Schrobenhausen"
-                },
-                "box3":{
-                  "name":"Xxx",
-                  "des":"the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
-                  "username":"Andreas Lehnig",
-                  "userinfo":"Head of Marketing & Communications bei Schattdecor SE"
-                      },
+    "box1": {
+      "name": "Product communication",
+      "des": "the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
+      "username": "Adrian Weiß",
+      "userinfo": "Product Manager nexineer"
+    },
+    "box2": {
+      "name": "Software training",
+      "des": "the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
+      "username": "Christian Färber",
+      "userinfo": "Digitization officer Neuburg-Schrobenhausen"
+    },
+    "box3": {
+      "name": "Xxx",
+      "des": "the sadipscing elitr is established, but they envy the diam nonumy for such a long time that with labor and pain there was something great, but the voluptua diam. But indeed I will accuse them and just two pains and those",
+      "username": "Andreas Lehnig",
+      "userinfo": "Head of Marketing & Communications bei Schattdecor SE"
+    },
     "title": "LANDKREIS NEUBURG-SCHROBENHAUSEN:",
     "subtitle": "AI-Supported Training Videos Revolutionize Administration",
     "section1": {
@@ -447,6 +466,13 @@
       "content": "Take the right step towards more efficient and engaging further education – with just one click.",
       "button1": "Create Demo Video for Free",
       "button2": "Contact Us"
+    },
+    "act": {
+      "title": "ACT NOW",
+      "subtitle": "Ready for your own story?",
+      "des": "Take the right step for more efficient and engaging training – with just one click.",
+      "button1": "Create Demo Video for Free",
+      "button2": "Get in Touch"
     }
   },
   "contact": {
@@ -469,30 +495,26 @@
   },
   "faq": {
     "faqHeading": "FAQ",
-    "faq1":{
-      "question":"Do I have to create a complete presentation?",
-      "answer":" 'No, you just have to create a short text consisting of a few bullet points. Our AI software creates the presentation for you."
-      },
-      "faq2":{
-        "question":"Do I have to write a full script?",
-        "answer":" 'No, you just have to create a short text consisting of a few bullet points. Our AI software creates the presentation for you."
-        },
-        "faq3":{
-          "question":"In which languages ​​can training videos be created?",
-          "answer":" 'No, you just have to create a short text consisting of a few bullet points. Our AI software creates the presentation for you."
-      
-          },
-          "faq4":{
-            "question":"Are the training videos interactive?",
-            "answer":" 'No, you just have to create a short text consisting of a few bullet points. Our AI software creates the presentation for you."
-        
-            },
-            "faq5":{
-              "question":"How long does it take to create a video?",
-              "answer":" 'No, you just have to create a short text consisting of a few bullet points. Our AI software creates the presentation for you."
-          
-              }
-      
+    "faq1": {
+      "question": "Do I have to create a complete presentation?",
+      "answer": " 'No, you just have to create a short text consisting of a few bullet points. Our AI software creates the presentation for you."
+    },
+    "faq2": {
+      "question": "Do I have to write a full script?",
+      "answer": " 'No, you just have to create a short text consisting of a few bullet points. Our AI software creates the presentation for you."
+    },
+    "faq3": {
+      "question": "In which languages ​​can training videos be created?",
+      "answer": " 'No, you just have to create a short text consisting of a few bullet points. Our AI software creates the presentation for you."
+    },
+    "faq4": {
+      "question": "Are the training videos interactive?",
+      "answer": " 'No, you just have to create a short text consisting of a few bullet points. Our AI software creates the presentation for you."
+    },
+    "faq5": {
+      "question": "How long does it take to create a video?",
+      "answer": " 'No, you just have to create a short text consisting of a few bullet points. Our AI software creates the presentation for you."
+    }
   },
   "bottomcustom": {
     "actNowHeading": "ACT NOW",
@@ -588,54 +610,54 @@
     "applyButton": "Apply Now!"
   },
   "news": {
-      "news1": {
-        "name": "The future belongs to him: The interview with 19-year-old AI startup founder Florian Scherl",
-        "p": "Florian Scherl shares his experiences in this video, narrating how he came to establish his AI startup. This interview is a must-watch for all technology enthusiasts who want to explore the world of artificial intelligence."
-      },
-      "news2": {
-        "name": "Revolution of AI Video Generation with FAST AI Movies | AI E-Lab Success Stories",
-        "p": "Florian Scherl, a 19-year-old founder and CEO of Fast AI Movies, talks about his startup journey as a young and successful entrepreneur with Launrenz Sommerlad from Europe's leading student initiative, TUM.ai."
-      },
-      "news3": {
-        "name": "AI meets EdTech - What role does Artificial Intelligence play in the education industry?",
-        "p": "In collaboration with Founders Foundation, KI.NRW organized the first AI Meetup NRW on May 15, 2023. The networking event featured leading experts from the EdTech industry, discussing opportunities for educators and learners."
-      },
-      "news4": {
-        "name": "The future belongs to him: The interview with 19-year-old AI startup founder Florian Scherl",
-        "p": "Florian Scherl shares his experiences in this video, narrating how he came to establish his AI startup. This interview is a must-watch for all technology enthusiasts who want to explore the world of artificial intelligence."
-      },
-      "news5": {
-        "name": "Revolution of AI Video Generation with FAST AI Movies | AI E-Lab Success Stories",
-        "p": "Florian Scherl, a 19-year-old founder and CEO of Fast AI Movies, talks about his startup journey as a young and successful entrepreneur with Launrenz Sommerlad from Europe's leading student initiative, TUM.ai."
-      },
-      "news6": {
-        "name": "AI meets EdTech - What role does Artificial Intelligence play in the education industry?",
-        "p": "In collaboration with Founders Foundation, KI.NRW organized the first AI Meetup NRW on May 15, 2023. The networking event featured leading experts from the EdTech industry, discussing the opportunities that can arise."
-      },
-      "news7": {
-        "name": "The future belongs to him: The interview with 19-year-old AI startup founder Florian Scherl",
-        "p": "Florian Scherl shares his experiences in this video, narrating how he came to establish his AI startup. This interview is a must-watch for all technology enthusiasts who want to explore the world of artificial intelligence."
-      },
-      "news8": {
-        "name": "Revolution of AI Video Generation with FAST AI Movies | AI E-Lab Success Stories",
-        "p": "Florian Scherl, a 19-year-old founder and CEO of Fast AI Movies, talks about his startup journey as a young and successful entrepreneur with Launrenz Sommerlad from Europe's leading student initiative, TUM.ai."
-      },
-      "news9": {
-        "name": "AI meets EdTech - What role does Artificial Intelligence play in the education industry?",
-        "p": "In collaboration with Founders Foundation, KI.NRW organized the first AI Meetup NRW on May 15, 2023. The networking event featured leading experts from the EdTech industry, discussing opportunities for educators and learners."
-      },
-      "news10": {
-        "name": "The future belongs to him: The interview with 19-year-old AI startup founder Florian Scherl",
-        "p": "Florian Scherl shares his experiences in this video, narrating how he came to establish his AI startup. This interview is a must-watch for all technology enthusiasts who want to explore the world of artificial intelligence."
-      },
-      "news11": {
-        "name": "Revolution of AI Video Generation with FAST AI Movies | AI E-Lab Success Stories",
-        "p": "Florian Scherl, a 19-year-old founder and CEO of Fast AI Movies, talks about his startup journey as a young and successful entrepreneur with Launrenz Sommerlad from Europe's leading student initiative, TUM.ai."
-      },
-      "news12": {
-        "name": "AI meets EdTech - What role does Artificial Intelligence play in the education industry?",
-        "p": "In collaboration with Founders Foundation, KI.NRW organized the first AI Meetup NRW on May 15, 2023. The networking event featured leading experts from the EdTech industry, discussing the chances that can arise from it."
-      },
+    "news1": {
+      "name": "The future belongs to him: The interview with 19-year-old AI startup founder Florian Scherl",
+      "p": "Florian Scherl shares his experiences in this video, narrating how he came to establish his AI startup. This interview is a must-watch for all technology enthusiasts who want to explore the world of artificial intelligence."
+    },
+    "news2": {
+      "name": "Revolution of AI Video Generation with FAST AI Movies | AI E-Lab Success Stories",
+      "p": "Florian Scherl, a 19-year-old founder and CEO of Fast AI Movies, talks about his startup journey as a young and successful entrepreneur with Launrenz Sommerlad from Europe's leading student initiative, TUM.ai."
+    },
+    "news3": {
+      "name": "AI meets EdTech - What role does Artificial Intelligence play in the education industry?",
+      "p": "In collaboration with Founders Foundation, KI.NRW organized the first AI Meetup NRW on May 15, 2023. The networking event featured leading experts from the EdTech industry, discussing opportunities for educators and learners."
+    },
+    "news4": {
+      "name": "The future belongs to him: The interview with 19-year-old AI startup founder Florian Scherl",
+      "p": "Florian Scherl shares his experiences in this video, narrating how he came to establish his AI startup. This interview is a must-watch for all technology enthusiasts who want to explore the world of artificial intelligence."
+    },
+    "news5": {
+      "name": "Revolution of AI Video Generation with FAST AI Movies | AI E-Lab Success Stories",
+      "p": "Florian Scherl, a 19-year-old founder and CEO of Fast AI Movies, talks about his startup journey as a young and successful entrepreneur with Launrenz Sommerlad from Europe's leading student initiative, TUM.ai."
+    },
+    "news6": {
+      "name": "AI meets EdTech - What role does Artificial Intelligence play in the education industry?",
+      "p": "In collaboration with Founders Foundation, KI.NRW organized the first AI Meetup NRW on May 15, 2023. The networking event featured leading experts from the EdTech industry, discussing the opportunities that can arise."
+    },
+    "news7": {
+      "name": "The future belongs to him: The interview with 19-year-old AI startup founder Florian Scherl",
+      "p": "Florian Scherl shares his experiences in this video, narrating how he came to establish his AI startup. This interview is a must-watch for all technology enthusiasts who want to explore the world of artificial intelligence."
+    },
+    "news8": {
+      "name": "Revolution of AI Video Generation with FAST AI Movies | AI E-Lab Success Stories",
+      "p": "Florian Scherl, a 19-year-old founder and CEO of Fast AI Movies, talks about his startup journey as a young and successful entrepreneur with Launrenz Sommerlad from Europe's leading student initiative, TUM.ai."
+    },
+    "news9": {
+      "name": "AI meets EdTech - What role does Artificial Intelligence play in the education industry?",
+      "p": "In collaboration with Founders Foundation, KI.NRW organized the first AI Meetup NRW on May 15, 2023. The networking event featured leading experts from the EdTech industry, discussing opportunities for educators and learners."
+    },
+    "news10": {
+      "name": "The future belongs to him: The interview with 19-year-old AI startup founder Florian Scherl",
+      "p": "Florian Scherl shares his experiences in this video, narrating how he came to establish his AI startup. This interview is a must-watch for all technology enthusiasts who want to explore the world of artificial intelligence."
+    },
+    "news11": {
+      "name": "Revolution of AI Video Generation with FAST AI Movies | AI E-Lab Success Stories",
+      "p": "Florian Scherl, a 19-year-old founder and CEO of Fast AI Movies, talks about his startup journey as a young and successful entrepreneur with Launrenz Sommerlad from Europe's leading student initiative, TUM.ai."
+    },
+    "news12": {
+      "name": "AI meets EdTech - What role does Artificial Intelligence play in the education industry?",
+      "p": "In collaboration with Founders Foundation, KI.NRW organized the first AI Meetup NRW on May 15, 2023. The networking event featured leading experts from the EdTech industry, discussing the chances that can arise from it."
+    },
     "title": "FAST AI Movies in the Media",
     "articles": "Articles",
     "articleless": "Article Lesson",
@@ -647,10 +669,8 @@
     "founderjorney": "Despite Florian's age, he is advancing very fast in AI and business. At 13 years old, he taught himself programming and then AI. In our chat today, we talk about Florian's unique journey into his passion for AI.",
     "contentfounder": "FAST AI Movies | Presentation | Campus Founder",
     "last": "FAST Movies | Demo Day | AI Garage"
-
   },
   "blogTitle": "Blog",
-
 
   "section1": {
     "title": "Masterful Methods: Successful Learning in E-Learning",
@@ -681,69 +701,66 @@
     "emailPlaceholder": "Email Address*",
     "subscribeButton": "Subscribe",
     "privacyPolicy": "By clicking Subscribe, you agree to our Privacy Policy"
-  },  
+  },
   "learningIntroduction": {
     "intro": "The way we learn has changed significantly in the digital age and e-learning has emerged as a significant form of education. E-learning offers learners the flexibility to learn from anywhere and advance at their own pace. However, to fully realize the benefits of e-learning, effective learning strategies are crucial. In this discussion, we will take a look at the best learning strategies specifically tailored for eLearning. From self-motivation to time management to active interaction with learning material, we will explore how learners can successfully navigate the digital education environment. Applying these strategies can make the difference between superficial understanding and deep, sustained learning, ultimately promoting success in eLearning courses."
   },
-  " Selbsmotivation":" Selbsmotivation:",
-    "learningIntro": {
-      "cont": "The way we learn has significantly changed in the digital age, and E-Learning has evolved into a significant form of education. E-Learning provides learners with the flexibility to study from anywhere and to further their education at their own pace. However, to fully leverage the benefits of E-Learning, effective learning strategies are crucial. In this discussion, we will take a look at the best learning strategies specifically tailored to E-Learning. From self-motivation to time management and active interaction with learning materials – we will explore how learners can navigate successfully in the digital educational environment. The application of these strategies can make the difference between a superficial understanding and a deep, sustainable learning experience, ultimately promoting success in E-Learning courses."
-    },
-    "rewardSystem": {
-      "heading":"Successful learning in e-learning",
-      "p4":"interaction",
-      "Selbstdisziplin":"Self-discipline",
-      "Zeitmanacement:":"Time management:",
-"Aktives":"Active learning:",
-"Abonnieren":"Subscribe to",
-      "text": "It is also helpful to set rewards for yourself when you achieve specific milestones to maintain motivation. Reward yourself, for example, with a short break, a small treat, or a moment of relaxation after completing a particular task.",
-    "text2":"However self-motivation can fluctuate and there are times when that make you feel less motivated. In such moments it is important to rely on discipline. Follow your study plan and set clear expectations for yourself. Even if the If motivation is missing, discipline can then contribute continuously Achieve progress",
-   "text3":"Finally, the inclusion of other people, be it in form of learning partners or mentors, your self-motivation strengthen. Share your goals and progress with others to support each other and stay motivated. Self-motivation is a key to successful e-learning, as it helps you stay on track and achieve your learning goals to reach.",
-   "text4":"Effective time management is crucial to get the most out of your eLearning experience. There E-learning is often effective time management crucial to getting the most out of your Get the best e-learning experience. Because e-learning is often flexible and you can set your own learning times, it is important to proceed in a disciplined and structured manner.",
-  "Text5":"Start by creating a learning plan that... Course content, goals and deadlines taken into account. Sit down clear and realistic learning goals for each day or week to track progress. Don't forget buffer times to plan for unexpected events or additional exercises.",
-"text6":"Use technology to support your time management. Calendar apps or to-do lists can help with study times to organize and set reminders for important deadlines to set up."  ,
-"text7":"In addition, it makes sense to increase your personal productivity take into account. Identify your most productive times day and plan challenging tasks during it time window. Breaks are also important to reduce fatigue avoid and maintain concentration",
-"text8":"Finally, flexibility is an important aspect of the time management. It's okay to adjust the schedule if unexpected obligations arise, as long as you make sure that you can make up for the lost learning time later.",
-"text9":"Well-thought-out time management allows you to achieve your Cope with e-learning courses efficiently, reduce stress and ensure. that you have enough time for understanding and Deepen the course material...",
-"text10":"Active learning is a key aspect of being successful Completing e-learning courses. Instead of passive information you become an active learner through active learning Participants in the educational process. This can deepen your understanding and improve knowledge retention.",
-"text11":"A proven method of active learning is to ask Questions. Ask yourself what you already know want to learn and how new information fits into your existing ones Knowledge fits. Write down questions that arise during the Learning arise and try to answer them.",
-"text12":"Practical application of the knowledge learned is also important central aspect of active learning. Solve exercises, lead Do experiments or put what you have learned into practical use Applications around if possible. This promotes not only that understanding, but also strengthens practical skills.",
-"text13":"​ 260 / 5,000 Translation results Translation result Active learning also requires that you incorporate the material into your put your own words and create summaries. This compels You to process what you have learned and organize it Keeping easier.",
-"text14":"Overall, active learning helps you not only absorb information, but actually understand it and can apply. This promotes and enables sustainable learning it allows you to apply what you have learned to your professional and personal life to apply.",
-"text15":"Interaction plays a prominent role in e-learning as it can enrich and deepen the learning process. Through the Interaction with other learners, teachers and the course material you can develop a deeper understanding and of benefit from different perspectives.",
-"text16":"One of the most common forms of interaction in E-learning environments are online discussion forums or chat rooms. Here you can ask questions, exchange views and hear from the Benefit from the experiences of others. This interaction does not promote only understanding, but also creates a feeling of Community and learning in a group..",
-"text17":"Interacting with teachers or tutors is also decisive. Use those available Means of communication to receive clarifications and feedback to obtain. Teachers can provide valuable insight and additional Provide resources to support your learning success.",
-"text18":"Interacting with the course material itself should not be overlooked become. Active participation by solving exercises and quiz questions and practical tasks deepen their understanding and enable them allow you to apply your knowledge.",
-"text19":"If possible, also form study groups to learn together work and learn from each other. studying together, Discussing and explaining what you have learned can help fill gaps in understanding close and different perspectives receive.",
-"text20":"Overall, interaction in e-learning environments promotes Sharing knowledge increases motivation and makes it easier Understanding complex topics. It is important to have these opportunities to take full advantage of the interaction to get the most out of your Get the best e-learning experience.",
-"text21":"Self-discipline is an indispensable quality for anyone who would like to successfully complete e-learning courses. In one Environment in which you learn largely self-directed, you are Your own teacher and must take responsibility for your Adopt progress. Self-discipline will help you stay on track stay and achieve your learning goals.",
-"text22":"Self-discipline means setting clear expectations for yourself set and fulfill them, even when no one else is watching. This can mean. that you stick to a learning plan, regardless of whether you feel motivated or not. It requires the ability to minimize distractions and focus on to concentrate the work.",
-"text23":"It is also important to realize that self-discipline does not mean overexerting yourself. Put Set realistic goals and make sure you are sufficient for yourself Allow yourself to take breaks and recovery time to avoid fatigue.",
-"text24":"Self-discipline also includes the ability to be yourself monitor and adjust. If you find that you are from Deviate from your plan or have difficulty complying concentrate, you should be in the lodge, take appropriate action to take to get back on track.",
-"text25":"Overall, self-discipline is the key Taking personal responsibility, which is required in e-learning is. It helps you use your time efficiently, your learning goals to achieve and ultimately the knowledge and skills acquire what you are hoping for.",
-"text26":"In the digital era, in which e-learning is becoming increasingly important role plays, the right learning strategies are the key Success. We have seen how self-motivation is effective Time management, active learning and encouraging interaction are crucial in e-learning courses. These strategies enable learners to achieve their full potential, To deepen knowledge and develop skills in the are invaluable in the modern world.",
-"text27":"E-learning offers a world of opportunities for lifelong learning and professional development. The application of this Learning strategies will not only increase learning success, but also strengthen self-confidence, the ability to Improve self-regulation and ultimately a more fulfilling one Provide educational experience. We encourage everyone who is interested in E-learning decide to actively apply these strategies and to continually perfect the doors to knowledge and to keep career development wide open. With Self-motivation, efficient time management and an active one Learning attitude allows you to fully embrace the world of e-learning explore and achieve your educational goals.",
-"text28":"With FAST Al Movies we have developed an AI SaaS that exactly such employee training in an exciting way Prepared with the help of clear training videos.",
-"text29":"By clicking Subscribe you agree to our Data protection regulations"
+  " Selbsmotivation": " Selbsmotivation:",
+  "learningIntro": {
+    "cont": "The way we learn has significantly changed in the digital age, and E-Learning has evolved into a significant form of education. E-Learning provides learners with the flexibility to study from anywhere and to further their education at their own pace. However, to fully leverage the benefits of E-Learning, effective learning strategies are crucial. In this discussion, we will take a look at the best learning strategies specifically tailored to E-Learning. From self-motivation to time management and active interaction with learning materials – we will explore how learners can navigate successfully in the digital educational environment. The application of these strategies can make the difference between a superficial understanding and a deep, sustainable learning experience, ultimately promoting success in E-Learning courses."
+  },
+  "rewardSystem": {
+    "heading": "Successful learning in e-learning",
+    "p4": "interaction",
+    "Selbstdisziplin": "Self-discipline",
+    "Zeitmanacement:": "Time management:",
+    "Aktives": "Active learning:",
+    "Abonnieren": "Subscribe to",
+    "text": "It is also helpful to set rewards for yourself when you achieve specific milestones to maintain motivation. Reward yourself, for example, with a short break, a small treat, or a moment of relaxation after completing a particular task.",
+    "text2": "However self-motivation can fluctuate and there are times when that make you feel less motivated. In such moments it is important to rely on discipline. Follow your study plan and set clear expectations for yourself. Even if the If motivation is missing, discipline can then contribute continuously Achieve progress",
+    "text3": "Finally, the inclusion of other people, be it in form of learning partners or mentors, your self-motivation strengthen. Share your goals and progress with others to support each other and stay motivated. Self-motivation is a key to successful e-learning, as it helps you stay on track and achieve your learning goals to reach.",
+    "text4": "Effective time management is crucial to get the most out of your eLearning experience. There E-learning is often effective time management crucial to getting the most out of your Get the best e-learning experience. Because e-learning is often flexible and you can set your own learning times, it is important to proceed in a disciplined and structured manner.",
+    "Text5": "Start by creating a learning plan that... Course content, goals and deadlines taken into account. Sit down clear and realistic learning goals for each day or week to track progress. Don't forget buffer times to plan for unexpected events or additional exercises.",
+    "text6": "Use technology to support your time management. Calendar apps or to-do lists can help with study times to organize and set reminders for important deadlines to set up.",
+    "text7": "In addition, it makes sense to increase your personal productivity take into account. Identify your most productive times day and plan challenging tasks during it time window. Breaks are also important to reduce fatigue avoid and maintain concentration",
+    "text8": "Finally, flexibility is an important aspect of the time management. It's okay to adjust the schedule if unexpected obligations arise, as long as you make sure that you can make up for the lost learning time later.",
+    "text9": "Well-thought-out time management allows you to achieve your Cope with e-learning courses efficiently, reduce stress and ensure. that you have enough time for understanding and Deepen the course material...",
+    "text10": "Active learning is a key aspect of being successful Completing e-learning courses. Instead of passive information you become an active learner through active learning Participants in the educational process. This can deepen your understanding and improve knowledge retention.",
+    "text11": "A proven method of active learning is to ask Questions. Ask yourself what you already know want to learn and how new information fits into your existing ones Knowledge fits. Write down questions that arise during the Learning arise and try to answer them.",
+    "text12": "Practical application of the knowledge learned is also important central aspect of active learning. Solve exercises, lead Do experiments or put what you have learned into practical use Applications around if possible. This promotes not only that understanding, but also strengthens practical skills.",
+    "text13": "​ 260 / 5,000 Translation results Translation result Active learning also requires that you incorporate the material into your put your own words and create summaries. This compels You to process what you have learned and organize it Keeping easier.",
+    "text14": "Overall, active learning helps you not only absorb information, but actually understand it and can apply. This promotes and enables sustainable learning it allows you to apply what you have learned to your professional and personal life to apply.",
+    "text15": "Interaction plays a prominent role in e-learning as it can enrich and deepen the learning process. Through the Interaction with other learners, teachers and the course material you can develop a deeper understanding and of benefit from different perspectives.",
+    "text16": "One of the most common forms of interaction in E-learning environments are online discussion forums or chat rooms. Here you can ask questions, exchange views and hear from the Benefit from the experiences of others. This interaction does not promote only understanding, but also creates a feeling of Community and learning in a group..",
+    "text17": "Interacting with teachers or tutors is also decisive. Use those available Means of communication to receive clarifications and feedback to obtain. Teachers can provide valuable insight and additional Provide resources to support your learning success.",
+    "text18": "Interacting with the course material itself should not be overlooked become. Active participation by solving exercises and quiz questions and practical tasks deepen their understanding and enable them allow you to apply your knowledge.",
+    "text19": "If possible, also form study groups to learn together work and learn from each other. studying together, Discussing and explaining what you have learned can help fill gaps in understanding close and different perspectives receive.",
+    "text20": "Overall, interaction in e-learning environments promotes Sharing knowledge increases motivation and makes it easier Understanding complex topics. It is important to have these opportunities to take full advantage of the interaction to get the most out of your Get the best e-learning experience.",
+    "text21": "Self-discipline is an indispensable quality for anyone who would like to successfully complete e-learning courses. In one Environment in which you learn largely self-directed, you are Your own teacher and must take responsibility for your Adopt progress. Self-discipline will help you stay on track stay and achieve your learning goals.",
+    "text22": "Self-discipline means setting clear expectations for yourself set and fulfill them, even when no one else is watching. This can mean. that you stick to a learning plan, regardless of whether you feel motivated or not. It requires the ability to minimize distractions and focus on to concentrate the work.",
+    "text23": "It is also important to realize that self-discipline does not mean overexerting yourself. Put Set realistic goals and make sure you are sufficient for yourself Allow yourself to take breaks and recovery time to avoid fatigue.",
+    "text24": "Self-discipline also includes the ability to be yourself monitor and adjust. If you find that you are from Deviate from your plan or have difficulty complying concentrate, you should be in the lodge, take appropriate action to take to get back on track.",
+    "text25": "Overall, self-discipline is the key Taking personal responsibility, which is required in e-learning is. It helps you use your time efficiently, your learning goals to achieve and ultimately the knowledge and skills acquire what you are hoping for.",
+    "text26": "In the digital era, in which e-learning is becoming increasingly important role plays, the right learning strategies are the key Success. We have seen how self-motivation is effective Time management, active learning and encouraging interaction are crucial in e-learning courses. These strategies enable learners to achieve their full potential, To deepen knowledge and develop skills in the are invaluable in the modern world.",
+    "text27": "E-learning offers a world of opportunities for lifelong learning and professional development. The application of this Learning strategies will not only increase learning success, but also strengthen self-confidence, the ability to Improve self-regulation and ultimately a more fulfilling one Provide educational experience. We encourage everyone who is interested in E-learning decide to actively apply these strategies and to continually perfect the doors to knowledge and to keep career development wide open. With Self-motivation, efficient time management and an active one Learning attitude allows you to fully embrace the world of e-learning explore and achieve your educational goals.",
+    "text28": "With FAST Al Movies we have developed an AI SaaS that exactly such employee training in an exciting way Prepared with the help of clear training videos.",
+    "text29": "By clicking Subscribe you agree to our Data protection regulations"
+  },
+  "header": {
+    "companyname": "Your Company",
+    "openmainmenu": "Open main menu",
+    "buttontext": "Create a free demo video",
+    "closemenu": "Close menu",
 
-
-}
-  ,
-  "header":{
-    "companyname":"Your Company",
-    "openmainmenu":"Open main menu",
-    "buttontext":"Create a free demo video",
-  "closemenu":"Close menu",
-
-    "menus":{
-      "1":"Products",
-      "2":"  Case Studies",
-      "3":" About Us",
-      "4":"Contact",
-      "5":" FAQ"
+    "menus": {
+      "1": "Products",
+      "2": "  Case Studies",
+      "3": " About Us",
+      "4": "Contact",
+      "5": " FAQ"
     }
-    },
-  
+  },
+
   "footer": {
     "quickFind": "Quick Find",
     "caseStudies": "Case Studies",

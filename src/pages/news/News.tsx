@@ -2,9 +2,8 @@ import { PiNoteDuotone } from "react-icons/pi";
 import { MdOutlineKeyboardVoice } from "react-icons/md";
 import { FaPhotoVideo } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { useTranslation } from "react-i18next";
-  
 
 const News = () => {
   const { t } = useTranslation();
@@ -20,7 +19,7 @@ const News = () => {
       id: 1,
       video: "/stell/card1.png",
       name: `${t("news.news1.name")}`,
-      p:  `${t("news.news1.p")}`,
+      p: `${t("news.news1.p")}`,
     },
     {
       id: 2,
@@ -32,7 +31,7 @@ const News = () => {
       id: 3,
       video: "/stell/card3.png",
       name: `${t("news.news3.name")}`,
-      p:`${t("news.news3.p")}`,
+      p: `${t("news.news3.p")}`,
     },
     {
       id: 4,
@@ -62,19 +61,19 @@ const News = () => {
       id: 8,
       video: "/stell/card2.png",
       name: `${t("news.news8.name")}`,
-      p:`${t("news.news8.p")}`,
+      p: `${t("news.news8.p")}`,
     },
     {
       id: 9,
       video: "/stell/card3.png",
-      name:  `${t("news.news9.name")}`,
+      name: `${t("news.news9.name")}`,
       p: `${t("news.news9.p")}`,
     },
     {
       id: 10,
       video: "/stell/card1.png",
-      name:  `${t("news.news10.name")}`,
-      p:`${t("news.news10.p")}`,
+      name: `${t("news.news10.name")}`,
+      p: `${t("news.news10.p")}`,
     },
     {
       id: 11,
@@ -86,9 +85,8 @@ const News = () => {
       id: 12,
       video: "/stell/card3.png",
       name: `${t("news.news12.name")}`,
-      p:`${t("news.news12.p")}`,
+      p: `${t("news.news12.p")}`,
     },
-    
   ];
 
   return (
@@ -97,30 +95,45 @@ const News = () => {
         News
       </div>
 
-
-
       <div className="xl:text-lg lg:text-md text-m2d text font-[Outfit-Bold] ">
-      {t("news.title")}
-
+        {t("news.title")}
       </div>
-<div className="flex items-center justify-between my-7">
-  {/* buttons */}
-  <button onClick={() => scrollToSection(newsSectionRef)} className="artikle-button w-[120px] h-[120px] rounded-[50%] border-[2px] border-primary border-solid flex items-center justify-center text-[80px]"><PiNoteDuotone/></button>
-  <div className="podcast-button flex-1 h-[2px] bg-primary"></div>
-  <button onClick={() => scrollToSection(podcastSectionRef)} className="one w-[120px] h-[120px] rounded-[50%] border-[2px] border-primary border-solid flex items-center justify-center text-[80px]"> <MdOutlineKeyboardVoice/></button>
-  <div className="line flex-1 h-[2px] bg-primary"></div>
-  <button onClick={() => scrollToSection(videoSectionRef)} className="video-button w-[120px] h-[120px] rounded-[50%] border-[2px] border-primary border-solid flex items-center justify-center text-[80px]"><FaPhotoVideo/></button>
-  {/* buttons */}
-</div>
+      <div className="flex items-center justify-between my-7">
+        {/* buttons */}
+        <button
+          onClick={() => scrollToSection(newsSectionRef)}
+          className="artikle-button w-[120px] h-[120px] rounded-[50%] border-[2px] border-primary border-solid flex items-center justify-center text-[80px]"
+        >
+          <PiNoteDuotone />
+        </button>
+        <div className="podcast-button flex-1 h-[2px] bg-primary"></div>
+        <button
+          onClick={() => scrollToSection(podcastSectionRef)}
+          className="one w-[120px] h-[120px] rounded-[50%] border-[2px] border-primary border-solid flex items-center justify-center text-[80px]"
+        >
+          {" "}
+          <MdOutlineKeyboardVoice />
+        </button>
+        <div className="line flex-1 h-[2px] bg-primary"></div>
+        <button
+          onClick={() => scrollToSection(videoSectionRef)}
+          className="video-button w-[120px] h-[120px] rounded-[50%] border-[2px] border-primary border-solid flex items-center justify-center text-[80px]"
+        >
+          <FaPhotoVideo />
+        </button>
+        {/* buttons */}
+      </div>
       <div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
-        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-white justify-center flex items-center">
+        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-light400 justify-center flex items-center">
           <div className="text-5xl ">
             <PiNoteDuotone />{" "}
           </div>
         </div>
-        <div ref={newsSectionRef} className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary">
-        {t("news.articles")}
-
+        <div
+          ref={newsSectionRef}
+          className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary"
+        >
+          {t("news.articles")}
         </div>
       </div>
       {news.map((item) => {
@@ -131,14 +144,14 @@ const News = () => {
                 <img src={item.video} />
               </div>
               <div className="flex flex-col gap-[20px] lg:p-[20px] md:p[8px] p-[5px] md:w-[auto] w-[100%]  h-[auto] ">
-                <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black]">
+                <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-dark100">
                   {item.name}
                 </div>
-                <div className="lg:text-sm text-xs font-[Outfit-Regular] xl:pr-[50px]  text-[black]">
+                <div className="lg:text-sm text-xs font-[Outfit-Regular] xl:pr-[50px]  text-dark100">
                   {item.p}
                 </div>
                 <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-                {t("news.articleless")}
+                  {t("news.articleless")}
 
                   <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] ">
                     <FaArrowRight />
@@ -150,28 +163,28 @@ const News = () => {
         );
       })}
       <div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
-        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-white justify-center flex items-center">
+        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-light400 justify-center flex items-center">
           <div className="text-3xl ">
             <MdOutlineKeyboardVoice />{" "}
           </div>
         </div>
-        <div  ref={podcastSectionRef} className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary">
-        {t("news.podcast")}
-
+        <div
+          ref={podcastSectionRef}
+          className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary"
+        >
+          {t("news.podcast")}
         </div>
       </div>
       <div className="lg:flex-row md:flex-row flex-col h-auto pb-2 flex gap-[40px]">
         <div className="flex flex-col xl:w-[450px] lg:w-[300px] md:w-[250px] w-[100%] lg:pl-8 md:pl-6 pl-3 gap-[20px]">
           <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black] flex items-center gap-[20px]">
-          {t("news.address")}
-
+            {t("news.address")}
           </div>
           <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-[black] flex items-center gap-[20px]">
-          {t("news.epdesc")}
-
+            {t("news.epdesc")}
           </div>
-          <div  className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-          {t("news.watchvid")}
+          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
+            {t("news.watchvid")}
 
             <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] ">
               {" "}
@@ -180,18 +193,16 @@ const News = () => {
           </div>
         </div>
         <div className="flex flex-col  lg:w-[300px] md:w-[250px] w-[100%] lg:pl-8 md:pl-6 pl-3 gap-[20px]">
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black] flex items-center gap-[20px]">
-                      {t("news.founderinfo")}
-
+          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-dark100 flex items-center gap-[20px]">
+            {t("news.founderinfo")}
           </div>
-          <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-[black] flex items-center gap-[20px]">
-          {t("news.founderjourney")}
-
+          <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-dark100 flex items-center gap-[20px]">
+            {t("news.founderjourney")}
           </div>
-          <div  className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-                      {t("news.watchvid")}
+          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
+            {t("news.watchvid")}
 
-            <div  className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] pl-[2px]">
+            <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] pl-[2px]">
               {" "}
               <FaArrowRight />
             </div>
@@ -199,12 +210,12 @@ const News = () => {
         </div>
       </div>
       <div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
-        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-white justify-center flex items-center">
+        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-light400 justify-center flex items-center">
           <div ref={videoSectionRef} className="text-3xl">
             <FaPhotoVideo />{" "}
           </div>
         </div>
-        <div  className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary">
+        <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary">
           Video
         </div>
       </div>
@@ -213,12 +224,11 @@ const News = () => {
           <img src="/stell/card1.png"></img>
         </div>
         <div className="flex flex-col lg:pl-8 pl-4  lg:pt-5 pt-4 gap-[20px]">
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black] flex items-center gap-[20px]">
-          {t("news.contentfounder")}
-
+          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-dark100 flex items-center gap-[20px]">
+            {t("news.contentfounder")}
           </div>
-          <div  className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-          {t("news.watchvid")}
+          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
+            {t("news.watchvid")}
             <div className="lg:pt-[10px] md:pt-[6px] pt-[4px] ">
               {" "}
               <FaArrowRight />
@@ -231,12 +241,11 @@ const News = () => {
           <img src="/stell/card1.png"></img>
         </div>
         <div className="flex flex-col lg:pl-8 pl-4  lg:pt-5 pt-4 gap-[20px]">
-          <div  className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black] flex items-center gap-[20px]">
-          {t("news.last")}
-
+          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-dark100 flex items-center gap-[20px]">
+            {t("news.last")}
           </div>
           <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-          {t("news.watchvid")}
+            {t("news.watchvid")}
 
             <div className="lg:pt-[10px] md:pt-[6px] pt-[4px] ">
               {" "}
