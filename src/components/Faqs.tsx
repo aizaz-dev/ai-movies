@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const Faq = () => {
   const { t } = useTranslation();
 
+  // State to track the active question
   const [activeQuestion, setActiveQuestion] = useState(0);
 
+  // Array containing FAQ data with questions and answers
   const faqData = [
     {
       id: 1,
