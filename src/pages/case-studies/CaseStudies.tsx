@@ -4,40 +4,7 @@ import { GoArrowRight } from "react-icons/go";
 
 const CaseStudies = () => {
   const { t } = useTranslation();
-
-  // const box = [
-  //   {
-  //     id: 1,
-  //     logo: "/casestudy/1.png",
-  //     name: "Produktkommunikation",
-  //     des: `consetetur sadipscing elitr, sed diam
-  //     nonumy eirmod tempor invidunt ut
-  //     labore et dolore magna aliquyam
-  //     erat, sed diam voluptua. At vero eos
-  //     et accusam et justo duo dolores et ea`,
-  //     userpic: "/casestudy/man1.png",
-  //     username: "Adrian Weiß",
-  //     userinfo: "Produkt Manager nexineer",
-  //   },
-  //   {
-  //     id: 2,
-  //     logo: "/casestudy/2.png",
-  //     name: "Softwareschulung ",
-  //     des: "Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
-  //     userpic: "/casestudy/man2.png",
-  //     username: "Christian Färber ",
-  //     userinfo: "Digitalisierungsbeauftragter Neuburg-Schrobenhausen",
-  //   },
-  //   {
-  //     id: 3,
-  //     logo: "/casestudy/3.png",
-  //     name: "Xxx",
-  //     des: "Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
-  //     userpic: "/casestudy/man3.png",
-  //     username: "Andreas Lehnig",
-  //     userinfo: "Head of Marketing & Communications bei Schattdecor SE",
-  //   },
-  // ];
+  // Data for case study boxes
   const box = [
     {
       id: 1,
@@ -76,7 +43,7 @@ const CaseStudies = () => {
         <div className="text-lg font-[Outfit-Bold]  max-md:text-sm max-md:text-center max-laptop:text-lf ">
           {t("caseStudies.subtitle")}
         </div>
-
+        {/* Subtitle for Case Studies */}
         <div className="w-[100%] flex justify-between  max-tab:flex-col lg:gap-8 gap-6 items-start mt-[60px]">
           {box.map((item) => {
             return (

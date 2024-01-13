@@ -1,6 +1,7 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+// Interface defining the structure of category data
 interface CategoryData {
   description: string;
   currently: string;
@@ -8,7 +9,7 @@ interface CategoryData {
   videoUrl: string;
   subclasses: { id: "string"; name: "string" }[];
 }
-
+// Wecase component
 const Wecase = () => {
   const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState("compliance");
@@ -220,6 +221,7 @@ const Wecase = () => {
       subclasses: [],
       videoUrl: "/flexvid/vid.mp4",
     });
+  // Effect to update selected category data when language changes or category change
   useEffect(() => {
     // This effect will run whenever the language changes
     setSelectedCategoryData((prevData) => ({

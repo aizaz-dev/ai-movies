@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { FaCheck } from "react-icons/fa";
 
+// Schrit component
 const Schrit = () => {
+  // Accessing translation function and managing active step state
   const { t } = useTranslation();
   const [activeStep, setActiveStep] = useState(0);
 
+  // Array of steps with details
   const steps = [
     {
       schrit: "Schrit1",
@@ -44,16 +47,19 @@ const Schrit = () => {
     },
   ];
 
+  // Function to handle step click
   const handleStepClick = (index) => {
     setActiveStep(index);
   };
 
+  // Rendering the Schrit component
   return (
     <div className="w-full bg-light100 mt-[50px] px-[80px] max-laptop:px-[60px] max-md:px-[30px]">
       <div className="webapp max-w-[2000px] m-auto px-[60px] max-tab:px-0 max-md:px-0">
         <div className="greyblock mt-[20px] w-full flex max-tab:flex-col max-tab:items-center max-md:py-6 gap-[20px] py-[40px] max-md:p-0 rounded-[10px]">
           <div className="left w-[40%] max-tab:w-full flex justify-start items-start gap-2">
             <div className="eft flex flex-col gap-[10px] items-start">
+              {/* Loop through each step */}
               {steps.map((step, index) => (
                 <div
                   className={`one ${
@@ -63,6 +69,7 @@ const Schrit = () => {
                   onClick={() => handleStepClick(index)}
                 >
                   <div className="box flex">
+                    {/* Step icon and lines */}
                     <div className="flex flex-col gap-[10px] justify-start items-center">
                       <div
                         className={`icon bg-${
@@ -73,7 +80,6 @@ const Schrit = () => {
                       >
                         <FaCheck size={40} />
                       </div>
-                      {/* line */}
                       {index !== steps.length - 1 && (
                         <div
                           className={`line w-[2px] min-h-[50px] flex-1 bg-${
@@ -83,8 +89,8 @@ const Schrit = () => {
                           }`}
                         ></div>
                       )}
-                      {/* line */}
                     </div>
+                    {/* Step title, description, and content */}
                     <div className="ml-7 pb-[30px]">
                       <h3
                         className={`text-sm font-[Outfit-Bold] max-md:text-mf max-laptop:text-mf text-primary ${
@@ -115,6 +121,7 @@ const Schrit = () => {
               ))}
             </div>
           </div>
+          {/* Video and button on the right */}
           <div className="right w-[55%]  h-full flex flex-col items-end max-md:items-center">
             <div className="vid max-tab:hidden">
               <video
@@ -127,7 +134,7 @@ const Schrit = () => {
             </div>
             <div className="button ">
               <button className="text-primary text-sm font-[Outfit-Bold] max-laptop:text-mf font-bold border-[2px] border-solid border-primary py-[10px] px-[15px] rounded-[10px] mt-6 max-md:text-[14px] whitespace-nowrap max-md:mx-auto">
-                Demovideo kostenlos erstellen
+                {t("Schrit.createFreeDemoVideo")}
               </button>
             </div>
           </div>
@@ -137,4 +144,5 @@ const Schrit = () => {
   );
 };
 
+// Exporting the Schrit component
 export default Schrit;

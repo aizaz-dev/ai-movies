@@ -64,6 +64,24 @@ const AboutUs = () => {
       name: `${t("about.about5.name")}`,
     },
   ];
+  const advisorsData = [
+    {
+      imgSrc: "/uben/person6.png",
+      altText: "Advisor 1",
+      title: `${t("about.adv1")}`, // Use the translation key directly
+    },
+    {
+      imgSrc: "/uben/person7.png",
+      altText: "Advisor 2",
+      title: `${t("about.adv2")}`, // Use the translation key directly
+    },
+    {
+      imgSrc: "/uben/person8.png",
+      altText: "Advisor 3",
+      title: `${t("about.adv3")}`, // Use the translation key directly
+    },
+  ];
+
   return (
     <div>
       <div>
@@ -101,37 +119,21 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="w-full bg-light100">
-        <div className="max-w-[2000px] mx-auto  w-[100%] flex flex-col lg:px-[80px] px-[20px] py-[50px] pt-[50px]  mt-[50px]">
+        <div className="max-w-[2000px] mx-auto w-[100%] flex flex-col lg:px-[80px] px-[20px] py-[50px] pt-[50px] mt-[50px]">
           <div className="xl:text-lg lg:text-md text-m2d text font-[Outfit-Bold] mb-[50px]">
             Advisors
           </div>
-          <div className="flex lg:flex-row md:flex-row flex-col w-full justify-center items-center gap-6">
-            <div className=" text-center">
-              <div className=" h-[250px] w-[250px] rounded-full  object-cover">
-                <img src="/uben/person6.png" alt="" />
+          <div className="flex lg:flex-row md:flex-row flex-col w-full justify-center items-center gap-11">
+            {advisorsData.map((advisor, index) => (
+              <div className="text-center" key={index}>
+                <div className="h-[250px] w-[250px] rounded-full object-cover">
+                  <img src={advisor.imgSrc} alt={advisor.altText} />
+                </div>
+                <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary">
+                  {t(advisor.title)}
+                </div>
               </div>
-              <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary">
-                {t("about.adv1")}
-              </div>
-            </div>
-
-            <div className=" text-center">
-              <div className=" h-[250px] w-[250px] rounded-full  object-cover">
-                <img src="/uben/person7.png" alt="" />
-              </div>
-              <div className="lg:text-[25px] md:text-[20px] text-[18px] font-bold text-primary">
-                {t("about.adv2")}
-              </div>
-            </div>
-
-            <div className=" text-center">
-              <div className=" h-[250px] w-[250px] rounded-full  object-cover">
-                <img src="/uben/person8.png" alt="" />
-              </div>
-              <div className="lg:text-[25px] md:text-[20px] text-[18px] font-bold text-primary">
-                {t("about.adv3")}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

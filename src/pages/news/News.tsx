@@ -88,7 +88,32 @@ const News = () => {
       p: `${t("news.news12.p")}`,
     },
   ];
-
+  const videoSectionData = [
+    {
+      imgSrc: "/stell/card1.png",
+      founderTextKey: `${t("news.contentfounder")}`, // Using template literals
+      watchVidTextKey: `${t("news.watchvid")}`, // Using template literals
+    },
+    {
+      imgSrc: "/stell/card1.png",
+      founderTextKey: `${t("news.last")}`, // Using template literals
+      watchVidTextKey: `${t("news.watchvid")}`, // Using template literals
+    },
+  ];
+  
+  const infoSectionData = [
+    {
+      titleKey: `${t("news.address")}`, // Using template literals
+      descKey: `${t("news.epdesc")}`, // Using template literals
+      watchVidTextKey: `${t("news.watchvid")}`, // Using template literals
+    },
+    {
+      titleKey: `${t("news.founderinfo")}`, // Using template literals
+      descKey: `${t("news.founderjourney")}`, // Using template literals
+      watchVidTextKey: `${t("news.watchvid")}`, // Using template literals
+    },
+  ];
+  
   return (
     <div className="max-w-[2000px] mx-auto my-[40px] w-[100%] flex flex-col lg:px-[80px] px-[20px] pt-[50px]">
       <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary">
@@ -98,6 +123,7 @@ const News = () => {
       <div className="xl:text-lg lg:text-md text-m2d text font-[Outfit-Bold] ">
         {t("news.title")}
       </div>
+      {/* Buttons line */}
       <div className="flex items-center justify-between my-7">
         {/* buttons */}
         <button
@@ -123,8 +149,13 @@ const News = () => {
         </button>
         {/* buttons */}
       </div>
+      {/* //Buttons line */}
+
+
+
+{/* Articles */}
       <div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
-        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-light400 justify-center flex items-center">
+        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-white justify-center flex items-center">
           <div className="text-5xl ">
             <PiNoteDuotone />{" "}
           </div>
@@ -144,10 +175,10 @@ const News = () => {
                 <img src={item.video} />
               </div>
               <div className="flex flex-col gap-[20px] lg:p-[20px] md:p[8px] p-[5px] md:w-[auto] w-[100%]  h-[auto] ">
-                <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-dark100">
+                <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black]">
                   {item.name}
                 </div>
-                <div className="lg:text-sm text-xs font-[Outfit-Regular] xl:pr-[50px]  text-dark100">
+                <div className="lg:text-sm text-xs font-[Outfit-Regular] xl:pr-[50px]  text-[black]">
                   {item.p}
                 </div>
                 <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
@@ -162,55 +193,54 @@ const News = () => {
           </div>
         );
       })}
-      <div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
-        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-light400 justify-center flex items-center">
-          <div className="text-3xl ">
-            <MdOutlineKeyboardVoice />{" "}
-          </div>
-        </div>
-        <div
-          ref={podcastSectionRef}
-          className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary"
-        >
-          {t("news.podcast")}
+
+{/* Articles */}
+
+
+{/* Podcasts */}
+<div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
+  <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-white justify-center flex items-center">
+    <div className="text-3xl ">
+      <MdOutlineKeyboardVoice />{" "}
+    </div>
+  </div>
+  <div
+    ref={podcastSectionRef}
+    className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary"
+  >
+    {`${t("news.podcast")}`}
+  </div>
+</div>
+
+<div className="lg:flex-row md:flex-row flex-col h-auto pb-2 flex gap-[40px]">
+  {infoSectionData.map((section, index) => (
+    <div
+      className="flex flex-col xl:w-[450px] lg:w-[300px] md:w-[250px] w-[100%] lg:pl-8 md:pl-6 pl-3 gap-[20px]"
+      key={index}
+    >
+      <div className="lg:text-sm text-xs font-[Outfit-Bold] text-[black] flex items-center gap-[20px]">
+        {`${t(section.titleKey)}`}
+      </div>
+      <div className="lg:text-sm text-xs font-[Outfit-Regular] text-[black] flex items-center gap-[20px]">
+        {`${t(section.descKey)}`}
+      </div>
+      <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary flex items-center gap-[20px]">
+        {`${t(section.watchVidTextKey)}`}
+        <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] ">
+          <FaArrowRight />
         </div>
       </div>
-      <div className="lg:flex-row md:flex-row flex-col h-auto pb-2 flex gap-[40px]">
-        <div className="flex flex-col xl:w-[450px] lg:w-[300px] md:w-[250px] w-[100%] lg:pl-8 md:pl-6 pl-3 gap-[20px]">
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-[black] flex items-center gap-[20px]">
-            {t("news.address")}
-          </div>
-          <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-[black] flex items-center gap-[20px]">
-            {t("news.epdesc")}
-          </div>
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-            {t("news.watchvid")}
+    </div>
+  ))}
+</div>
 
-            <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] ">
-              {" "}
-              <FaArrowRight />
-            </div>
-          </div>
-        </div>
-        <div className="flex flex-col  lg:w-[300px] md:w-[250px] w-[100%] lg:pl-8 md:pl-6 pl-3 gap-[20px]">
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-dark100 flex items-center gap-[20px]">
-            {t("news.founderinfo")}
-          </div>
-          <div className="lg:text-sm text-xs font-[Outfit-Regular]  text-dark100 flex items-center gap-[20px]">
-            {t("news.founderjourney")}
-          </div>
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-            {t("news.watchvid")}
+{/* //Podcasts */}
 
-            <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] pl-[2px]">
-              {" "}
-              <FaArrowRight />
-            </div>
-          </div>
-        </div>
-      </div>
+
+
+{/* End videos */}
       <div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
-        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-light400 justify-center flex items-center">
+        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-white justify-center flex items-center">
           <div ref={videoSectionRef} className="text-3xl">
             <FaPhotoVideo />{" "}
           </div>
@@ -219,41 +249,28 @@ const News = () => {
           Video
         </div>
       </div>
-      <div className="flex lg:pl-[40px] md:p-4 p-3 ">
-        <div className="xl:min-w-[450px] xl:max-w-[450px] lg:min-w-[390px] lg:max-w-[390px]  h-[auto] md:min-w-[270px]  w-[100%]  rounded-[15px]">
-          <img src="/stell/card1.png"></img>
-        </div>
-        <div className="flex flex-col lg:pl-8 pl-4  lg:pt-5 pt-4 gap-[20px]">
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-dark100 flex items-center gap-[20px]">
-            {t("news.contentfounder")}
-          </div>
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-            {t("news.watchvid")}
-            <div className="lg:pt-[10px] md:pt-[6px] pt-[4px] ">
-              {" "}
-              <FaArrowRight />
+      <div className="vidsection">
+        {videoSectionData.map((video, index) => (
+          <div className="flex lg:pl-[40px] md:p-4 p-3" key={index}>
+            <div className="xl:min-w-[450px] xl:max-w-[450px] lg:min-w-[390px] lg:max-w-[390px] h-[auto] md:min-w-[270px] w-[100%] rounded-[15px]">
+              <img src={video.imgSrc} alt={`Video ${index + 1}`} />
+            </div>
+            <div className="flex flex-col lg:pl-8 pl-4 lg:pt-5 pt-4 gap-[20px]">
+              <div className="lg:text-sm text-xs font-[Outfit-Bold] text-[black] flex items-center gap-[20px]">
+                {t(video.founderTextKey)}
+              </div>
+              <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary flex items-center gap-[20px]">
+                {t(video.watchVidTextKey)}
+                <div className="lg:pt-[10px] md:pt-[6px] pt-[4px] ">
+                  <FaArrowRight />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
-      <div className="flex lg:pl-[40px] md:pl-[25px] pl-[10px]  ">
-        <div className="xl:min-w-[450px] xl:max-w-[450px] lg:min-w-[390px] lg:max-w-[390px]  h-[auto] md:min-w-[270px]  w-[100%]  rounded-[15px] ">
-          <img src="/stell/card1.png"></img>
-        </div>
-        <div className="flex flex-col lg:pl-8 pl-4  lg:pt-5 pt-4 gap-[20px]">
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-dark100 flex items-center gap-[20px]">
-            {t("news.last")}
-          </div>
-          <div className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary flex items-center gap-[20px]">
-            {t("news.watchvid")}
+{/* //End videos */}
 
-            <div className="lg:pt-[10px] md:pt-[6px] pt-[4px] ">
-              {" "}
-              <FaArrowRight />
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };

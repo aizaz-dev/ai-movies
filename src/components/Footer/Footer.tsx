@@ -31,13 +31,22 @@ const Footer = () => {
                 <div className="text-sm font-[Outfit-Bold] text-light400  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.quickFind")}
                 </div>
-                <Link to="/case-studies" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                <Link
+                  to="/case-studies"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.caseStudies")}
                 </Link>
-                <Link to="/about-us" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                <Link
+                  to="/about-us"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.aboutUs")}
                 </Link>
-                <Link to="/contact" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                <Link
+                  to="/contact"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.contact")}
                 </Link>
               </div>
@@ -56,13 +65,22 @@ const Footer = () => {
                 <div className="text-sm font-[Outfit-Bold] text-light400  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.additional")}
                 </div>
-                <Link to="/contact" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                <Link
+                  to="/contact"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.contact")}
                 </Link>
-                <Link to="/faq" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                <Link
+                  to="/faq"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.faq")}
                 </Link>
-                <Link to="/jobs" className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                <Link
+                  to="/jobs"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.jobs")}
                 </Link>
               </div>

@@ -1,23 +1,33 @@
+// Importing translation hook from i18next
 import { useTranslation } from "react-i18next";
 
+// Flextop component
 const Flextop = () => {
+  // Translation hook
   const { t } = useTranslation();
 
   return (
     <div>
       <div className="w-full m-auto">
+        {/* Top section with background image */}
         <div className="bg-[url('/bg.png')] bg-cover w-[100%] lg:flex-row flex flex-col items-center justify-center py-[80px] max-md:py-[30px] px-[80px] max-tab:px-[40px] max-laptop:px-[80px] max-md:px-[30px] gap-[4%]">
+          {/* Container for content with max-width */}
           <div className="max-w-[2000px] w-full mx-auto flex gap-[60px] justify-between items-center px-[40px] max-lg:p-[40px] max-md:flex-col max-md:p-[0px]">
+            {/* Left content section */}
             <div className="w-full text-light400 flex flex-col gap-6">
+              {/* Heading 1 */}
               <h3 className="text-sm font-[Outfit-Regular] max-laptop:text-mf max-md:text-center">
                 {t("flextop.heading1")}
               </h3>
+              {/* Heading 2 */}
               <h1 className="font-[Outfit-Bold] text-left text-lg  leading-[60px] max-laptop:text-lf max-md:text-sm max-md:leading-8 max-md:text-center max-laptop:font-[700] max-laptop:leading-10">
                 {t("flextop.heading2")}
               </h1>
+              {/* Paragraph */}
               <p className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
                 {t("flextop.paragraph")}
               </p>
+              {/* Buttons */}
               <div className="btn flex gap-[20px] max-md:flex-col">
                 <button className="font-[Outfit-Regular] text-primary text-sm font-bold bg-light400 px-4 py-3 rounded-[12px] whitespace-nowrap max-laptop:text-mf">
                   {t("flextop.button1")}
@@ -27,12 +37,14 @@ const Flextop = () => {
                 </button>
               </div>
             </div>
+            {/* Right content section with video */}
             <div className="w-full lg:flex">
               <video
                 autoPlay
                 muted
                 className="object-cover m-auto controls autoPlay muted"
               >
+                {/* Video source */}
                 <source
                   className="w-full h-full object-cover"
                   src="./flexvid/vid.mp4"

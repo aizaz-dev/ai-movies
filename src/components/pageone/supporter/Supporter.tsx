@@ -1,59 +1,26 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 
+// Supporter component
 const Supporter = () => {
   const { t } = useTranslation();
 
+  // Data for supporters
   const data = [
-    {
-      id: 1,
-      image: "pageone/supporter/9.png",
-    },
-    {
-      id: 2,
-      image: "pageone/supporter/2.png",
-    },
-    {
-      id: 3,
-      image: "pageone/supporter/6.png",
-    },
-    {
-      id: 4,
-      image: "pageone/supporter/4.png",
-    },
-    {
-      id: 5,
-      image: "pageone/supporter/5.png",
-    },
-    {
-      id: 6,
-      image: "pageone/supporter/6.png",
-    },
-    {
-      id: 7,
-      image: "pageone/supporter/7.png",
-    },
-    {
-      id: 8,
-      image: "pageone/supporter/8.png",
-    },
-    {
-      id: 9,
-      image: "pageone/supporter/9.png",
-    },
-    {
-      id: 10,
-      image: "pageone/supporter/10.png",
-    },
-    {
-      id: 11,
-      image: "pageone/supporter/11.png",
-    },
-    {
-      id: 12,
-      image: "pageone/supporter/12.png",
-    },
+    { id: 1, image: "pageone/supporter/9.png" },
+    { id: 2, image: "pageone/supporter/2.png" },
+    { id: 3, image: "pageone/supporter/6.png" },
+    { id: 4, image: "pageone/supporter/4.png" },
+    { id: 5, image: "pageone/supporter/5.png" },
+    { id: 6, image: "pageone/supporter/6.png" },
+    { id: 7, image: "pageone/supporter/7.png" },
+    { id: 8, image: "pageone/supporter/8.png" },
+    { id: 9, image: "pageone/supporter/9.png" },
+    { id: 10, image: "pageone/supporter/10.png" },
+    { id: 11, image: "pageone/supporter/11.png" },
+    { id: 12, image: "pageone/supporter/12.png" },
   ];
+
+  // Rendering the Supporter component
   return (
     <div className="w-full bg-light400 py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px]">
       <div className="max-w-[2000px] mx-auto">
