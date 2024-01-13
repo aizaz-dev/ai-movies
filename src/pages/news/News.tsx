@@ -1,19 +1,22 @@
 import { PiNoteDuotone } from "react-icons/pi";
 import { MdOutlineKeyboardVoice } from "react-icons/md";
-import { FaPhotoVideo } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
+import { FaPhotoVideo, FaArrowRight } from "react-icons/fa";
 import { useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 const News = () => {
   const { t } = useTranslation();
 
+  // Refs for scrolling to specific sections
   const newsSectionRef = useRef(null);
   const podcastSectionRef = useRef(null);
   const videoSectionRef = useRef(null);
+
+  // Function to scroll to a specific section
   const scrollToSection = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
+  // Data for news articles
   const news = [
     {
       id: 1,
@@ -88,6 +91,7 @@ const News = () => {
       p: `${t("news.news12.p")}`,
     },
   ];
+  // Data for video section
   const videoSectionData = [
     {
       imgSrc: "/stell/card1.png",
@@ -100,7 +104,7 @@ const News = () => {
       watchVidTextKey: `${t("news.watchvid")}`, // Using template literals
     },
   ];
-  
+  // Data for information section
   const infoSectionData = [
     {
       titleKey: `${t("news.address")}`, // Using template literals
@@ -113,7 +117,7 @@ const News = () => {
       watchVidTextKey: `${t("news.watchvid")}`, // Using template literals
     },
   ];
-  
+
   return (
     <div className="max-w-[2000px] mx-auto my-[40px] w-[100%] flex flex-col lg:px-[80px] px-[20px] pt-[50px]">
       <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary">
@@ -151,9 +155,7 @@ const News = () => {
       </div>
       {/* //Buttons line */}
 
-
-
-{/* Articles */}
+      {/* Articles */}
       <div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
         <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-white justify-center flex items-center">
           <div className="text-5xl ">
@@ -194,51 +196,48 @@ const News = () => {
         );
       })}
 
-{/* Articles */}
+      {/* Articles */}
 
-
-{/* Podcasts */}
-<div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
-  <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-white justify-center flex items-center">
-    <div className="text-3xl ">
-      <MdOutlineKeyboardVoice />{" "}
-    </div>
-  </div>
-  <div
-    ref={podcastSectionRef}
-    className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary"
-  >
-    {`${t("news.podcast")}`}
-  </div>
-</div>
-
-<div className="lg:flex-row md:flex-row flex-col h-auto pb-2 flex gap-[40px]">
-  {infoSectionData.map((section, index) => (
-    <div
-      className="flex flex-col xl:w-[450px] lg:w-[300px] md:w-[250px] w-[100%] lg:pl-8 md:pl-6 pl-3 gap-[20px]"
-      key={index}
-    >
-      <div className="lg:text-sm text-xs font-[Outfit-Bold] text-[black] flex items-center gap-[20px]">
-        {`${t(section.titleKey)}`}
-      </div>
-      <div className="lg:text-sm text-xs font-[Outfit-Regular] text-[black] flex items-center gap-[20px]">
-        {`${t(section.descKey)}`}
-      </div>
-      <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary flex items-center gap-[20px]">
-        {`${t(section.watchVidTextKey)}`}
-        <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] ">
-          <FaArrowRight />
+      {/* Podcasts */}
+      <div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
+        <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-white justify-center flex items-center">
+          <div className="text-3xl ">
+            <MdOutlineKeyboardVoice />{" "}
+          </div>
+        </div>
+        <div
+          ref={podcastSectionRef}
+          className="lg:text-sm text-xs font-[Outfit-Bold]  text-primary"
+        >
+          {`${t("news.podcast")}`}
         </div>
       </div>
-    </div>
-  ))}
-</div>
 
-{/* //Podcasts */}
+      <div className="lg:flex-row md:flex-row flex-col h-auto pb-2 flex gap-[40px]">
+        {infoSectionData.map((section, index) => (
+          <div
+            className="flex flex-col xl:w-[450px] lg:w-[300px] md:w-[250px] w-[100%] lg:pl-8 md:pl-6 pl-3 gap-[20px]"
+            key={index}
+          >
+            <div className="lg:text-sm text-xs font-[Outfit-Bold] text-[black] flex items-center gap-[20px]">
+              {`${t(section.titleKey)}`}
+            </div>
+            <div className="lg:text-sm text-xs font-[Outfit-Regular] text-[black] flex items-center gap-[20px]">
+              {`${t(section.descKey)}`}
+            </div>
+            <div className="lg:text-sm text-xs font-[Outfit-Bold] text-primary flex items-center gap-[20px]">
+              {`${t(section.watchVidTextKey)}`}
+              <div className="lg:pt-[5.5px] md:pt-[6px] pt-[4px] ">
+                <FaArrowRight />
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
 
+      {/* //Podcasts */}
 
-
-{/* End videos */}
+      {/* End videos */}
       <div className="w-[100%] flex gap-[20px] bg-light100 lg:my-[30px] md:my-[20px] my-[10px] rounded-l-3xl mr-[30px] items-center">
         <div className="lg:w-[70px] lg:h-[70px] w-[50px] h-[50px] outline-primary outline rounded-full bg-white justify-center flex items-center">
           <div ref={videoSectionRef} className="text-3xl">
@@ -269,8 +268,7 @@ const News = () => {
           </div>
         ))}
       </div>
-{/* //End videos */}
-
+      {/* //End videos */}
     </div>
   );
 };
