@@ -1,12 +1,15 @@
 import CustomButton from "../../components/CustomButton";
 import { useTranslation } from "react-i18next";
 
+// Blog 2 Component
 export default function Home() {
   const { t } = useTranslation();
 
   return (
     <div className=" ">
+      {/* Image Section */}
       <img className="w-[100%]  object-cover" src="/blog2/girl.png" alt="pic" />
+      {/* Main Content Section */}
       <div className="max-w-[2000px] m-auto  px-[60px] max-tab:px-[40px] max-md:px-[28px]">
         <div className=" flex justify-center w-[100%]">
           <div className="w-[100%] flex flex-col justify-center my-[40px]">
@@ -18,6 +21,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Main Text Section */}
         <div className="w-[100%] flex justify-center">
           <div className="w-[100%] ">
             <p className="lg:text-sm text-xs font-[Outfit-Regular] text-dark100">
