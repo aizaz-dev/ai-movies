@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 const Jobs = () => {
   const { t } = useTranslation();
-
+  // Slider settings
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -31,6 +31,7 @@ const Jobs = () => {
                 <h3 className="text-sm font-[Outfit-Bold] max-laptop:text-mf max-md:text-center">
                   {t("jobspage.joinUsHeading")}
                 </h3>
+                {/* Hero Main Heading */}
                 <h1 className="font-[Outfit-Bold] text-left text-lg   leading-[60px] max-laptop:text-lf max-md:text-sm max-md:leading-8 max-md:text-center max-laptop:font-[700] max-laptop:leading-10">
                   {t("jobspage.joinUsTitle")}
                 </h1>
