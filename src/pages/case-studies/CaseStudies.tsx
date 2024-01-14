@@ -62,9 +62,9 @@ const CaseStudies = () => {
                   {item.des}
                 </div>
 
-                <div className="whitespace-nowrap h-[31px] w-[full] lg:text-[25px] md:text-[18px] text-[13px] font-[Outfit-Bold] text-primary flex justify-end lg:pr-3 md:pr-1 pr-0 mt-[50px]">
+                <div className="whitespace-nowrap h-[31px] w-[full] xl:text-[25px] lg:text-[20px] md:text-[15px] text-[16px] font-[Outfit-Bold] text-primary flex items-center justify-end lg:pr-3 md:pr-1 pr-0 mt-[50px]">
                   {t("caseStudies.button")}
-                  <div className="lg:pt-[10px] md:pt-[6px] pt-[5px] ">
+                  <div className=" ">
                     <GoArrowRight className="text-sm" />
                   </div>
                 </div>

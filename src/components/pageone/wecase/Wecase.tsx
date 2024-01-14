@@ -332,7 +332,7 @@ const Wecase = () => {
             <div className="flex flex-wrap gap-x-[20px] max-tab:flex-col max-tab:items-start max-tab:gap-[15px]">
               {selectedCategoryData?.industries?.map((industry, index) => (
                 <div
-                  key={index}
+                key={index}
                   className="text-primary text-sm font-[Outfit-Regular] max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-justify flex items-center justify-center gap-[10px]"
                 >
                   {industry?.name}{" "}

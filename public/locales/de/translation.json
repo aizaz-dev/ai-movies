@@ -849,9 +849,7 @@
   },
 
   "languages": {
-    "english": "Anglais",
-    "german": "Allemand",
-    "french": "Français",
-    "spanish": "Espagnol"
+    "english": "Englisch",
+    "german": "Deutsch"
   }
 }

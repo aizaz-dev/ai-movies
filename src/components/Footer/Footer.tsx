@@ -8,12 +8,40 @@ const Footer = () => {
   const { t, i18n } = useTranslation();
   useEffect(() => {
     const storedLanguage = localStorage.getItem("selectedLanguage");
-    const defaultLanguage = storedLanguage || "en";
 
-    i18n.changeLanguage(defaultLanguage);
-    localStorage.setItem("selectedLanguage", defaultLanguage);
+    const setLanguage = (language) => {
+      if (i18n.language !== language) {
+        i18n.changeLanguage(language);
+        localStorage.setItem("selectedLanguage", language);
+      }
+    };
+
+    const handleLanguageChange = () => {
+      const browserLanguage =
+        navigator.languages && navigator.languages.length
+          ? navigator.languages[0]
+          : navigator.language;
+      const defaultLanguage =
+        storedLanguage || browserLanguage.split("-")[0] || "en";
+
+      setLanguage(defaultLanguage);
+    };
+
+    // Set the initial language
+    handleLanguageChange();
+
+    // Listen for changes in local storage
+    window.addEventListener("storage", (event) => {
+      if (event.key === "selectedLanguage") {
+        handleLanguageChange();
+      }
+    });
+
+    return () => {
+      // Remove the event listener when the component is unmounted
+      window.removeEventListener("storage", handleLanguageChange);
+    };
   }, [i18n]);
-
   return (
     <div className="bg-dark200  lg:px-[80px] px-[20px] pb-[40px]  w-[100%]">
       <div className="max-w-[2000px] mx-auto">
@@ -137,6 +165,7 @@ const Footer = () => {
                 i18n.changeLanguage(selectedLanguage);
                 localStorage.setItem("selectedLanguage", selectedLanguage);
               }}
+              value={i18n.language} // Set the selected value based on the current language
             >
               <option value="en">{t("languages.english")}</option>
               <option value="de">{t("languages.german")}</option>
