@@ -301,7 +301,7 @@ const Wecase = () => {
           {t("weCase.description")}
         </p>
 
-        <div className="flex max-md:flex-col gap-10">
+        <div className="flex max-maxtab:flex-col gap-10">
           <div className="full bg-light400 w-[60%] max-md:w-full p-[40px] md:px-[60px] rounded-[10px] shadow-md">
             <p className="text-left text-sm font-[Outfit-Regular] max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
               {selectedCategoryData?.description}
@@ -329,7 +329,7 @@ const Wecase = () => {
                 );
               })}
             </div>
-            <div className="flex gap-[30px] max-tab:flex-col max-tab:items-start max-tab:gap-[15px]">
+            <div className="flex flex-wrap gap-x-[20px] max-tab:flex-col max-tab:items-start max-tab:gap-[15px]">
               {selectedCategoryData?.industries?.map((industry, index) => (
                 <div
                   key={index}
