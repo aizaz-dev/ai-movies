@@ -36,8 +36,8 @@
     "buttonTitle": "Mehr Features entdecken"
   },
   "Benefits": {
-    "BENEFITS_TITLE": "Unsere Vorteile",
-    "BENEFITS_SUBTITLE": "Warum Sie uns wählen sollten",
+    "BENEFITS_TITLE": "Welche Vorteile haben Sie?",
+    "BENEFITS_SUBTITLE": "BENEFIT",
     "Benefit1": {
       "Title": "Kurze Bereitstellungszeit",
       "Description": "Unsere Software reduziert die Videoerstellungszeit um über 90% im Vergleich zu traditionellen Agenturen, wodurch Schulungen rasch umgesetzt werden."
@@ -77,6 +77,10 @@
     "CreateDemoVideo": "Demovideo kostenlos erstellen"
   },
   "weCase": {
+    "null":{
+"Description":"a",
+"currently":"w"
+    },
     "title": "USE CASES",
     "subtitle": "Wo können Sie unsere Videos einsetzen?",
     "description": "Unsere KI Software kann im Unternehmen für die verschiedensten Schulungszwecke verwendet werden, insbesondere eignet sich der Start in den folgenden Bereichen, um Ihr Unternehmen und Ihre Verwaltung zu entlasten:",
@@ -157,7 +161,9 @@
       "Name": "Software-Schulung",
       "Des": "“In der Einführung von KIUnterstützung für Schulungsvideos sehen wir großes Potential um unseren Mitarbeitenden die immer komplexeren Fachanwendungen und Prozessabläufe zu erklären. Wir sind stolz darauf, die Vorreiterrolle in der Digitalisierung zu übernehmen und anderen Landkreisen zu zeigen, wie sie von dieser Technologie profitieren können.“",
       "Username": "Christian Färber",
-      "Userinfo": "Digitalbeauftragter Neuburg-Schrobenhausen"
+      "Userinfo": " Neuburg - Schrobenhausen",
+      "userdone":"Digitalisierung",
+      "done":"sbeauftragter"
     },
     "Box3": {
       "Name": "Eine weitere Fallstudie",
@@ -168,6 +174,7 @@
   },
 
   "Press": {
+    "MORE_NEWS_BUTTON":"Mehr News",
     "TITLE": "PRESSE",
     "SUBTITLE": "Das sagen die Medien",
     "con1": "EP 28 Learn from an entrepreneur: Florian Scherl, Founder at Fast AI Movies In dieser Episode trifft Antoine Leboyer Florian Scherl, Gründer von FAST AI Movies"

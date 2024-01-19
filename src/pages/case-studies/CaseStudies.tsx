@@ -44,12 +44,12 @@ const CaseStudies = () => {
           {t("caseStudies.subtitle")}
         </div>
         {/* Subtitle for Case Studies */}
-        <div className="w-[100%] flex justify-between  max-tab:flex-col lg:gap-8 gap-6 items-start mt-[60px]">
+        <div className="w-[100%] flex justify-between  max-tab:flex-col lg:gap-8 gap-6 items-stretch mt-[60px]">
           {box.map((item) => {
             return (
               <div
                 key={item.id}
-                className="bg-light100 w-[30%] max-tab:w-full h-fit rounded-[10px] shadow-md  lg:p-[40px] p-[20px]"
+                className="bg-light100 relative w-[30%] max-tab:w-full rounded-[10px] shadow-md  lg:p-[40px] p-[20px]"
               >
                 <div className="flex items-center object-cover ">
                   <img src={item.logo} alt="" width="300px" />
@@ -58,14 +58,14 @@ const CaseStudies = () => {
                 <div className="text-sm  text-dark100 font-bold font-[Outfit-Bold] max-md:text-left max-laptop:text-mf">
                   {item.name}
                 </div>
-                <div className="text-sm font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start">
+                <div className="text-sm pb-[80px] font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start">
                   {item.des}
                 </div>
 
-                <div className="whitespace-nowrap h-[31px] w-[full] xl:text-[25px] lg:text-[20px] md:text-[15px] text-[16px] font-[Outfit-Bold] text-primary flex items-center justify-end lg:pr-3 md:pr-1 pr-0 mt-[50px]">
+                <div className="whitespace-nowrap absolute pb-7 bottom-6 right-4 h-[31px] w-[full] xl:text-[25px] lg:text-[20px] md:text-[15px] text-[16px] font-[Outfit-Bold] text-primary flex items-center justify-end lg:pr-3 md:pr-1 pr-0 ">
                   {t("caseStudies.button")}
                   <div className=" ">
-                    <GoArrowRight className="text-sm" />
+                    <GoArrowRight className="text-sm ml-1" />
                   </div>
                 </div>
               </div>

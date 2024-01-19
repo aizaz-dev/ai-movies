@@ -141,7 +141,7 @@ const Stellenbeschreibung = () => {
       </div>
 
       {/* WHY FAST AI MOVIES Headings? */}
-      <div className=" w-[100%]  flex  justify-center bg-light100  ">
+      <div className=" w-[100%]  flex   justify-center bg-light100  ">
         <div className=" w-[100%] max-w-[2000px] mx-auto  p-[80px] max-md:p-[30px] max-tab:p-[40px]">
           <div className=" flex  flex-col gap-[20px] mt-[50px]">
             <h3 className=" text-sm font-bold font-[Outfit-Bold] max-md:text-center max-laptop:text-mf text-primary">
@@ -151,7 +151,7 @@ const Stellenbeschreibung = () => {
             <div className="w-[100%] flex justify-center">
               <div className="w-[100%]  max-w-[2000px]">
                 <div className="w-[100%] pb-[50px] flex flex-col gap-[20px]">
-                  <div className="lg:gap-[2%]  justify-between flex-wrap flex lg:flex-row flex-col w-[100%] max-md:items-center mt-[50px] max-tab:mt-[20px] gap-[30px]">
+                  <div className="lg:gap-[2%]  justify-between flex-wrap flex lg:flex-row flex-col w-[100%] max-md:justify-start mt-[50px] max-tab:mt-[20px] max-tab:flex-row max-tab:justify-start max-md:items-center gap-[30px]">
                     {jobSections.map(renderSection)}
                   </div>
                 </div>

@@ -34,6 +34,10 @@
     "CreateDemoVideo": "Create a demo video for free"
   },
   "weCase": {
+    "null":{
+      "Description":"v",
+      "currently":"w"
+          },
     "title": "Case Studies",
     "subtitle": "Explore Our Use Cases",
     "description": "Discover how our technology is revolutionizing industries.",
@@ -123,8 +127,8 @@
   },
 
   "Benefits": {
-    "BENEFITS_TITLE": "Our Benefits",
-    "BENEFITS_SUBTITLE": "Why Choose Us",
+    "BENEFITS_TITLE": "What advantages do you have?",
+    "BENEFITS_SUBTITLE": "BENEFIT",
     "Benefit1": {
       "Title": "Short Deployment Time",
       "Description": "Our software reduces video creation time by over 90% compared to traditional agencies, enabling rapid training implementation."
@@ -174,7 +178,9 @@
     "feature3Title": "Automated Animations",
     "feature3Description": "Automatically create animations from text inputs, including charts and icons.",
     "feature4Title": "Various Language Styles",
-    "feature4Description": "Enter content in bullet points and choose from various output styles tailored to your audience - from simple language to technical jargon."
+    "feature4Description": "Enter content in bullet points and choose from various output styles tailored to your audience - from simple language to technical jargon.",
+    "buttonTitle": "Discover more features"
+
   },
   "Case": {
     "TITLE": "STATEMENTS",
@@ -189,7 +195,9 @@
       "Name": "Software Training",
       "Des": "Description for Box 2...",
       "Username": "Christian Färber",
-      "Userinfo": "Digital Officer Neuburg-Schrobenhausen"
+      "Userinfo": " Neuburg-Schrobenhausen",
+      "userdone":"Digitalization",
+      "done":"expert"
     },
     "Box3": {
       "Name": "Another Case Study",
@@ -199,6 +207,7 @@
     }
   },
   "Press": {
+    "MORE_NEWS_BUTTON":"More news",
     "TITLE": "PRESS",
     "SUBTITLE": "What the media says"
   },
@@ -244,6 +253,7 @@
   "feature": {
     "heading1": "FEATURES",
     "heading3": "Comprehensive features for an ideal result",
+
     "feature1": {
       "title": "Diverse export options",
       "description": "Download training courses as MP4, use the LMS-compatible file or share your content directly via URL. A PDF export for animations is also available."

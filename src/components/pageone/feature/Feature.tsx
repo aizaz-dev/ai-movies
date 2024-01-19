@@ -47,14 +47,14 @@ const Feature: React.FC = () => {
   // Rendering the Feature component
   return (
     <div className="w-full bg-light400 py-20 px-[80px] max-tab:px-[40px] max-md:px-[30px] ">
-      <div className="max-w-[2000px] m-auto">
+      <div style={{overflowWrap:'break-word'}} className="max-w-[2000px] m-auto ">
         {/* Section Title */}
-        <h3 className="text-sm font-bold font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf">
+        <h3 className="text-sm  font-bold font-[Outfit-Bold]  text-primary max-md:text-center max-laptop:text-mf">
           {t('features.sectionTitle')}
         </h3>
 
         {/* Ideal Features Title */}
-        <h1 className="text-lg font-[Outfit-Bold]  max-md:text-sm max-md:text-center max-laptop:text-lf ">
+        <h1   className="text-lg  flex  flex-wrap  font-[Outfit-Bold] text-wrap break-words  max-md:text-sm max-md:text-center max-laptop:text-lf ">
           {t('features.idealFeaturesTitle')}
         </h1>
 
@@ -63,7 +63,7 @@ const Feature: React.FC = () => {
           {featuresData.map((feature) => (
             <div
               key={feature.id}
-              className="item w-[100%] p-[30px] max-md:w-full max-md:items-center flex flex-col gap-[30px]"
+              className="item w-[100%] whitespace-pre-wrap max-md:w-full max-md:items-center flex flex-col gap-[30px]"
             >
               {/* Feature Image */}
               <img
@@ -75,7 +75,7 @@ const Feature: React.FC = () => {
               {/* Feature Details */}
               <div className="flex flex-col gap-2">
                 {/* Feature Title */}
-                <h1 className="text-sm text-primary font-bold font-[Outfit-Bold] max-md:text-left max-laptop:text-mf whitespace-nowrap">
+                <h1 className="text-sm text-primary font-bold text-wrap font-[Outfit-Bold] max-md:text-left max-laptop:text-mf whitespace-nowrap">
                   {feature.titleKey}
                 </h1>
 

@@ -21,6 +21,32 @@ const Jobs = () => {
     centerPadding: "0", // No padding for center mode
     dotsClass: "slick-dots custom-dots", // Custom class for dots
   };
+
+
+  const jobStudiesData = [
+    {
+      id: 1,
+      projectStudyTitle: `${t("jobspage.projectStudyTitle")}`,
+      complianceLegalMarketSegment: t("jobspage.complianceLegalMarketSegment"),
+    },
+    {
+      id: 2,
+      projectStudyTitle: `${t("jobspage.projectStudyTitle")}`,
+      complianceLegalMarketSegment: t("jobspage.complianceLegalMarketSegment"),
+    },
+    {
+      id: 3,
+      projectStudyTitle: `${t("jobspage.projectStudyTitle")}`,
+      complianceLegalMarketSegment: t("jobspage.complianceLegalMarketSegment"),
+    },
+    {
+      id: 4,
+      projectStudyTitle: `${t("jobspage.projectStudyTitle")}`,
+      complianceLegalMarketSegment: t("jobspage.complianceLegalMarketSegment"),
+    },
+    
+  ];
+
   return (
     <div className="w-[100%] mb-[80px] flex flex-col">
       <div>
@@ -79,63 +105,26 @@ const Jobs = () => {
         </div>
       </div>
       <div className="max-w-[2000px] mx-auto  w-[100%] flex flex-col lg:px-[80px] px-[20px] pt-[50px]">
-        <div className="w-[100%] flex items-center lg:gap-6 md:gap-4 gap-3 flex-col lg:mt-[50px] md:mt-[30px] mt-[20px]">
-          <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
-            <div>
-              <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                {t("jobspage.projectStudyTitle")}
-              </div>
-              <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                {t("jobspage.complianceLegalMarketSegment")}
-              </div>
+      <div className="w-[100%] flex items-center lg:gap-6 md:gap-4 gap-3 flex-col lg:mt-[50px] md:mt-[30px] mt-[20px]">
+      {jobStudiesData.map((item) => (
+        <div
+          key={item.id}
+          className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100 rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md items-center"
+        >
+          <div>
+            <div className="font-[Outfit-Bold]  text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
+              {item.projectStudyTitle}
             </div>
-            <div className="text-[40px]   text-light200">
-              <FaAngleRight />
-            </div>
-          </div>
-
-          <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
-            <div>
-              <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
-                {t("jobspage.projectStudyTitle")}
-              </div>
-              <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                {t("jobspage.complianceLegalMarketSegment")}
-              </div>
-            </div>
-            <div className="text-[40px]   text-light200">
-              <FaAngleRight />
+            <div className="font-[Outfit-Regular] text-left text-sm max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
+              {item.complianceLegalMarketSegment}
             </div>
           </div>
-
-          <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
-            <div>
-              <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start ">
-                {t("jobspage.projectStudyTitle")}
-              </div>
-              <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                {t("jobspage.complianceLegalMarketSegment")}
-              </div>
-            </div>
-            <div className="text-[40px] text-light200">
-              <FaAngleRight />
-            </div>
-          </div>
-
-          <div className="w-[93%] lg:h-[140px] md:h-[80px] h-60px bg-light100  rounded-[5px] flex lg:px-[50px] md:px-[20px] px-[10px] py-[10px] justify-between shadow-md  items-center">
-            <div>
-              <div className="font-[Outfit-Bold] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                {t("jobspage.projectStudyTitle")}
-              </div>
-              <div className="font-[Outfit-Regular] text-left text-sm  max-tab:w-auto max-md:text-mf max-laptop:text-mf max-md:text-start">
-                {t("jobspage.complianceLegalMarketSegment")}
-              </div>
-            </div>
-            <div className="text-[40px] font-[900] text-light200">
-              <FaAngleRight />
-            </div>
+          <div className="text-[40px] text-light200">
+            <FaAngleRight />
           </div>
         </div>
+      ))}
+    </div>
       </div>
     </div>
   );

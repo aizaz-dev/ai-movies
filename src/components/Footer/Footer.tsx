@@ -3,6 +3,7 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { BsSend } from "react-icons/bs";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { MdLanguage } from "react-icons/md";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
@@ -159,7 +160,7 @@ const Footer = () => {
             <select
               name=""
               id=""
-              className="rounded-md px-[24px] max-tab:mt-[20px] py-[8px] font-[Outfit-Bold] max-md:mx-auto"
+              className="rounded-md mt-[30px] px-[24px] max-tab:mt-[20px] py-[8px] font-[Outfit-Bold] max-md:mx-auto"
               onChange={(e) => {
                 const selectedLanguage = e.target.value;
                 i18n.changeLanguage(selectedLanguage);
@@ -167,8 +168,8 @@ const Footer = () => {
               }}
               value={i18n.language} // Set the selected value based on the current language
             >
-              <option value="en">{t("languages.english")}</option>
-              <option value="de">{t("languages.german")}</option>
+              <option value="en">{t("languages.english")}(EN)</option>
+              <option value="de">{t("languages.german")} (DE)</option>
               {/* Add more language options as needed */}
             </select>
           </div>

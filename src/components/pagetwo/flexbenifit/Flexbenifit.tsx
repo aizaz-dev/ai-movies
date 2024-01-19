@@ -18,7 +18,7 @@ const Flexbenifit = () => {
   const benefitsArray1 = ["benefitsList", "benefitsList2", "benefitsList3"];
   const benefitsArray2 = ["benefitsList", "benefitsList2", "benefitsList3"];
   return (
-    <div className=" w-[100%]  mt-[100px] px-[80px] max-tab:px-[40px] max-md:px-[30px]">
+    <div className=" w-[100%]  py-[80px] px-[80px] max-tab:px-[40px] max-md:px-[30px]">
       <div className="max-w-[2000px]  m-auto">
         {/* BENEFITS Optimal Performance for Your Business */}
         <h3 className="text-sm text-left max-tab:text-center font-bold font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf">

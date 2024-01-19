@@ -7,7 +7,7 @@ const Dataprivacy = () => {
 
   // Rendering the Dataprivacy component
   return (
-    <div className="w-full mt-[40px] bg-light100 py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px]">
+    <div className="w-full mt-[40px]  bg-light100 py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px]">
       <div className="max-w-[2000px] m-auto">
         {/* Title */}
         <h3 className="text-sm  font-bold font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf">

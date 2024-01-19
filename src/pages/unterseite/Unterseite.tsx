@@ -1,6 +1,8 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
-
+import  { useRef, useState, useEffect } from "react";
+import { FaPlayCircle } from "react-icons/fa";
+import { FaPauseCircle } from "react-icons/fa";
 const Unterseite = () => {
   const { t } = useTranslation();
   // Data for the sections
@@ -25,6 +27,49 @@ const Unterseite = () => {
     },
   ];
 
+
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [showControls, setShowControls] = useState(true);
+
+  useEffect(() => {
+    let timeoutId;
+
+    const handleMouseMove = () => {
+      // Show controls on mouse move
+      setShowControls(true);
+
+      // Clear previous timeout
+      clearTimeout(timeoutId);
+
+      // Set a timeout to hide controls after a certain time
+      timeoutId = setTimeout(() => {
+        setShowControls(false);
+      }, 1000);
+    };
+
+    // Attach event listener to the video container
+    const videoContainer = document.querySelector(".video-container");
+    videoContainer.addEventListener("mousemove", handleMouseMove);
+
+    // Cleanup function to remove event listener
+    return () => {
+      videoContainer.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
+  const handlePlayPause = () => {
+    const video = videoRef.current;
+    if (isPlaying) {
+      video.play();
+    } else {
+      video.pause();
+    }
+    setIsPlaying(!isPlaying);
+
+    // Show controls when play/pause button is clicked
+    setShowControls(true);
+  };
   return (
     <div className="w-full bg-ligh400 ">
       <div className="max-w-[2000px] mx-auto py-10 px-[80px] max-tab:px-[40px] max-md:px-[30px]">
@@ -144,31 +189,33 @@ const Unterseite = () => {
           <div>
             {/*  */}
             <div className="w-full m-auto bg-light100">
-              <div className="max-w-[2000px] w-[100%] lg:flex-col flex flex-col py-[80px] max-md:py-[30px] lg:px-[80px] px-[30px]  gap-[50px] ">
+              <div className="max-w-[2000px] mx-auto w-[100%] lg:flex-col flex flex-col py-[80px] max-md:py-[30px] lg:px-[80px] px-[30px]  gap-[50px] ">
                 <div className="text-lg font-[Outfit-Bold] max-md:text-sm max-md:text-center max-laptop:text-lf ">
                   Überzeugen Sie sich vom Ergebnis
                 </div>
-                <div className=" w-full mx-auto flex gap-10 lg:flex-row-reverse flex-col-reverse  ">
-                  <div className="w-[500px] text-dark100 flex flex-col">
+                <div className=" w-full mx-auto flex  gap-10 flex-row-reverse max-tab:flex-col-reverse  ">
+                  <div className="w-[50%] max-tab:w-full text-dark100  max-tab:text-center text-wrap flex flex-col">
                     {/* Video Explanation Title */}
                     <h1 className="text-sm font-bold font-[Outfit-Bold] text-dark100 max-md:text-center max-laptop:text-mf">
                       Wie ist dieses Video entstanden?
                     </h1>
                     {/* Video Explanation Content */}
-                    <p className="text-sm font-[Outfit-Regular] text-dark100 max-md:text-center max-laptop:text-mf">
+                    <p className="text-sm w-[440px] max-tab:w-auto text-wrap whitespace-pre-wrap break-words font-[Outfit-Regular] text-dark100 max-md:text-center max-laptop:text-mf">
                       Die Grundlage für dieses Video ist ein einfacher
                       Eingabetext, den der Kunde unserer KI-Software
                       bereitgestellt hat.
                     </p>
                     {/* Show Input Text Button */}
-                    <div className="bg-light400 mt-8 text-primary border-[3px] border-primary [font-family:Outfit-Bold] rounded-[10px] px-[24px] py-[8px] lg:text-sm text-xs w-fit h-fit ">
+                    <button className="bg-light400 max-tab:text-mf max-tab:mx-auto mt-8 whitespace-nowrap text-primary border-[3px] border-primary [font-family:Outfit-Bold] rounded-[10px] px-[24px] py-[8px] lg:text-sm text-xs w-fit h-fit ">
                       Eingabetext anzeigen
-                    </div>
+                    </button>
                   </div>
                   {/* Video Display */}
-                  <div className=" w-full p-3 ">
+                  <div className=" w-1/2 max-tab:w-full flex items-center justify-center relative p-3 video-container ">
                     <video
-                      className="w-full object-cover m-auto"
+                ref={videoRef}
+
+                      className="w-full object-cover m-auto rounded-[10px] shadow-md"
                       autoPlay
                       muted
                     >
@@ -178,13 +225,31 @@ const Unterseite = () => {
                         type="video/mp4"
                       />
                     </video>
+                    {showControls && (
+              <div
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer "
+                onClick={handlePlayPause}
+              >
+                {isPlaying ? (
+                  <FaPauseCircle
+                    color="#fff"
+                    className="bg-white text-[100px] max-tab:text-[50px]  rounded-[50%] bg-opacity-[0.7] opacity-[0.7]"
+                  />
+                ) : (
+                  <FaPlayCircle
+                    color="#fff"
+                    className=" text-[100px] max-tab:text-[50px] bg-white  rounded-[50%] bg-opacity-[0.7] opacity-[0.7]"
+                  />
+                )}
+              </div>
+            )}
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Additional Section */}
-            <div className="max-w-[2000px] w-[100%] lg:flex-col flex flex-col py-[80px] max-md:py-[30px] lg:px-[80px] px-[30px] mt-[80px]">
+            <div className="max-w-[2000px] mx-auto w-[100%] lg:flex-col flex flex-col py-[80px] max-md:py-[30px] lg:px-[80px] px-[30px] mt-[80px]">
               {/* Additional Section Title */}
               <h3 className="text-sm font-bold font-[Outfit-Bold] text-primary max-md:text-center max-laptop:text-mf">
                 {t("unterseite.act.title")}
