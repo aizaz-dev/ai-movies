@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import {
   Dialog,
   //  Disclosure,
@@ -14,6 +16,7 @@ import {
   // SquaresPlusIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 // import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 // import { PiCheckLight } from "react-icons/pi";
 
@@ -34,74 +37,76 @@ import {
 // }
 
 const Header = () => {
+  const { t } = useTranslation();
+
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
-    <div className=" shadow-md    bg-white ">
-      <header  className="bg-white   shadow-md relative p-0 m-0 top-0 z-10">
-        <nav 
+    <div className=" shadow-md bg-light400 ">
+      <header className="bg-light400   shadow-md relative p-0 m-0 top-0 z-10">
+        <nav
           className="mx-auto  flex items-center justify-between p-6 max-laptop:py-1 lg:px-8  "
           aria-label="Global"
         >
           <div className="flex lg:flex-1  ">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
+            <Link to="/" className="-m-1.5 p-1.5">
+              <span className="sr-only">{t("header.companyname")}</span>
               {/* <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
             <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" /> */}
               {/* <img className="h-8 w-auto" src="./log.png" alt="" /> */}
               <img
-                className="h-20  max-md:h-10 w-auto"
+                className="w-[230px]  max-md:[200px] "
                 src="/company.png"
                 alt=""
               />
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-dark100"
               onClick={() => setMobileMenuOpen(true)}
             >
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">{t("header.openmainmenu")}</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <Popover.Group className="hidden lg:flex lg:items-center lg:gap-x-12 ">
-            <a
-              href="#"
-              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-gray-900"
+            <Link
+              to="/product"
+              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-headerText"
             >
-              Produkt
-            </a>
-            <a
-              href="#"
-              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-gray-900"
+              {t("header.menus.1")}
+            </Link>
+            <Link
+              to="/case-studies"
+              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-headerText"
             >
-              Case Studies
-            </a>
-            <a
-              href="#"
-              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-gray-900"
+              {t("header.menus.2")}
+            </Link>
+            <Link
+              to="/about-us"
+              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-headerText"
             >
-              Uber Uns
-            </a>
-            <a
-              href="#"
-              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-gray-900"
+              {t("header.menus.3")}
+            </Link>
+            <Link
+              to="/contact"
+              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-headerText"
             >
-              Kontakt
-            </a>
-            <a
-              href="#"
-              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-gray-900"
+              {t("header.menus.4")}
+            </Link>
+            <Link
+              to="faq"
+              className="text-sm max-laptop:text-[14px] font-[Outfit-Regular] leading-6 text-headerText"
             >
-              FAQ
-            </a>
+              {t("header.menus.5")}
+            </Link>
             <button className=" bg-blue-700 font-[Outfit-Bold] py-[10px] px-[12px] rounded-[5px] text-light400 text-sm max-laptop:text-[14px]">
-              Demovideo kostenlose erstaellen
+              {t("header.buttontext")}
             </button>
           </Popover.Group>
           {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm font-[Outfit-Regular] leading-6 text-gray-900">
+          <a href="#" className="text-sm font-[Outfit-Regular] leading-6 text-headerText">
             Log in <span aria-hidden="true">&rarr;</span>
           </a>
         </div> */}
@@ -113,27 +118,23 @@ const Header = () => {
           onClose={setMobileMenuOpen}
         >
           <div className="fixed inset-0 z-10" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <Dialog.Panel className="fixed inset-y-0 right-0 z-[1000] w-full overflow-y-auto bg-light400 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">Your Company</span>
+              <Link to="" className="-m-1.5 p-1.5">
+                {/* <span className="sr-only">{t("header.companyname")}</span> */}
                 {/* <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
               /> */}
-                <img
-                  className="h-20 w-auto"
-                  src="./header/company.png"
-                  alt=""
-                />
-              </a>
+                <img className="h-20 w-auto" src="/company.png" alt="" />
+              </Link>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-dark100"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <span className="sr-only">Close menu</span>
+                <span className="sr-only">{t("header.closemenu")}</span>
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
@@ -143,7 +144,7 @@ const Header = () => {
                   {/* <Disclosure as="div" className="-mx-3">
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50">
+                      <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-[Outfit-Regular] leading-7 text-headerText hover:bg-gray-50">
                         Product
                         <ChevronDownIcon
                           className={classNames(open ? 'rotate-180' : '', 'h-5 w-5 flex-none')}
@@ -156,7 +157,7 @@ const Header = () => {
                             key={item.name}
                             as="a"
                             href={item.href}
-                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
+                            className="block rounded-lg py-2 pl-6 pr-3 text-sm font-[Outfit-Regular] leading-7 text-headerText hover:bg-gray-50"
                           >
                             {item.name}
                           </Disclosure.Button>
@@ -165,44 +166,44 @@ const Header = () => {
                     </>
                   )}
                 </Disclosure> */}
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
+                  {/* <link
+                    to="/product"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-headerText hover:bg-gray-50"
                   >
-                    Produkt
-                  </a>
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
+                    {t("header.menus.1")}
+                  </link> */}
+                  <Link
+                    to="/"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-headerText hover:bg-gray-50"
                   >
-                    Case Studies
-                  </a>
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
+                    {t("header.menus.2")}
+                  </Link>
+                  <Link
+                    to="about-us"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-headerText hover:bg-gray-50"
                   >
-                    Uber Uns
-                  </a>
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
+                    {t("header.menus.3")}
+                  </Link>
+                  <Link
+                    to="contact"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-headerText hover:bg-gray-50"
                   >
-                    Kontakt
-                  </a>
-                  <a
-                    href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
+                    {t("header.menus.4")}
+                  </Link>
+                  <Link
+                    to="/faq"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-[Outfit-Regular] leading-7 text-headerText hover:bg-gray-50"
                   >
-                    FAQ
-                  </a>
-                  <button className=" bg-blue-700 py-[10px] px-[12px] rounded-[5px] text-light400">
-                    Demovideo kostenlose erstaellen
+                    {t("header.menus.5")}
+                  </Link>
+                  <button className=" bg-primary py-[10px] px-[12px] rounded-[5px] text-light100">
+                    {t("header.buttontext")}
                   </button>
                 </div>
                 {/* <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-[Outfit-Regular] leading-7 text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-[Outfit-Regular] leading-7 text-headerText hover:bg-gray-50"
                 >
                   Log in
                 </a>

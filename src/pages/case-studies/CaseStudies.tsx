@@ -1,56 +1,55 @@
+import { useTranslation } from "react-i18next";
 
 import { GoArrowRight } from "react-icons/go";
 
 const CaseStudies = () => {
+  const { t } = useTranslation();
+  // Data for case study boxes
   const box = [
     {
       id: 1,
       logo: "/casestudy/1.png",
-      name: "Produktkommunikation",
-      des: `consetetur sadipscing elitr, sed diam
-      nonumy eirmod tempor invidunt ut
-      labore et dolore magna aliquyam
-      erat, sed diam voluptua. At vero eos
-      et accusam et justo duo dolores et ea`,
+      name: `${t("caseStudies.box1.name")}`,
+      des: `${t("caseStudies.box1.des")}`,
+      username: `${t("caseStudies.box1.username")}`,
+      userinfo: `${t("caseStudies.box1.userinfo")}`,
       userpic: "/casestudy/man1.png",
-      username: "Adrian Weiß",
-      userinfo: "Produkt Manager nexineer",
     },
     {
       id: 2,
       logo: "/casestudy/2.png",
-      name: "Softwareschulung ",
-      des: "Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
+      name: `${t("caseStudies.box2.name")}`,
+      des: `${t("caseStudies.box2.des")}`,
+      username: `${t("caseStudies.box2.username")}`,
+      userinfo: `${t("caseStudies.box2.userinfo")}`,
       userpic: "/casestudy/man2.png",
-      username: "Christian Färber ",
-      userinfo: "Digitalisierungsbeauftragter Neuburg-Schrobenhausen",
     },
     {
       id: 3,
       logo: "/casestudy/3.png",
-      name: "Xxx",
-      des: "Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea",
+      name: `${t("caseStudies.box3.name")}`,
+      des: `${t("caseStudies.box3.des")}`,
+      username: `${t("caseStudies.box3.username")}`,
+      userinfo: `${t("caseStudies.box3.userinfo")}`,
       userpic: "/casestudy/man3.png",
-      username: "Andreas Lehnig",
-      userinfo: "Head of Marketing & Communications bei Schattdecor SE",
     },
   ];
   return (
     <div className="w-[100%] mt-[50px] mb-[80px] px-[80px] max-laptop:px-[60px] max-md:px-[30px]">
       <div className="max-w-[2000px] mx-auto">
         <div className="text-sm font-[Outfit-Bold]  text-primary max-md:text-center max-laptop:text-mf">
-        CASE STUDIES
+          {t("caseStudies.title")}
         </div>
         <div className="text-lg font-[Outfit-Bold]  max-md:text-sm max-md:text-center max-laptop:text-lf ">
-          So optimieren unsere Kunden ihre Schulungsprozesse
+          {t("caseStudies.subtitle")}
         </div>
-
-        <div className="w-[100%] flex justify-between  max-tab:flex-col lg:gap-8 gap-6 items-start mt-[60px]">
+        {/* Subtitle for Case Studies */}
+        <div className="w-[100%] flex justify-between  max-tab:flex-col lg:gap-8 gap-6 items-stretch mt-[60px]">
           {box.map((item) => {
             return (
               <div
                 key={item.id}
-                className="bg-light100 w-[30%] max-tab:w-full h-fit rounded-[10px] shadow-md  lg:p-[40px] p-[20px]"
+                className="bg-light100 relative w-[30%] max-tab:w-full rounded-[10px] shadow-md  lg:p-[40px] p-[20px]"
               >
                 <div className="flex items-center object-cover ">
                   <img src={item.logo} alt="" width="300px" />
@@ -59,14 +58,14 @@ const CaseStudies = () => {
                 <div className="text-sm  text-dark100 font-bold font-[Outfit-Bold] max-md:text-left max-laptop:text-mf">
                   {item.name}
                 </div>
-                <div className="text-sm font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start">
+                <div className="text-sm pb-[80px] font-[Outfit-Regular] max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start">
                   {item.des}
                 </div>
 
-                <div className="whitespace-nowrap h-[31px] w-[full] lg:text-[25px] md:text-[18px] text-[13px] font-[Outfit-Bold] text-primary flex justify-end lg:pr-3 md:pr-1 pr-0 mt-[50px]">
-                 Case Study ansehen
-                  <div className="lg:pt-[10px] md:pt-[6px] pt-[5px] ">
-                    <GoArrowRight className="text-sm" />
+                <div className="whitespace-nowrap absolute pb-7 bottom-6 right-4 h-[31px] w-[full] xl:text-[25px] lg:text-[20px] md:text-[15px] text-[16px] font-[Outfit-Bold] text-primary flex items-center justify-end lg:pr-3 md:pr-1 pr-0 ">
+                  {t("caseStudies.button")}
+                  <div className=" ">
+                    <GoArrowRight className="text-sm ml-1" />
                   </div>
                 </div>
               </div>

@@ -16,14 +16,14 @@ import Stellenbeschreibung from "./pages/stellenbeschreibung/Stellenbeschreibung
 function App() {
   return (
     <>
-      <div className=" ">
+      <div className=" z-[1000]">
         <Header />
       </div>
       <Routes>
         {/* page 1 */}
         <Route path="/" element={<Startseite />} />
         {/* page 2 */}
-        <Route path="/produkt" element={<Produkt />} />
+        <Route path="/product" element={<Produkt />} />
         {/* page 3 */}
         <Route path="/about-us" element={<AboutUs />} />
         {/* page 4 */}

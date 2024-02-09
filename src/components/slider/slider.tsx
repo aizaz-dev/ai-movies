@@ -1,15 +1,18 @@
-// ImageSlider.jsx
-import React, { useRef, useEffect } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import '../../index.css';
-import { FaChevronLeft } from 'react-icons/fa';
-import { FaChevronRight } from 'react-icons/fa';
+// Importing necessary dependencies
+import { useRef, useEffect } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "../../index.css";
+import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
+// ImageSlider component
 const ImageSlider = () => {
+  // Reference to the Slider component
   const sliderRef = useRef(null);
 
+  // Settings for the react-slick Slider component
   const settings = {
     dots: false,
     infinite: true,
@@ -46,22 +49,25 @@ const ImageSlider = () => {
     ],
   };
 
+  // Array of image paths for the slider
   const images = [
-    '/slider/1.png',
-    '/slider/2.png',
-    '/slider/3.png',
-    '/slider/4.png',
-    '/slider/5.png',
-    '/slider/6.png',
-    '/slider/7.png',
+    "/slider/1.png",
+    "/slider/2.png",
+    "/slider/3.png",
+    "/slider/4.png",
+    "/slider/5.png",
+    "/slider/6.png",
+    "/slider/7.png",
   ];
 
+  // Function to navigate to the next slide
   const goToNext = () => {
     if (sliderRef.current) {
       sliderRef.current.slickNext();
     }
   };
 
+  // Function to navigate to the previous slide
   const goToPrev = () => {
     if (sliderRef.current) {
       sliderRef.current.slickPrev();
@@ -71,43 +77,64 @@ const ImageSlider = () => {
   // Pause autoplay when the user interacts with the slider
   useEffect(() => {
     const slider = sliderRef.current;
+
     const handleSliderInteraction = () => {
       if (slider) {
         slider.slickPause();
       }
     };
 
-    if (slider) {
-      slider.innerSlider.list.addEventListener('mouseenter', handleSliderInteraction);
-      slider.innerSlider.list.addEventListener('touchstart', handleSliderInteraction);
+    const listElement = slider?.innerSlider?.list;
+
+    if (listElement) {
+      listElement.addEventListener("mouseenter", handleSliderInteraction);
+      listElement.addEventListener("touchstart", handleSliderInteraction);
     }
 
+    // Cleanup function
     return () => {
-      if (slider) {
-        slider.innerSlider.list.removeEventListener('mouseenter', handleSliderInteraction);
-        slider.innerSlider.list.removeEventListener('touchstart', handleSliderInteraction);
+      if (listElement) {
+        listElement.removeEventListener("mouseenter", handleSliderInteraction);
+        listElement.removeEventListener("touchstart", handleSliderInteraction);
       }
     };
   }, []);
 
+  // Rendering the ImageSlider component
   return (
     <div className="relative w-full max-w-[2000px] m-auto">
-      <div className="hidden md:block absolute -left-4 top-1/2 transform -translate-y-1/2 z-10 pl-4 ">
-        <div className="prev-arrow text-[60px] max-laptop:text-lf text-[#BBBCBC] cursor-pointer " onClick={goToPrev}>
+      {/* Left arrow for previous slide */}
+      <div className="hidden md:block absolute -left-4 top-1/2 transform -translate-y-1/2 z-10 pl-4">
+        <div
+          className="prev-arrow text-[60px] max-laptop:text-lf text-headerText cursor-pointer"
+          onClick={goToPrev}
+        >
           <FaChevronLeft />
         </div>
       </div>
+
+      {/* Slider content */}
       <div className="px-[60px] max-md:p-0">
         <Slider ref={sliderRef} {...settings}>
+          {/* Mapping over images array to create slide items */}
           {images.map((image, index) => (
             <div key={index}>
-              <img className="p-4  bg-transparent" src={image} alt={`Slide ${index + 1}`} />
+              <img
+                className="p-4 bg-transparent"
+                src={image}
+                alt={`Slide ${index + 1}`}
+              />
             </div>
           ))}
         </Slider>
       </div>
+
+      {/* Right arrow for next slide */}
       <div className="max-tab:hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 pr-4">
-        <div className="next-arrow text-[60px] max-laptop:text-lf text-[#BBBCBC] cursor-pointer" onClick={goToNext}>
+        <div
+          className="next-arrow text-[60px] max-laptop:text-lf text-headerText cursor-pointer"
+          onClick={goToNext}
+        >
           <FaChevronRight />
         </div>
       </div>
@@ -115,4 +142,5 @@ const ImageSlider = () => {
   );
 };
 
+// Exporting the ImageSlider component
 export default ImageSlider;

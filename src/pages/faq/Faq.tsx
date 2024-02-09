@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Faq from '../../components/Faqs'
 import Bottomcustom from '../../components/Bottomcustom'
 

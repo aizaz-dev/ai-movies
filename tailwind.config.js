@@ -19,12 +19,15 @@ export default {
         light400: "#ffffff",
         dark100: "#000000",
         dark200: "#0d1c5a",
+        inputblue: "#1F4AF434",
+        headerText: "#707070",
       },
       screens: {
         // SH
         laptop: "1500px",
         tab: "850px",
         xtab: "1050px",
+        maxtab:"1200px"
       },
       transitionDuration: {
         2000: "2000ms", // You can adjust the duration as needed

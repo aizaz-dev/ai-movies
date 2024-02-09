@@ -2,17 +2,47 @@ import { useTranslation } from "react-i18next";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { BsSend } from "react-icons/bs";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { MdLanguage } from "react-icons/md";
 
 const Footer = () => {
   const { t, i18n } = useTranslation();
   useEffect(() => {
     const storedLanguage = localStorage.getItem("selectedLanguage");
-    const defaultLanguage = storedLanguage || "en";
 
-    i18n.changeLanguage(defaultLanguage);
-    localStorage.setItem("selectedLanguage", defaultLanguage);
+    const setLanguage = (language) => {
+      if (i18n.language !== language) {
+        i18n.changeLanguage(language);
+        localStorage.setItem("selectedLanguage", language);
+      }
+    };
+
+    const handleLanguageChange = () => {
+      const browserLanguage =
+        navigator.languages && navigator.languages.length
+          ? navigator.languages[0]
+          : navigator.language;
+      const defaultLanguage =
+        storedLanguage || browserLanguage.split("-")[0] || "en";
+
+      setLanguage(defaultLanguage);
+    };
+
+    // Set the initial language
+    handleLanguageChange();
+
+    // Listen for changes in local storage
+    window.addEventListener("storage", (event) => {
+      if (event.key === "selectedLanguage") {
+        handleLanguageChange();
+      }
+    });
+
+    return () => {
+      // Remove the event listener when the component is unmounted
+      window.removeEventListener("storage", handleLanguageChange);
+    };
   }, [i18n]);
-
   return (
     <div className="bg-dark200  lg:px-[80px] px-[20px] pb-[40px]  w-[100%]">
       <div className="max-w-[2000px] mx-auto">
@@ -30,15 +60,24 @@ const Footer = () => {
                 <div className="text-sm font-[Outfit-Bold] text-light400  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.quickFind")}
                 </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                <Link
+                  to="/case-studies"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.caseStudies")}
-                </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                </Link>
+                <Link
+                  to="/about-us"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.aboutUs")}
-                </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                </Link>
+                <Link
+                  to="/contact"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.contact")}
-                </div>
+                </Link>
               </div>
               <div className="flex flex-col gap-1">
                 <div className="text-sm font-[Outfit-Bold] text-light400 max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
@@ -55,15 +94,24 @@ const Footer = () => {
                 <div className="text-sm font-[Outfit-Bold] text-light400  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                   {t("footer.additional")}
                 </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                <Link
+                  to="/contact"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.contact")}
-                </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                </Link>
+                <Link
+                  to="/faq"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.faq")}
-                </div>
-                <div className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+                </Link>
+                <Link
+                  to="/jobs"
+                  className="text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]"
+                >
                   {t("footer.jobs")}
-                </div>
+                </Link>
               </div>
               <div className="flex flex-col gap-1">
                 <div className="text-sm font-[Outfit-Bold] text-light400  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
@@ -76,10 +124,10 @@ const Footer = () => {
                   {t("footer.blog")}
                 </div>
                 <div className="flex gap-[10px] mt-3">
-                  <div className="bg-white rounded-sm p-[4px]">
+                  <div className="bg-light400 rounded-sm p-[4px]">
                     <FaFacebookF className="text-dark200 text-[18px]" />
                   </div>
-                  <div className="bg-white rounded-sm p-[4px]">
+                  <div className="bg-light400 rounded-sm p-[4px]">
                     <FaLinkedinIn className="text-dark200 text-[18px]" />
                   </div>
                 </div>
@@ -97,7 +145,7 @@ const Footer = () => {
                 placeholder={t("footer.emailPlaceholder")}
                 type="text"
               />
-              <div className=" text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
+              <div className=" lg:w-[300px] text-sm font-[Outfit-Regular] text-light200  max-md:text-mf leading-7 max-laptop:text-[15px] max-laptop:leading-4 max-md:leading-5 max-md:text-start mt-[10px]">
                 {t("footer.subscriptionNote")}
               </div>
               <div className="max-md:hidden">
@@ -112,15 +160,16 @@ const Footer = () => {
             <select
               name=""
               id=""
-              className="rounded-md px-[24px] max-tab:mt-[20px] py-[8px] font-[Outfit-Bold] max-md:mx-auto"
+              className="rounded-md mt-[30px] px-[24px] max-tab:mt-[20px] py-[8px] font-[Outfit-Bold] max-md:mx-auto"
               onChange={(e) => {
                 const selectedLanguage = e.target.value;
                 i18n.changeLanguage(selectedLanguage);
                 localStorage.setItem("selectedLanguage", selectedLanguage);
               }}
+              value={i18n.language} // Set the selected value based on the current language
             >
-              <option value="en">{t("languages.english")}</option>
-              <option value="de">{t("languages.german")}</option>
+              <option value="en">{t("languages.english")}(EN)</option>
+              <option value="de">{t("languages.german")} (DE)</option>
               {/* Add more language options as needed */}
             </select>
           </div>
